@@ -9,7 +9,7 @@ const tier1: TalentTier = [
     talentNames.paladin.deflection,
     "ability_parry",
     ["Increases your Parry chance by ", "%."],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   new MultiRankTalent(
     talentNames.paladin.benediction,
@@ -18,7 +18,7 @@ const tier1: TalentTier = [
       "Reduces the Mana cost of all instant cast spells and abilities by ",
       "%.",
     ],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   null,
 ];
@@ -29,7 +29,7 @@ const tier2: TalentTier = [
     talentNames.paladin.improvedJudgement,
     "spell_holy_righteousfury",
     ["Decreases the cooldown of your Judgement ability by ", " sec."],
-    [["1", "2"]],
+    [[1, 2]],
   ),
   new MultiRankTalent(
     talentNames.paladin.holyConduit,
@@ -38,7 +38,7 @@ const tier2: TalentTier = [
       "Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by ",
       "%.",
     ],
-    [["20", "40"]],
+    [[20, 40]],
   ),
   new MultiRankTalent(
     talentNames.paladin.conviction,
@@ -47,7 +47,7 @@ const tier2: TalentTier = [
       "Improves your chance to get a critical strike with melee attacks by ",
       "%.",
     ],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   null,
 ];
@@ -64,8 +64,8 @@ const tier3: TalentTier = [
       "% for 30 sec.",
     ],
     [
-      ["1", "2", "3"],
-      ["1", "2", "3"],
+      [1, 2, 3],
+      [1, 2, 3],
     ],
   ),
   new MultiRankTalent(
@@ -77,8 +77,8 @@ const tier3: TalentTier = [
       "% of the Mana cost of the judged seal.",
     ],
     [
-      ["33", "66", "100"],
-      ["20", "40", "60"],
+      [33, 66, 100],
+      [20, 40, 60],
     ],
   ),
   // TODO: check manually: description contains markup
@@ -94,7 +94,7 @@ const tier3: TalentTier = [
       "Increases movement speed and mounted movement speed by ",
       "%.  This does not stack with other movement speed increasing effects.",
     ],
-    [["8", "15"]],
+    [[8, 15]],
   ),
 ];
 
@@ -107,7 +107,7 @@ const tier4: TalentTier = [
       "All critical strikes against you cause ",
       "% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health.",
     ],
-    [["5", "10"]],
+    [[5, 10]],
   ),
   null,
   new SingleRankTalent(
@@ -124,7 +124,7 @@ const tier5: TalentTier = [
     talentNames.paladin.twoHandedWeaponSpecialization,
     "inv_hammer_04",
     ["Increases the damage you deal with two-handed melee weapons by ", "%."],
-    [["2", "4", "6"]],
+    [[2, 4, 6]],
   ),
   new MultiRankTalent(
     talentNames.paladin.vengeance,
@@ -133,7 +133,7 @@ const tier5: TalentTier = [
       "Increases your Physical and Holy damage dealt by ",
       "% for 30 sec after landing a non-periodic critical strike.  Stacks up to 3 times.",
     ],
-    [["1", "2", "3"]],
+    [[1, 2, 3]],
     talentNames.paladin.sanctifiedJudgement,
   ),
   new SingleRankTalent(
@@ -151,7 +151,7 @@ const tier6: TalentTier = [
     talentNames.paladin.championOfTheLight,
     "ability_paladin_enlightenedjudgements",
     ["Increases your spell damage by up to ", "% of your Intellect."],
-    [["20", "40", "60"]],
+    [[20, 40, 60]],
   ),
   new MultiRankTalent(
     talentNames.paladin.instrumentOfLaw,
@@ -162,8 +162,8 @@ const tier6: TalentTier = [
       "% while Righteous Fury is not active.",
     ],
     [
-      ["0.5", "1.0"],
-      ["10", "20"],
+      [0.5, "1.0"],
+      [10, 20],
     ],
   ),
   null,

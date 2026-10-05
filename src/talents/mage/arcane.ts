@@ -8,13 +8,13 @@ const tier1: TalentTier = [
     talentNames.mage.wandSpecialization,
     "inv_wand_01",
     ["Increases your damage with Wands by ", "%."],
-    [["13", "25"]],
+    [[13, 25]],
   ),
   new MultiRankTalent(
     talentNames.mage.arcaneFocus,
     "spell_holy_devotion",
     ["Improves your chance to hit with Arcane spells by ", "%."],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   new MultiRankTalent(
     talentNames.mage.improvedChanneling,
@@ -25,8 +25,8 @@ const tier1: TalentTier = [
       "% chance while casting Arcane Blast.",
     ],
     [
-      ["20", "40", "60", "80", "100"],
-      ["14", "28", "42", "56", "70"],
+      [20, 40, 60, 80, 100],
+      [14, 28, 42, 56, 70],
     ],
   ),
   null,
@@ -43,8 +43,8 @@ const tier2: TalentTier = [
       "%.",
     ],
     [
-      ["8", "15"],
-      ["15", "30"],
+      [8, 15],
+      [15, 30],
     ],
   ),
   new MultiRankTalent(
@@ -56,8 +56,8 @@ const tier2: TalentTier = [
       "% of your total mana. Cannot trigger more often than 1 time per sec.",
     ],
     [
-      ["5", "10"],
-      ["1", "2"],
+      [5, 10],
+      [1, 2],
     ],
   ),
   new MultiRankTalent(
@@ -67,13 +67,13 @@ const tier2: TalentTier = [
       "Gives you a ",
       "% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by 100%.",
     ],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   new MultiRankTalent(
     talentNames.mage.arcaneResilience,
     "spell_arcane_arcaneresilience",
     ["Increases your Armor by an amount equal to ", "% of your Intellect."],
-    [["25", "50"]],
+    [[25, 50]],
   ),
 ];
 
@@ -83,13 +83,13 @@ const tier3: TalentTier = [
     talentNames.mage.arcaneGeometry,
     "inv_ability_mage_radiantspark",
     ["Increases the range of your Arcane spells by ", " yards."],
-    [["3", "6"]],
+    [[3, 6]],
   ),
   new MultiRankTalent(
     talentNames.mage.arcaneImpact,
     "spell_nature_wispsplode",
     ["Increases the critical strike chance of your Arcane spells by ", "%."],
-    [["2", "4", "6"]],
+    [[2, 4, 6]],
   ),
   null,
   // TODO: check manually: description contains markup
@@ -111,21 +111,21 @@ const tier4: TalentTier = [
       "%.",
     ],
     [
-      ["17", "33"],
-      ["25", "50"],
+      [17, 33],
+      [25, 50],
     ],
   ),
   new MultiRankTalent(
     talentNames.mage.improvedCounterspell,
     "spell_frost_iceshock",
     ["Your Counterspell also Silences the target for ", " sec."],
-    [["2", "4"]],
+    [[2, 4]],
   ),
   new MultiRankTalent(
     talentNames.mage.arcaneMeditation,
     "spell_shadow_siphonmana",
     ["Allows ", "% of your Mana regeneration to continue while casting."],
-    [["17", "33", "50"]],
+    [[17, 33, 50]],
     talentNames.mage.arcaneConcentration,
   ),
   new SingleRankTalent(
@@ -152,8 +152,8 @@ const tier5: TalentTier = [
       "%.",
     ],
     [
-      ["2", "4", "6", "8", "10"],
-      ["20", "40", "60", "80", "100"],
+      [2, 4, 6, 8, 10],
+      [20, 40, 60, 80, 100],
     ],
   ),
   null,
@@ -172,8 +172,8 @@ const tier6: TalentTier = [
       "%.",
     ],
     [
-      ["1", "2", "3"],
-      ["1", "2", "3"],
+      [1, 2, 3],
+      [1, 2, 3],
     ],
   ),
   null,

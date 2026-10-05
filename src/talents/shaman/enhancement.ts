@@ -13,8 +13,8 @@ const tier1: TalentTier = [
       "%.",
     ],
     [
-      ["25", "50"],
-      ["10", "20"],
+      [25, 50],
+      [10, 20],
     ],
   ),
   new MultiRankTalent(
@@ -24,13 +24,13 @@ const tier1: TalentTier = [
       "Improves your chance to get a critical strike with all spells and attacks by ",
       "%.",
     ],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   new MultiRankTalent(
     talentNames.shaman.ancestralKnowledge,
     "spell_shadow_grimward",
     ["Increases your Intellect by ", "%."],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   null,
 ];
@@ -46,8 +46,8 @@ const tier2: TalentTier = [
       " sec.",
     ],
     [
-      ["10", "20"],
-      ["1", "2"],
+      [10, 20],
+      [1, 2],
     ],
   ),
   new MultiRankTalent(
@@ -57,7 +57,7 @@ const tier2: TalentTier = [
       "Increases your Attack Power by an amount equal to ",
       "% of your Intellect.",
     ],
-    [["33", "67", "100"]],
+    [[33, 67, 100]],
   ),
   new MultiRankTalent(
     talentNames.shaman.improvedGhostWolf,
@@ -72,7 +72,7 @@ const tier2: TalentTier = [
     talentNames.shaman.improvedLightningShield,
     "spell_nature_lightningshield",
     ["Increases the damage done by your Lightning Shield orbs by ", "%."],
-    [["5", "10", "15"]],
+    [[5, 10, 15]],
   ),
 ];
 
@@ -88,9 +88,9 @@ const tier3: TalentTier = [
       "%.",
     ],
     [
-      ["7", "13", "20"],
-      ["13", "27", "40"],
-      ["5", "10", "15"],
+      [7, 13, 20],
+      [13, 27, 40],
+      [5, 10, 15],
     ],
   ),
   null,
@@ -103,7 +103,7 @@ const tier3: TalentTier = [
     talentNames.shaman.anticipation,
     "spell_nature_mirrorimage",
     ["Increases your chance to dodge by an additional ", "%."],
-    [["2", "4", "6"]],
+    [[2, 4, 6]],
   ),
 ];
 
@@ -113,7 +113,7 @@ const tier4: TalentTier = [
     talentNames.shaman.toughness,
     "spell_holy_devotion",
     ["Increases your Stamina by ", "%."],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   new MultiRankTalent(
     talentNames.shaman.flurry,
@@ -122,7 +122,7 @@ const tier4: TalentTier = [
       "Increases your attack speed by ",
       "% for your next 3 swings after dealing a melee critical strike.",
     ],
-    [["5", "10", "15", "20", "25"]],
+    [[5, 10, 15, 20, 25]],
     talentNames.shaman.mentalDexterity,
   ),
   new SingleRankTalent(
@@ -147,7 +147,7 @@ const tier5: TalentTier = [
       "Increases your spell damage and healing by up to ",
       "% of your Intellect.",
     ],
-    [["15", "30"]],
+    [[15, 30]],
   ),
   new MultiRankTalent(
     talentNames.shaman.improvedStormstrike,
@@ -158,8 +158,8 @@ const tier5: TalentTier = [
       "% chance to reset each time you Dodge or Parry.",
     ],
     [
-      ["50", "100"],
-      ["50", "100"],
+      [50, 100],
+      [50, 100],
     ],
     talentNames.shaman.stormstrike,
   ),
@@ -177,7 +177,7 @@ const tier6: TalentTier = [
       "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by ",
       "%. Stacks up to 5 times. Lasts 30 sec.",
     ],
-    [["4", "8", "12", "16", "20"]],
+    [[4, 8, 12, 16, 20]],
   ),
   null,
 ];

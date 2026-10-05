@@ -12,13 +12,13 @@ const tier1: TalentTier = [
       "While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by ",
       "%.",
     ],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   new MultiRankTalent(
     talentNames.hunter.deflection,
     "ability_parry",
     ["Increases your Parry chance by ", "%."],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   null,
 ];
@@ -32,7 +32,7 @@ const tier2: TalentTier = [
       "When your traps are triggered, all affected targets are Entrapped, preventing them from moving for ",
       " sec.",
     ],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   new MultiRankTalent(
     talentNames.hunter.savageStrikes,
@@ -41,13 +41,13 @@ const tier2: TalentTier = [
       "Increases the critical strike chance of all your melee abilities by ",
       "%.",
     ],
-    [["2", "4"]],
+    [[2, 4]],
   ),
   new MultiRankTalent(
     talentNames.hunter.survivalist,
     "spell_shadow_twilight",
     ["Increases your total Health by ", "%."],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   new MultiRankTalent(
     talentNames.hunter.improvedWingClip,
@@ -56,7 +56,7 @@ const tier2: TalentTier = [
       "Gives your Wing Clip ability a ",
       "% chance to immobilize the target for 5 sec.",
     ],
-    [["7", "13", "20"]],
+    [[7, 13, 20]],
   ),
 ];
 
@@ -71,8 +71,8 @@ const tier3: TalentTier = [
       "%.",
     ],
     [
-      ["15", "30"],
-      ["15", "30"],
+      [15, 30],
+      [15, 30],
     ],
   ),
   new MultiRankTalent(
@@ -84,8 +84,8 @@ const tier3: TalentTier = [
       "%.",
     ],
     [
-      ["1", "2", "3"],
-      ["10", "20", "30"],
+      [1, 2, 3],
+      [10, 20, 30],
     ],
   ),
   // TODO: check manually: description contains markup
@@ -106,7 +106,7 @@ const tier4: TalentTier = [
       "Increases your chance to hit with your Trap and Feign Death abilities by ",
       "%.",
     ],
-    [["5", "10"]],
+    [[5, 10]],
   ),
   new MultiRankTalent(
     talentNames.hunter.predatorsEdge,
@@ -117,8 +117,8 @@ const tier4: TalentTier = [
       "%.",
     ],
     [
-      ["6", "12", "18", "24", "30"],
-      ["10", "20", "30", "40", "50"],
+      [6, 12, 18, 24, 30],
+      [10, 20, 30, 40, 50],
     ],
   ),
   new SingleRankTalent(
@@ -141,8 +141,8 @@ const tier5: TalentTier = [
       "% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec.",
     ],
     [
-      ["30", "60"],
-      ["30", "60"],
+      [30, 60],
+      [30, 60],
     ],
   ),
   new MultiRankTalent(
@@ -152,13 +152,13 @@ const tier5: TalentTier = [
       "Your attacks against targets with Hunter's Mark have a ",
       "% chance to activate your Mongoose Bite for 5 sec.",
     ],
-    [["5", "10"]],
+    [[5, 10]],
   ),
   new MultiRankTalent(
     talentNames.hunter.survivalistsDiscipline,
     "ability_hunter_mastertactitian",
     ["Reduces the cooldown of your Trap and Deterrence abilities by ", "%."],
-    [["20", "40"]],
+    [[20, 40]],
   ),
   new SingleRankTalent(
     talentNames.hunter.striderKick,
@@ -175,7 +175,7 @@ const tier6: TalentTier = [
     talentNames.hunter.lightningReflexes,
     "spell_nature_invisibilty",
     ["Increases your Agility by ", "%."],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   null,
 ];

@@ -11,19 +11,19 @@ const tier1: TalentTier = [
       "Gives you a ",
       "% chance to avoid interruption caused by damage while casting any spell.",
     ],
-    [["23", "47", "70"]],
+    [[23, 47, 70]],
   ),
   new MultiRankTalent(
     talentNames.priest.improvedRenew,
     "spell_holy_renew",
     ["Increases the amount healed by your Renew spell by ", "%."],
-    [["5", "10", "15"]],
+    [[5, 10, 15]],
   ),
   new MultiRankTalent(
     talentNames.priest.holySpecialization,
     "spell_holy_sealofsalvation",
     ["Increases the critical effect chance of your Holy spells by ", "%."],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   null,
 ];
@@ -35,7 +35,7 @@ const tier2: TalentTier = [
     talentNames.priest.spellWarding,
     "spell_holy_spellwarding",
     ["Reduces all spell damage taken by ", "%."],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   new MultiRankTalent(
     talentNames.priest.divineFury,
@@ -44,7 +44,7 @@ const tier2: TalentTier = [
       "Reduces the casting time of your Smite, Holy Fire, Heal, and Greater Heal spells by ",
       " sec.",
     ],
-    [["0.1", "0.2", "0.3", "0.4", "0.5"]],
+    [[0.1, 0.2, 0.3, 0.4, 0.5]],
   ),
   null,
 ];
@@ -64,7 +64,7 @@ const tier3: TalentTier = [
       "After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal ",
       "% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing.",
     ],
-    [["8", "17", "25"]],
+    [[8, 17, 25]],
   ),
   null,
   new MultiRankTalent(
@@ -74,7 +74,7 @@ const tier3: TalentTier = [
       "Your non-periodic critical heals increase your target's Armor by ",
       "% for 15 sec.",
     ],
-    [["8", "17", "25"]],
+    [[8, 17, 25]],
   ),
 ];
 
@@ -87,7 +87,7 @@ const tier4: TalentTier = [
       "Increases the range of your Smite and Holy Fire spells and the radius of your Prayer of Healing and Holy Nova spells by ",
       "%.",
     ],
-    [["10", "20"]],
+    [[10, 20]],
   ),
   new MultiRankTalent(
     talentNames.priest.improvedHealing,
@@ -96,7 +96,7 @@ const tier4: TalentTier = [
       "Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by ",
       "%.",
     ],
-    [["5", "10", "15"]],
+    [[5, 10, 15]],
   ),
   new MultiRankTalent(
     talentNames.priest.searingLight,
@@ -107,8 +107,8 @@ const tier4: TalentTier = [
       "% chance each time your Holy Fire spell deals periodic damage for your next Holy Nova to cost no Mana.",
     ],
     [
-      ["2", "5"],
-      ["5", "10"],
+      [2, 5],
+      [5, 10],
     ],
     talentNames.priest.divineFury,
   ),
@@ -129,7 +129,7 @@ const tier5: TalentTier = [
       "When you cast a healing spell, gain Mana equal to ",
       "% of the base cost of the spell if your previous heal was a different spell.",
     ],
-    [["5", "10"]],
+    [[5, 10]],
   ),
   new SingleRankTalent(
     talentNames.priest.spiritOfRedemption,
@@ -145,8 +145,8 @@ const tier5: TalentTier = [
       "% of your total Spirit.",
     ],
     [
-      ["5", "10", "15", "20", "25"],
-      ["1", "3", "5", "6", "8"],
+      [5, 10, 15, 20, 25],
+      [1, 3, 5, 6, 8],
     ],
   ),
   null,
@@ -160,7 +160,7 @@ const tier6: TalentTier = [
     talentNames.priest.spiritualHealing,
     "spell_nature_moonglow",
     ["Increases the amount healed by your spells by ", "%."],
-    [["3", "7", "10"]],
+    [[3, 7, 10]],
   ),
   null,
 ];

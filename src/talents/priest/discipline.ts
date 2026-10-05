@@ -11,19 +11,19 @@ const tier1: TalentTier = [
       "Your Smite and Penance spells deal ",
       "% increased damage to targets afflicted with your Holy Fire.",
     ],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   new MultiRankTalent(
     talentNames.priest.wandSpecialization,
     "inv_wand_01",
     ["Increases your damage with Wands by ", "%."],
-    [["13", "25"]],
+    [[13, 25]],
   ),
   new MultiRankTalent(
     talentNames.priest.twinDisciplines,
     "spell_holy_sealofvengeance",
     ["Increases the damage and healing of your instant cast spells by ", "%."],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   null,
 ];
@@ -39,21 +39,21 @@ const tier2: TalentTier = [
       "%.",
     ],
     [
-      ["10", "20", "30"],
-      ["5", "10", "15"],
+      [10, 20, 30],
+      [5, 10, 15],
     ],
   ),
   new MultiRankTalent(
     talentNames.priest.holyPrecision,
     "spell_holy_divineillumination",
     ["Improves your chance to hit with Holy spells by ", "%."],
-    [["6", "12", "18"]],
+    [[6, 12, 18]],
   ),
   new MultiRankTalent(
     talentNames.priest.improvedPowerWordShield,
     "spell_holy_powerwordshield",
     ["Increases the damage absorbed by your Power Word: Shield by ", "%."],
-    [["7", "14", "20"]],
+    [[7, 14, 20]],
   ),
   new MultiRankTalent(
     talentNames.priest.martyrdom,
@@ -62,7 +62,7 @@ const tier2: TalentTier = [
       "Gives you a ",
       "% chance to gain Focused Casting for 6 sec after being the victim of a melee or ranged critical strike. The Focused Casting effect prevents you from losing casting time when taking damage and increases your resistance to Interrupt effects by 20%.",
     ],
-    [["50", "100"]],
+    [[50, 100]],
   ),
 ];
 
@@ -75,7 +75,7 @@ const tier3: TalentTier = [
       "Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by ",
       "%.",
     ],
-    [["3", "7", "10"]],
+    [[3, 7, 10]],
   ),
   new SingleRankTalent(
     talentNames.priest.innerFocus,
@@ -87,7 +87,7 @@ const tier3: TalentTier = [
     talentNames.priest.meditation,
     "spell_nature_sleep",
     ["Allows ", "% of your Mana regeneration to continue while casting."],
-    [["17", "33", "50"]],
+    [[17, 33, 50]],
   ),
 ];
 
@@ -102,15 +102,15 @@ const tier4: TalentTier = [
       ".",
     ],
     [
-      ["15", "30", "45"],
-      ["4", "8", "12"],
+      [15, 30, 45],
+      [4, 8, 12],
     ],
   ),
   new MultiRankTalent(
     talentNames.priest.mentalStrength,
     "spell_nature_enchantarmor",
     ["Increases your total Intellect by ", "%."],
-    [["3", "6", "9", "12", "15"]],
+    [[3, 6, 9, 12, 15]],
   ),
   new SingleRankTalent(
     talentNames.priest.soulWarding,
@@ -122,7 +122,7 @@ const tier4: TalentTier = [
     talentNames.priest.improvedManaBurn,
     "spell_shadow_manaburn",
     ["Reduces the casting time of your Mana Burn spell by ", " sec."],
-    [["0.5", "1.0"]],
+    [[0.5, "1.0"]],
   ),
 ];
 
@@ -143,8 +143,8 @@ const tier5: TalentTier = [
       " sec.",
     ],
     [
-      ["2", "4", "6", "8", "10"],
-      ["1", "2", "3", "4", "5"],
+      [2, 4, 6, 8, 10],
+      [1, 2, 3, 4, 5],
     ],
     talentNames.priest.soulWarding,
   ),
@@ -162,7 +162,7 @@ const tier6: TalentTier = [
       "Your critical heals create a protective shield on the target, absorbing ",
       "% of the amount healed. Lasts 12 sec.",
     ],
-    [["5", "10", "15"]],
+    [[5, 10, 15]],
   ),
   null,
 ];

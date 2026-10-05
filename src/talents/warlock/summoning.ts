@@ -14,9 +14,9 @@ const tier1: TalentTier = [
       "%. Allows Health Funnel to be used regardless of your demon's health.",
     ],
     [
-      ["20", "40"],
-      ["15", "30"],
-      ["50", "100"],
+      [20, 40],
+      [15, 30],
+      [50, 100],
     ],
   ),
   new MultiRankTalent(
@@ -28,15 +28,15 @@ const tier1: TalentTier = [
       "%.",
     ],
     [
-      ["10", "20", "30"],
-      ["10", "20", "30"],
+      [10, 20, 30],
+      [10, 20, 30],
     ],
   ),
   new MultiRankTalent(
     talentNames.warlock.demonicEmbrace,
     "spell_shadow_metamorphosis",
     ["Increases your total Stamina by ", "%."],
-    [["3", "6", "9", "12", "15"]],
+    [[3, 6, 9, 12, 15]],
   ),
   new MultiRankTalent(
     talentNames.warlock.unholyPower,
@@ -45,7 +45,7 @@ const tier1: TalentTier = [
       "Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by ",
       "%.",
     ],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
 ];
 
@@ -58,7 +58,7 @@ const tier2: TalentTier = [
       "Increases the effectiveness of your Demon Skin and Demon Armor spells by ",
       "%.",
     ],
-    [["15", "30"]],
+    [[15, 30]],
   ),
   new MultiRankTalent(
     talentNames.warlock.improvedVoidwalker,
@@ -67,7 +67,7 @@ const tier2: TalentTier = [
       "Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice, and Suffering spells by ",
       "%.",
     ],
-    [["10", "20", "30"]],
+    [[10, 20, 30]],
   ),
   new MultiRankTalent(
     talentNames.warlock.felVitality,
@@ -78,8 +78,8 @@ const tier2: TalentTier = [
       "%.",
     ],
     [
-      ["5", "10", "15"],
-      ["5", "10", "15"],
+      [5, 10, 15],
+      [5, 10, 15],
     ],
   ),
   new MultiRankTalent(
@@ -91,8 +91,8 @@ const tier2: TalentTier = [
       "% of the Mana you gain.",
     ],
     [
-      ["8", "15"],
-      ["50", "100"],
+      [8, 15],
+      [50, 100],
     ],
   ),
 ];
@@ -108,8 +108,8 @@ const tier3: TalentTier = [
       "%.",
     ],
     [
-      ["10", "20", "30"],
-      ["10", "20", "30"],
+      [10, 20, 30],
+      [10, 20, 30],
     ],
   ),
   // TODO: check manually: description contains markup
@@ -127,8 +127,8 @@ const tier3: TalentTier = [
       "%.",
     ],
     [
-      ["2", "4"],
-      ["20", "40"],
+      [2, 4],
+      [20, 40],
     ],
   ),
   null,
@@ -146,9 +146,9 @@ const tier4: TalentTier = [
       "% and costs no Soul Shards.",
     ],
     [
-      ["45", "90"],
-      ["3", "6"],
-      ["20", "40"],
+      [45, 90],
+      [3, 6],
+      [20, 40],
     ],
   ),
   null,
@@ -168,8 +168,8 @@ const tier4: TalentTier = [
       " attacks against the target generate high threat and deal ((((<!--pl1293695:1:60-->60 - 26) * 1.5) + 14 + (0.078 * ((Shadow spell power)))) * (<!--sp23759:0-->1<!--sp23759--> * <!--sp18769:0-->1<!--sp18769--> * <!--sp23761:0-->1<!--sp23761-->)) to ((((<!--pl1293695:1:60-->60 - 26) * 1.5) + 17 + (0.078 * ((Shadow spell power)))) * (<!--sp23759:0-->1<!--sp23759--> * <!--sp18769:0-->1<!--sp18769--> * <!--sp23761:0-->1<!--sp23761-->)) Fire or Shadow damage based on the pet.",
     ],
     [
-      ["17", "33", "50"],
-      ["2", "4", "6"],
+      [17, 33, 50],
+      [2, 4, 6],
     ],
   ),
 ];
@@ -185,8 +185,8 @@ const tier5: TalentTier = [
       " sec.",
     ],
     [
-      ["10", "20", "30"],
-      ["2", "4", "6"],
+      [10, 20, 30],
+      [2, 4, 6],
     ],
   ),
   new SingleRankTalent(
@@ -202,7 +202,7 @@ const tier5: TalentTier = [
       "Increases your spell damage and your Demon pet's spell damage by up to ",
       "% of your level while you have a summoned Demon pet active.",
     ],
-    [["33", "67", "100"]],
+    [[33, 67, 100]],
   ),
   null,
 ];
@@ -223,10 +223,10 @@ const tier6: TalentTier = [
       "%.",
     ],
     [
-      ["2", "4", "6", "8", "10"],
-      ["2", "4", "6", "8", "10"],
-      ["2", "4", "6", "8", "10"],
-      ["2", "4", "6", "8", "10"],
+      [2, 4, 6, 8, 10],
+      [2, 4, 6, 8, 10],
+      [2, 4, 6, 8, 10],
+      [2, 4, 6, 8, 10],
     ],
   ),
   null,

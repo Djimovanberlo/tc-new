@@ -8,7 +8,7 @@ const tier1: TalentTier = [
     talentNames.warlock.destructiveReach,
     "spell_shadow_corpseexplode",
     ["Increases the range of your damaging spells by ", "%."],
-    [["10", "20"]],
+    [[10, 20]],
   ),
   new MultiRankTalent(
     talentNames.warlock.improvedShadowBolt,
@@ -17,7 +17,7 @@ const tier1: TalentTier = [
       "Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by ",
       "% for 12 sec.",
     ],
-    [["4", "8", "12", "16", "20"]],
+    [[4, 8, 12, 16, 20]],
   ),
   new MultiRankTalent(
     talentNames.warlock.bane,
@@ -28,8 +28,8 @@ const tier1: TalentTier = [
       " sec.",
     ],
     [
-      ["0.1", "0.2", "0.3", "0.4", "0.5"],
-      ["0.4", "0.8", "1.2", "1.6", "2"],
+      [0.1, 0.2, 0.3, 0.4, 0.5],
+      [0.4, 0.8, 1.2, 1.6, 2],
     ],
   ),
   null,
@@ -41,13 +41,13 @@ const tier2: TalentTier = [
     talentNames.warlock.moltenSkin,
     "ability_mage_moltenarmor",
     ["Reduces all damage taken by ", "%."],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   new MultiRankTalent(
     talentNames.warlock.cataclysm,
     "spell_fire_windsofwoe",
     ["Reduces the Mana cost of your Destruction spells by ", "%."],
-    [["3", "6", "10"]],
+    [[3, 6, 10]],
   ),
   new MultiRankTalent(
     talentNames.warlock.aftermath,
@@ -58,8 +58,8 @@ const tier2: TalentTier = [
       "% chance to Daze the target, reducing the target's movement speed by 50% for 5 sec.",
     ],
     [
-      ["10", "20", "30", "40", "50"],
-      ["20", "40", "60", "80", "100"],
+      [10, 20, 30, 40, 50],
+      [20, 40, 60, 80, 100],
     ],
   ),
   null,
@@ -75,7 +75,7 @@ const tier3: TalentTier = [
       "Increases the critical strike damage bonus of your Destruction spells by ",
       "%.",
     ],
-    [["20", "40", "60", "80", "100"]],
+    [[20, 40, 60, 80, 100]],
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
@@ -95,7 +95,7 @@ const tier4: TalentTier = [
       "Gives you a ",
       "% chance to resist interruption caused by damage while casting or channeling any Destruction spell.",
     ],
-    [["23", "47", "70"]],
+    [[23, 47, 70]],
   ),
   new MultiRankTalent(
     talentNames.warlock.agonizingFlames,
@@ -106,8 +106,8 @@ const tier4: TalentTier = [
       "%.",
     ],
     [
-      ["3", "7", "10"],
-      ["3", "7", "10"],
+      [3, 7, 10],
+      [3, 7, 10],
     ],
   ),
   // TODO: check manually: description contains markup
@@ -130,8 +130,8 @@ const tier5: TalentTier = [
       "% chance over their duration to Stun targets they damage for 3 sec.",
     ],
     [
-      ["13", "26"],
-      ["13", "26"],
+      [13, 26],
+      [13, 26],
     ],
     talentNames.warlock.intensity,
   ),
@@ -147,7 +147,7 @@ const tier5: TalentTier = [
       "Increases the critical strike chance of your Conflagrate spell by ",
       "%.",
     ],
-    [["8", "17", "25"]],
+    [[8, 17, 25]],
     talentNames.warlock.conflagrate,
   ),
   null,
@@ -168,10 +168,10 @@ const tier6: TalentTier = [
       "% chance to instantly refund a Soul Shard.",
     ],
     [
-      ["2", "4", "6", "8", "10"],
-      ["2", "4", "6", "8", "10"],
-      ["20", "40", "60", "80", "100"],
-      ["20", "40", "60", "80", "100"],
+      [2, 4, 6, 8, 10],
+      [2, 4, 6, 8, 10],
+      [20, 40, 60, 80, 100],
+      [20, 40, 60, 80, 100],
     ],
   ),
   null,

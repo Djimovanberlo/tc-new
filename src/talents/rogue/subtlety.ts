@@ -13,8 +13,8 @@ const tier1: TalentTier = [
       " sec.",
     ],
     [
-      ["3", "6", "9", "12", "15"],
-      ["2", "3", "4", "5", "6"],
+      [3, 6, 9, 12, 15],
+      [2, 3, 4, 5, 6],
     ],
   ),
   // TODO: check manually: description contains markup
@@ -25,7 +25,7 @@ const tier1: TalentTier = [
       "Reduces the chance enemies have to detect you while in Stealth mode as if you were ",
       " <!--singular:level:levels-->levels<!--singular--> higher.",
     ],
-    [["1", "2", "3"]],
+    [[1, 2, 3]],
   ),
   new MultiRankTalent(
     talentNames.rogue.opportunity,
@@ -34,7 +34,7 @@ const tier1: TalentTier = [
       "Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by ",
       "%.",
     ],
-    [["5", "10"]],
+    [[5, 10]],
   ),
   null,
 ];
@@ -48,25 +48,25 @@ const tier2: TalentTier = [
       "Gives you a ",
       "% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells.",
     ],
-    [["33", "67", "100"]],
+    [[33, 67, 100]],
   ),
   new MultiRankTalent(
     talentNames.rogue.elusiveness,
     "spell_magic_lesserinvisibilty",
     ["Reduces the cooldown of your Vanish and Blind abilities by ", " sec."],
-    [["45", "90"]],
+    [[45, 90]],
   ),
   new MultiRankTalent(
     talentNames.rogue.dirtyTricks,
     "ability_sap",
     ["Reduces the Energy cost of your Sap and Blind abilities by ", "%."],
-    [["25", "50"]],
+    [[25, 50]],
   ),
   new MultiRankTalent(
     talentNames.rogue.improvedAmbush,
     "ability_rogue_ambush",
     ["Increases the critical strike chance of your Ambush ability by ", "%."],
-    [["15", "30", "45"]],
+    [[15, 30, 45]],
   ),
 ];
 
@@ -79,7 +79,7 @@ const tier3: TalentTier = [
       "Gives you a ",
       "% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.",
     ],
-    [["33", "67", "100"]],
+    [[33, 67, 100]],
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
@@ -97,8 +97,8 @@ const tier3: TalentTier = [
       " <!--singular:level:levels-->levels<!--singular--> lower.",
     ],
     [
-      ["3", "5"],
-      ["1", "2"],
+      [3, 5],
+      [1, 2],
     ],
   ),
   null,
@@ -116,8 +116,8 @@ const tier4: TalentTier = [
       "%.",
     ],
     [
-      ["1", "3"],
-      ["2", "4"],
+      [1, 3],
+      [2, 4],
     ],
   ),
   new SingleRankTalent(
@@ -134,8 +134,8 @@ const tier4: TalentTier = [
       "%.",
     ],
     [
-      ["3", "6", "9"],
-      ["10", "20", "30"],
+      [3, 6, 9],
+      [10, 20, 30],
     ],
   ),
   null,
@@ -150,7 +150,7 @@ const tier5: TalentTier = [
       "Reduces the Energy cost of your Cheap Shot and Garrote abilities by ",
       ", and your Garrote ability no longer requires you to be behind your target.",
     ],
-    [["10", "20"]],
+    [[10, 20]],
   ),
   new SingleRankTalent(
     talentNames.rogue.preparation,
@@ -176,7 +176,7 @@ const tier6: TalentTier = [
       "Your Sinister Strike, Ghostly Strike, and Hemorrhage abilities cause ",
       "% more damage against targets below 35% health.",
     ],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
     talentNames.rogue.dirtyDeeds,
   ),
   null,
@@ -187,7 +187,7 @@ const tier6: TalentTier = [
       "Your Backstab has a ",
       "% chance to cause your next Ambush within 10 sec to not require Stealth.",
     ],
-    [["3", "6", "9", "12", "15"]],
+    [[3, 6, 9, 12, 15]],
   ),
   null,
 ];

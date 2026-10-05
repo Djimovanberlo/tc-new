@@ -12,7 +12,7 @@ const tier1: TalentTier = [
       "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by ",
       "%.",
     ],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   new MultiRankTalent(
     talentNames.shaman.concussion,
@@ -21,7 +21,7 @@ const tier1: TalentTier = [
       "Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by ",
       "%.",
     ],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   null,
 ];
@@ -32,13 +32,13 @@ const tier2: TalentTier = [
     talentNames.shaman.elementalWarding,
     "spell_nature_spiritarmor",
     ["Reduces damage taken from Fire, Frost, and Nature effects by ", "%."],
-    [["3", "7", "10"]],
+    [[3, 7, 10]],
   ),
   new MultiRankTalent(
     talentNames.shaman.reverberation,
     "spell_frost_frostward",
     ["Reduces the cooldown of your Shock spells by ", " sec."],
-    [["0.2", "0.4", "0.6", "0.8", "1.0"]],
+    [[0.2, 0.4, 0.6, 0.8, "1.0"]],
   ),
   new MultiRankTalent(
     talentNames.shaman.callOfFlame,
@@ -47,7 +47,7 @@ const tier2: TalentTier = [
       "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by ",
       "%.",
     ],
-    [["5", "10", "15"]],
+    [[5, 10, 15]],
   ),
   new MultiRankTalent(
     talentNames.shaman.elementalDevastation,
@@ -56,7 +56,7 @@ const tier2: TalentTier = [
       "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by ",
       "% for 10 sec.",
     ],
-    [["3", "6", "9"]],
+    [[3, 6, 9]],
   ),
 ];
 
@@ -75,7 +75,7 @@ const tier3: TalentTier = [
       "Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by ",
       " sec.",
     ],
-    [["0.17", "0.33", "0.50"]],
+    [[0.17, 0.33, "0.50"]],
   ),
   null,
 ];
@@ -91,8 +91,8 @@ const tier4: TalentTier = [
       " sec.",
     ],
     [
-      ["10", "20"],
-      ["2", "4"],
+      [10, 20],
+      [2, 4],
     ],
   ),
   new MultiRankTalent(
@@ -102,7 +102,7 @@ const tier4: TalentTier = [
       "Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by ",
       "%.",
     ],
-    [["23", "47", "70"]],
+    [[23, 47, 70]],
   ),
   new SingleRankTalent(
     talentNames.shaman.callOfThunder,
@@ -124,8 +124,8 @@ const tier5: TalentTier = [
       " yards.",
     ],
     [
-      ["3", "6"],
-      ["8", "15"],
+      [3, 6],
+      [8, 15],
     ],
   ),
   new MultiRankTalent(
@@ -135,7 +135,7 @@ const tier5: TalentTier = [
       "Gives your Lightning Bolt and Chain Lightning spells a ",
       "% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.",
     ],
-    [["3", "7", "10"]],
+    [[3, 7, 10]],
   ),
   null,
   new SingleRankTalent(
@@ -156,7 +156,7 @@ const tier6: TalentTier = [
       "Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by ",
       "%.",
     ],
-    [["20", "40", "60", "80", "100"]],
+    [[20, 40, 60, 80, 100]],
     talentNames.shaman.callOfThunder,
   ),
   null,

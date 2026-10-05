@@ -14,8 +14,8 @@ const tier1: TalentTier = [
       "%.",
     ],
     [
-      ["0.1", "0.2", "0.3", "0.4", "0.5"],
-      ["10", "20", "30", "40", "50"],
+      [0.1, 0.2, 0.3, 0.4, 0.5],
+      [10, 20, 30, 40, 50],
     ],
   ),
   new MultiRankTalent(
@@ -25,7 +25,7 @@ const tier1: TalentTier = [
       "Increases the periodic damage and healing done by your spells and abilities by ",
       "%.",
     ],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   null,
 ];
@@ -36,7 +36,7 @@ const tier2: TalentTier = [
     talentNames.druid.moonglow,
     "spell_nature_sentinal",
     ["Reduces the Mana cost of your damaging spells by ", "%."],
-    [["8", "17", "25"]],
+    [[8, 17, 25]],
   ),
   new MultiRankTalent(
     talentNames.druid.improvedMoonfire,
@@ -45,7 +45,7 @@ const tier2: TalentTier = [
       "Increases the damage and critical strike chance of your Moonfire spell by ",
       "%.",
     ],
-    [["5", "10"]],
+    [[5, 10]],
   ),
   new MultiRankTalent(
     talentNames.druid.naturesMajesty,
@@ -54,7 +54,7 @@ const tier2: TalentTier = [
       "Increases your critical strike chance with spells and melee attacks by ",
       "%.",
     ],
-    [["2", "4"]],
+    [[2, 4]],
   ),
   new MultiRankTalent(
     talentNames.druid.naturesReach,
@@ -65,8 +65,8 @@ const tier2: TalentTier = [
       "%.",
     ],
     [
-      ["10", "20"],
-      ["2", "4"],
+      [10, 20],
+      [2, 4],
     ],
   ),
 ];
@@ -82,8 +82,8 @@ const tier3: TalentTier = [
       "% more damage without interrupting the effect.",
     ],
     [
-      ["25", "50", "75"],
-      ["25", "50", "75"],
+      [25, 50, 75],
+      [25, 50, 75],
     ],
   ),
   null,
@@ -111,7 +111,7 @@ const tier4: TalentTier = [
       "Increases the critical strike damage bonus of your Arcane and Nature spells by ",
       "%.",
     ],
-    [["20", "40", "60", "80", "100"]],
+    [[20, 40, 60, 80, 100]],
     talentNames.druid.improvedMoonfire,
   ),
   new MultiRankTalent(
@@ -123,8 +123,8 @@ const tier4: TalentTier = [
       "% chance to stun its target for 3 sec.",
     ],
     [
-      ["0.1", "0.2", "0.3", "0.4", "0.5"],
-      ["3", "6", "9", "12", "15"],
+      [0.1, 0.2, 0.3, 0.4, 0.5],
+      [3, 6, 9, 12, 15],
     ],
   ),
   null,
@@ -139,7 +139,7 @@ const tier5: TalentTier = [
       "Increases the maximum number of targets you may have affected by Entangling Roots by ",
       ".",
     ],
-    [["1", "2"]],
+    [[1, 2]],
   ),
   new SingleRankTalent(
     talentNames.druid.naturesGrace,
@@ -153,7 +153,7 @@ const tier5: TalentTier = [
       "Your Wrath spell reduces the cast time of your next 2 Starfire spells by ",
       " sec. Stores up to 4 charges. Lasts 15 sec.",
     ],
-    [["0.17", "0.33", "0.50"]],
+    [[0.17, 0.33, "0.50"]],
   ),
   null,
 ];
@@ -165,7 +165,7 @@ const tier6: TalentTier = [
     talentNames.druid.moonfury,
     "spell_nature_moonglow",
     ["Increases the damage done by your Arcane and Nature spells by ", "%."],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   null,
   null,

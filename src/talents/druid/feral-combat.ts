@@ -12,7 +12,7 @@ const tier1: TalentTier = [
       "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by ",
       " Rage or Energy.",
     ],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   new MultiRankTalent(
     talentNames.druid.heartOfTheWild,
@@ -24,9 +24,9 @@ const tier1: TalentTier = [
       "%.",
     ],
     [
-      ["2", "4", "6", "8", "10"],
-      ["4", "8", "12", "16", "20"],
-      ["2", "4", "6", "8", "10"],
+      [2, 4, 6, 8, 10],
+      [4, 8, 12, 16, 20],
+      [2, 4, 6, 8, 10],
     ],
   ),
   null,
@@ -43,8 +43,8 @@ const tier2: TalentTier = [
       "%.",
     ],
     [
-      ["15", "30"],
-      ["2", "4"],
+      [15, 30],
+      [2, 4],
     ],
   ),
   // TODO: check manually: description contains markup
@@ -57,8 +57,8 @@ const tier2: TalentTier = [
       " <!--singular:level:levels-->levels<!--singular--> higher.",
     ],
     [
-      ["10", "20", "30"],
-      ["1", "2", "3"],
+      [10, 20, 30],
+      [1, 2, 3],
     ],
   ),
   new MultiRankTalent(
@@ -70,8 +70,8 @@ const tier2: TalentTier = [
       " sec.",
     ],
     [
-      ["0.5", "1"],
-      ["15", "30"],
+      [0.5, 1],
+      [15, 30],
     ],
   ),
   new MultiRankTalent(
@@ -83,8 +83,8 @@ const tier2: TalentTier = [
       " base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms.",
     ],
     [
-      ["1", "2", "3"],
-      ["0.67", "1.33", "2.00"],
+      [1, 2, 3],
+      [0.67, 1.33, "2.00"],
     ],
   ),
 ];
@@ -100,8 +100,8 @@ const tier3: TalentTier = [
       ".",
     ],
     [
-      ["6", "12", "18"],
-      ["1", "2", "3"],
+      [6, 12, 18],
+      [1, 2, 3],
     ],
   ),
   new MultiRankTalent(
@@ -111,7 +111,7 @@ const tier3: TalentTier = [
       "Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by ",
       "%.",
     ],
-    [["5", "10"]],
+    [[5, 10]],
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
@@ -126,7 +126,7 @@ const tier3: TalentTier = [
       "Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by ",
       "%.",
     ],
-    [["3", "6"]],
+    [[3, 6]],
   ),
 ];
 
@@ -152,7 +152,7 @@ const tier4: TalentTier = [
       "Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by ",
       "% of your level.",
     ],
-    [["50", "100", "150"]],
+    [[50, 100, 150]],
   ),
   new MultiRankTalent(
     talentNames.druid.bloodFrenzy,
@@ -163,8 +163,8 @@ const tier4: TalentTier = [
       "% chance to add an additional Combo Point.",
     ],
     [
-      ["50", "100"],
-      ["50", "100"],
+      [50, 100],
+      [50, 100],
     ],
     talentNames.druid.sharpenedClaws,
   ),
@@ -176,7 +176,7 @@ const tier5: TalentTier = [
     talentNames.druid.improvedShiftingPower,
     "ability_hunter_aspectmastery",
     ["Reduces the cooldown of your Shifting Power spell by ", " sec."],
-    [["4", "8"]],
+    [[4, 8]],
     talentNames.druid.shiftingPower,
   ),
   new SingleRankTalent(
@@ -192,7 +192,7 @@ const tier5: TalentTier = [
       "Increases the critical strike damage bonus of your melee abilities by ",
       "%.",
     ],
-    [["10", "20"]],
+    [[10, 20]],
   ),
 ];
 
@@ -207,8 +207,8 @@ const tier6: TalentTier = [
       "% chance to gain 5 Rage each time you dodge.",
     ],
     [
-      ["1", "2", "3", "4", "5"],
-      ["20", "40", "60", "80", "100"],
+      [1, 2, 3, 4, 5],
+      [20, 40, 60, 80, 100],
     ],
   ),
   null,
@@ -219,7 +219,7 @@ const tier6: TalentTier = [
       "Increases damage done by your melee abilities on Bleeding targets by ",
       "%.",
     ],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
     talentNames.druid.predatoryStrikes,
   ),
   null,

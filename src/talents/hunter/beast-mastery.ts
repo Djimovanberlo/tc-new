@@ -14,15 +14,15 @@ const tier1: TalentTier = [
       "% chance of increasing melee attack speed by 30% for 12 sec.",
     ],
     [
-      ["2", "4", "6", "8", "10"],
-      ["2", "4", "6", "8", "10"],
+      [2, 4, 6, 8, 10],
+      [2, 4, 6, 8, 10],
     ],
   ),
   new MultiRankTalent(
     talentNames.hunter.enduranceTraining,
     "spell_nature_reincarnation",
     ["Increases the Health and Armor of your pets by ", "%."],
-    [["3", "6", "9", "12", "15"]],
+    [[3, 6, 9, 12, 15]],
   ),
   null,
 ];
@@ -36,7 +36,7 @@ const tier2: TalentTier = [
       "Increases all damage you and your pet deal by ",
       "% while your pet is active.",
     ],
-    [["1", "2"]],
+    [[1, 2]],
   ),
   new MultiRankTalent(
     talentNames.hunter.improvedAspectOfTheMonkey,
@@ -45,7 +45,7 @@ const tier2: TalentTier = [
       "Increases the Dodge bonus of your Aspect of the Monkey by ",
       "%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability.",
     ],
-    [["2", "4", "6"]],
+    [[2, 4, 6]],
   ),
   new MultiRankTalent(
     talentNames.hunter.pathfinding,
@@ -54,7 +54,7 @@ const tier2: TalentTier = [
       "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by ",
       "%.",
     ],
-    [["3", "6"]],
+    [[3, 6]],
   ),
   new MultiRankTalent(
     talentNames.hunter.improvedRevivePet,
@@ -66,9 +66,9 @@ const tier2: TalentTier = [
       "%.",
     ],
     [
-      ["3", "6"],
-      ["20", "40"],
-      ["15", "30"],
+      [3, 6],
+      [20, 40],
+      [15, 30],
     ],
   ),
 ];
@@ -85,7 +85,7 @@ const tier3: TalentTier = [
     talentNames.hunter.unleashedFury,
     "ability_bullrush",
     ["Increases the damage done by your pets and hawks by ", "%."],
-    [["3", "6", "9", "12", "15"]],
+    [[3, 6, 9, 12, 15]],
   ),
   null,
 ];
@@ -101,8 +101,8 @@ const tier4: TalentTier = [
       "%.",
     ],
     [
-      ["15", "50"],
-      ["10", "20"],
+      [15, 50],
+      [10, 20],
     ],
   ),
   null,
@@ -110,7 +110,7 @@ const tier4: TalentTier = [
     talentNames.hunter.ferocity,
     "inv_misc_monsterclaw_04",
     ["Increases the critical strike chance of your pets and hawks by ", "%."],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
@@ -129,7 +129,7 @@ const tier5: TalentTier = [
       "While your pet is active, you and your pet will regenerate 1% of total health every ",
       " sec.",
     ],
-    [["10", "5"]],
+    [[10, 5]],
   ),
   new SingleRankTalent(
     talentNames.hunter.intimidation,
@@ -147,8 +147,8 @@ const tier5: TalentTier = [
       "% of your Mana regeneration to continue while casting.",
     ],
     [
-      ["10", "20"],
-      ["25", "50"],
+      [10, 20],
+      [25, 50],
     ],
   ),
 ];
@@ -164,7 +164,7 @@ const tier6: TalentTier = [
       "Gives your pet a ",
       "% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike.",
     ],
-    [["20", "40", "60", "80", "100"]],
+    [[20, 40, 60, 80, 100]],
     talentNames.hunter.ferocity,
   ),
   null,

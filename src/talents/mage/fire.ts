@@ -13,8 +13,8 @@ const tier1: TalentTier = [
       "%.",
     ],
     [
-      ["1", "2"],
-      ["25", "50"],
+      [1, 2],
+      [25, 50],
     ],
   ),
   new MultiRankTalent(
@@ -24,7 +24,7 @@ const tier1: TalentTier = [
       "Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by ",
       "%.",
     ],
-    [["2", "4", "6"]],
+    [[2, 4, 6]],
   ),
   new MultiRankTalent(
     talentNames.mage.improvedFireball,
@@ -33,7 +33,7 @@ const tier1: TalentTier = [
       "Reduces the casting time of your Fireball and Frostfire Bolt spells by ",
       " sec.",
     ],
-    [["0.1", "0.2", "0.3", "0.4", "0.5"]],
+    [[0.1, 0.2, 0.3, 0.4, 0.5]],
   ),
   null,
 ];
@@ -47,19 +47,19 @@ const tier2: TalentTier = [
       "Your critical strikes from Fire damage spells cause the target to burn for an additional ",
       "% of your spell's damage over 4 sec.",
     ],
-    [["8", "16", "24", "32", "40"]],
+    [[8, 16, 24, 32, 40]],
   ),
   new MultiRankTalent(
     talentNames.mage.flameThrowing,
     "spell_fire_flare",
     ["Increases the range of your Fire spells by ", " yards."],
-    [["3", "6"]],
+    [[3, 6]],
   ),
   new MultiRankTalent(
     talentNames.mage.impact,
     "spell_fire_meteorstorm",
     ["Gives your Fire spells a ", "% chance to stun the target for 2 sec."],
-    [["3", "7", "10"]],
+    [[3, 7, 10]],
   ),
   null,
 ];
@@ -75,8 +75,8 @@ const tier3: TalentTier = [
       "%.",
     ],
     [
-      ["23", "47", "70"],
-      ["10", "20", "30"],
+      [23, 47, 70],
+      [10, 20, 30],
     ],
   ),
   new MultiRankTalent(
@@ -86,7 +86,7 @@ const tier3: TalentTier = [
       "Increases the critical strike chance of your Flamestrike spell by ",
       "%.",
     ],
-    [["5", "10", "15"]],
+    [[5, 10, 15]],
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
@@ -106,7 +106,7 @@ const tier4: TalentTier = [
       "Your Scorch spell has a ",
       "% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases all Fire damage you deal to your target by 3% and lasts 30 sec, stacking up to 5 times.",
     ],
-    [["33", "67", "100"]],
+    [[33, 67, 100]],
   ),
   new MultiRankTalent(
     talentNames.mage.improvedFireWard,
@@ -115,7 +115,7 @@ const tier4: TalentTier = [
       "Causes your Fire Ward to have a ",
       "% chance to reflect Fire spells while active.",
     ],
-    [["10", "20"]],
+    [[10, 20]],
   ),
   new SingleRankTalent(
     talentNames.mage.heatingUp,
@@ -130,7 +130,7 @@ const tier4: TalentTier = [
       "Your Fire and Frost critical strikes will refund ",
       "% of their base mana cost.",
     ],
-    [["10", "20", "30"]],
+    [[10, 20, 30]],
   ),
 ];
 
@@ -141,7 +141,7 @@ const tier5: TalentTier = [
     talentNames.mage.criticalMass,
     "spell_nature_wispheal",
     ["Increases the critical strike chance of your Fire spells by ", "%."],
-    [["2", "4", "6"]],
+    [[2, 4, 6]],
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
@@ -160,7 +160,7 @@ const tier6: TalentTier = [
     talentNames.mage.firePower,
     "spell_fire_immolation",
     ["Increases the damage done by your Fire spells by ", "%."],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   null,
 ];

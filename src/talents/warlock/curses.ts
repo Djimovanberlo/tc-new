@@ -8,7 +8,7 @@ const tier1: TalentTier = [
     talentNames.warlock.improvedLifeTap,
     "spell_shadow_burningspirit",
     ["Increases the amount of Mana awarded by your Life Tap spell by ", "%."],
-    [["10", "20"]],
+    [[10, 20]],
   ),
   new MultiRankTalent(
     talentNames.warlock.suppression,
@@ -19,8 +19,8 @@ const tier1: TalentTier = [
       "%.",
     ],
     [
-      ["1", "2", "3", "4", "5"],
-      ["4", "8", "12", "16", "20"],
+      [1, 2, 3, 4, 5],
+      [4, 8, 12, 16, 20],
     ],
   ),
   new MultiRankTalent(
@@ -32,8 +32,8 @@ const tier1: TalentTier = [
       "%.",
     ],
     [
-      ["0.4", "0.8", "1.2", "1.6", "2"],
-      ["2", "4", "6", "8", "10"],
+      [0.4, 0.8, 1.2, 1.6, 2],
+      [2, 4, 6, 8, 10],
     ],
   ),
   null,
@@ -45,7 +45,7 @@ const tier2: TalentTier = [
     talentNames.warlock.malediction,
     "spell_shadow_curseofachimonde",
     ["Increases all periodic damage done by your Warlock spells by ", "%."],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   new MultiRankTalent(
     talentNames.warlock.soulHarvest,
@@ -56,8 +56,8 @@ const tier2: TalentTier = [
       "% of normal Mana regeneration to continue while casting.",
     ],
     [
-      ["50", "100"],
-      ["50", "100"],
+      [50, 100],
+      [50, 100],
     ],
   ),
   new MultiRankTalent(
@@ -67,7 +67,7 @@ const tier2: TalentTier = [
       "Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by ",
       "%.",
     ],
-    [["7", "13", "20"]],
+    [[7, 13, 20]],
   ),
   null,
 ];
@@ -78,7 +78,7 @@ const tier3: TalentTier = [
     talentNames.warlock.improvedBaneOfAgony,
     "spell_shadow_curseofsargeras",
     ["Increases the damage done by your Bane of Agony by ", "%."],
-    [["5", "10"]],
+    [[5, 10]],
   ),
   new MultiRankTalent(
     talentNames.warlock.felConcentration,
@@ -87,7 +87,7 @@ const tier3: TalentTier = [
       "Gives you a ",
       "% chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, Drain Soul, or Wrack spells.",
     ],
-    [["23", "47", "70"]],
+    [[23, 47, 70]],
   ),
   new SingleRankTalent(
     talentNames.warlock.amplifyCurse,
@@ -101,7 +101,7 @@ const tier3: TalentTier = [
       "Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by ",
       "%.",
     ],
-    [["33", "67", "100"]],
+    [[33, 67, 100]],
   ),
 ];
 
@@ -111,7 +111,7 @@ const tier4: TalentTier = [
     talentNames.warlock.malevolence,
     "spell_shadow_focusedpower",
     ["Increases the critical effect chance of your Shadow spells by ", "%."],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   new MultiRankTalent(
     talentNames.warlock.nightfall,
@@ -120,7 +120,7 @@ const tier4: TalentTier = [
       "Gives your Corruption, Drain Soul, Drain Life, and Wrack spells a ",
       "% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by 100%.",
     ],
-    [["2", "4"]],
+    [[2, 4]],
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
@@ -149,8 +149,8 @@ const tier5: TalentTier = [
       "%.",
     ],
     [
-      ["4", "8", "12"],
-      ["12", "24", "36"],
+      [4, 8, 12],
+      [12, 24, 36],
     ],
   ),
   null,
@@ -167,7 +167,7 @@ const tier6: TalentTier = [
       "Increases the damage dealt or life drained by your Shadow spells by ",
       "%.",
     ],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   null,
 ];

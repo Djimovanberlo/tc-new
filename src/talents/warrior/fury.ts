@@ -14,8 +14,8 @@ const tier1: TalentTier = [
       "%.",
     ],
     [
-      ["10", "20", "30", "40", "50"],
-      ["5", "10", "15", "20", "25"],
+      [10, 20, 30, 40, 50],
+      [5, 10, 15, 20, 25],
     ],
   ),
   new MultiRankTalent(
@@ -25,7 +25,7 @@ const tier1: TalentTier = [
       "Improves your chance to get a critical strike with melee attacks by ",
       "%.",
     ],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   null,
 ];
@@ -40,7 +40,7 @@ const tier2: TalentTier = [
       "Increases the time before your Rage begins to decay after leaving combat by ",
       " sec.",
     ],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   new MultiRankTalent(
     talentNames.warrior.unbridledWrath,
@@ -49,7 +49,7 @@ const tier2: TalentTier = [
       "Gives you a ",
       "% chance to generate 1 additional Rage when you deal melee damage with a weapon.",
     ],
-    [["12", "24", "36", "48", "60"]],
+    [[12, 24, 36, 48, 60]],
   ),
   null,
 ];
@@ -60,7 +60,7 @@ const tier3: TalentTier = [
     talentNames.warrior.furiousPrecision,
     "ability_warrior_incite",
     ["Increases your chance to hit with off-hand attacks by ", "%."],
-    [["4", "7", "10"]],
+    [[4, 7, 10]],
   ),
   new SingleRankTalent(
     talentNames.warrior.piercingHowl,
@@ -74,7 +74,7 @@ const tier3: TalentTier = [
       "Regenerates ",
       "% of your total Health over 6 sec after being the victim of a critical strike or suffering more than 20% of your maximum Health from a single attack.",
     ],
-    [["1", "2", "3"]],
+    [[1, 2, 3]],
   ),
   null,
 ];
@@ -90,8 +90,8 @@ const tier4: TalentTier = [
       "%.",
     ],
     [
-      ["5", "10", "15", "20", "25"],
-      ["10", "20", "30", "40", "50"],
+      [5, 10, 15, 20, 25],
+      [10, 20, 30, 40, 50],
     ],
   ),
   new SingleRankTalent(
@@ -106,13 +106,13 @@ const tier4: TalentTier = [
       "Gives you a 30% chance to deal ",
       "% increased Physical damage for 12 sec after being the victim of any damaging attack.",
     ],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   new MultiRankTalent(
     talentNames.warrior.improvedExecute,
     "inv_sword_48",
     ["Reduces the Rage cost of your Execute ability by ", "."],
-    [["3", "5"]],
+    [[3, 5]],
   ),
 ];
 
@@ -127,8 +127,8 @@ const tier5: TalentTier = [
       "% chance to remove all movement impairing effects when activated.",
     ],
     [
-      ["5", "10"],
-      ["50", "100"],
+      [5, 10],
+      [50, 100],
     ],
   ),
   new SingleRankTalent(
@@ -141,7 +141,7 @@ const tier5: TalentTier = [
     talentNames.warrior.improvedIntercept,
     "ability_rogue_sprint",
     ["Reduces the cooldown of your Intercept ability by ", " sec."],
-    [["5", "10"]],
+    [[5, 10]],
   ),
 ];
 
@@ -155,7 +155,7 @@ const tier6: TalentTier = [
       "Increases your melee attack speed by ",
       "% for your next 3 swings after dealing a melee critical strike.",
     ],
-    [["5", "10", "15", "20", "25"]],
+    [[5, 10, 15, 20, 25]],
     talentNames.warrior.deathWish,
   ),
   new MultiRankTalent(
@@ -165,7 +165,7 @@ const tier6: TalentTier = [
       "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore ",
       "% of your maximum Health.",
     ],
-    [["0.5", "1.0"]],
+    [[0.5, "1.0"]],
     talentNames.warrior.enrage,
   ),
   null,

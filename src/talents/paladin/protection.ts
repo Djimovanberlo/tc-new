@@ -9,7 +9,7 @@ const tier1: TalentTier = [
     talentNames.paladin.toughness,
     "spell_holy_devotion",
     ["Increases your armor value from items by ", "%."],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   new MultiRankTalent(
     talentNames.paladin.redoubt,
@@ -18,7 +18,7 @@ const tier1: TalentTier = [
       "Damaging melee attacks against you have a 10% chance to increase your chance to block by ",
       "%.  Lasts 10 sec or 5 blocks.",
     ],
-    [["4", "8", "12", "16", "20"]],
+    [[4, 8, 12, 16, 20]],
   ),
   null,
 ];
@@ -29,7 +29,7 @@ const tier2: TalentTier = [
     talentNames.paladin.precision,
     "ability_rogue_ambush",
     ["Improves your chance to hit by ", "%."],
-    [["1", "2", "3"]],
+    [[1, 2, 3]],
   ),
   new MultiRankTalent(
     talentNames.paladin.guardiansFavor,
@@ -40,8 +40,8 @@ const tier2: TalentTier = [
       " sec.",
     ],
     [
-      ["1", "2"],
-      ["3", "6"],
+      [1, 2],
+      [3, 6],
     ],
   ),
   null,
@@ -49,7 +49,7 @@ const tier2: TalentTier = [
     talentNames.paladin.anticipation,
     "spell_magic_lesserinvisibilty",
     ["Increases your Defense Skill by ", "."],
-    [["4", "8", "12", "16", "20"]],
+    [[4, 8, 12, 16, 20]],
   ),
 ];
 
@@ -64,7 +64,7 @@ const tier3: TalentTier = [
     talentNames.paladin.improvedRighteousFury,
     "spell_holy_sealoffury",
     ["While Righteous Fury is active, all damage taken is reduced by ", "%."],
-    [["2", "4", "6"]],
+    [[2, 4, 6]],
   ),
   new MultiRankTalent(
     talentNames.paladin.shieldSpecialization,
@@ -75,8 +75,8 @@ const tier3: TalentTier = [
       "% chance to restore 6% of your maximum Mana.  May only occur once every 3 sec.",
     ],
     [
-      ["10", "20", "30"],
-      ["33", "66", "100"],
+      [10, 20, 30],
+      [33, 66, 100],
     ],
     talentNames.paladin.redoubt,
   ),
@@ -89,8 +89,8 @@ const tier3: TalentTier = [
       " sec.",
     ],
     [
-      ["2", "4"],
-      ["30", "60"],
+      [2, 4],
+      [30, 60],
     ],
   ),
 ];
@@ -107,13 +107,13 @@ const tier4: TalentTier = [
     talentNames.paladin.oneHandedWeaponSpecialization,
     "inv_sword_20",
     ["Increases the damage you deal with one-handed melee weapons by ", "%."],
-    [["3", "7", "10"]],
+    [[3, 7, 10]],
   ),
   new MultiRankTalent(
     talentNames.paladin.improvedHammerOfJustice,
     "spell_holy_sealofmight",
     ["Decreases the cooldown of your Hammer of Justice spell by ", " sec."],
-    [["5", "10", "15"]],
+    [[5, 10, 15]],
   ),
   null,
 ];
@@ -136,8 +136,8 @@ const tier5: TalentTier = [
       "% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
     ],
     [
-      ["8", "16", "24", "32", "40"],
-      ["20", "40", "60", "80", "100"],
+      [8, 16, 24, 32, 40],
+      [20, 40, 60, 80, 100],
     ],
   ),
   null,
@@ -156,8 +156,8 @@ const tier6: TalentTier = [
       "% for 6 sec.",
     ],
     [
-      ["5", "10", "15", "20", "25"],
-      ["2", "4", "6", "8", "10"],
+      [5, 10, 15, 20, 25],
+      [2, 4, 6, 8, 10],
     ],
   ),
   null,

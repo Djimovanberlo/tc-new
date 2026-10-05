@@ -9,13 +9,13 @@ const tier1: TalentTier = [
     talentNames.paladin.divineStrength,
     "ability_golemthunderclap",
     ["Increases your Strength by ", "%."],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   new MultiRankTalent(
     talentNames.paladin.divineIntellect,
     "spell_nature_sleep",
     ["Increases your total Intellect by ", "%."],
-    [["2", "4", "6", "8", "10"]],
+    [[2, 4, 6, 8, 10]],
   ),
   null,
 ];
@@ -29,7 +29,7 @@ const tier2: TalentTier = [
       "Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by ",
       "%.",
     ],
-    [["4", "8", "12"]],
+    [[4, 8, 12]],
   ),
   new MultiRankTalent(
     talentNames.paladin.spiritualFocus,
@@ -38,19 +38,19 @@ const tier2: TalentTier = [
       "Gives your Flash of Light, Holy Light, and Light's Vigil spells a ",
       "% chance to not lose casting time when you take damage.",
     ],
-    [["35", "70"]],
+    [[35, 70]],
   ),
   new MultiRankTalent(
     talentNames.paladin.improvedSeals,
     "ability_thunderbolt",
     ["Increases the damage done by your Seals and Judgements by ", "%."],
-    [["5", "10", "15"]],
+    [[5, 10, 15]],
   ),
   new MultiRankTalent(
     talentNames.paladin.unyieldingFaith,
     "spell_holy_unyieldingfaith",
     ["Reduces the duration of Fear and Disorient effects on you by ", "%."],
-    [["15", "30"]],
+    [[15, 30]],
   ),
 ];
 
@@ -65,7 +65,7 @@ const tier3: TalentTier = [
     talentNames.paladin.reverence,
     "spell_holy_divineillumination",
     ["Allows ", "% of your Mana regeneration to continue while casting."],
-    [["10", "20", "30"]],
+    [[10, 20, 30]],
   ),
   new MultiRankTalent(
     talentNames.paladin.purifyingPower,
@@ -76,8 +76,8 @@ const tier3: TalentTier = [
       "%.",
     ],
     [
-      ["10", "20"],
-      ["17", "33"],
+      [10, 20],
+      [17, 33],
     ],
   ),
   null,
@@ -92,7 +92,7 @@ const tier4: TalentTier = [
       "Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by ",
       " sec.",
     ],
-    [["0.5", "1.0"]],
+    [[0.5, "1.0"]],
   ),
   new MultiRankTalent(
     talentNames.paladin.illumination,
@@ -101,7 +101,7 @@ const tier4: TalentTier = [
       "After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a ",
       "% chance to gain Mana equal to 50% of the base cost of the spell.",
     ],
-    [["20", "40", "60", "80", "100"]],
+    [[20, 40, 60, 80, 100]],
     talentNames.paladin.reverence,
   ),
   new SingleRankTalent(
@@ -118,7 +118,7 @@ const tier5: TalentTier = [
     talentNames.paladin.divinePrecision,
     "spell_holy_healingfocus",
     ["Improves your chance to hit with Holy spells by ", "%."],
-    [["6", "12", "18"]],
+    [[6, 12, 18]],
     talentNames.paladin.holyShock,
   ),
   new SingleRankTalent(
@@ -133,7 +133,7 @@ const tier5: TalentTier = [
       "Gives your Holy spells ",
       "% increased damage against the first 4 enemies that enter your Consecration.",
     ],
-    [["5", "10"]],
+    [[5, 10]],
   ),
   null,
 ];
@@ -151,8 +151,8 @@ const tier6: TalentTier = [
       "%.",
     ],
     [
-      ["3", "6", "9", "12", "15"],
-      ["1", "2", "3", "4", "5"],
+      [3, 6, 9, 12, 15],
+      [1, 2, 3, 4, 5],
     ],
   ),
   null,

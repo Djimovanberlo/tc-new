@@ -8,7 +8,7 @@ const tier1: TalentTier = [
     talentNames.rogue.improvedGouge,
     "ability_gouge",
     ["Increases the duration of your Gouge ability by ", " sec."],
-    [["0.5", "1", "1.5"]],
+    [[0.5, 1, 1.5]],
   ),
   new MultiRankTalent(
     talentNames.rogue.remorselessAttacks,
@@ -17,7 +17,7 @@ const tier1: TalentTier = [
       "After killing a non-trivial enemy, gives you a ",
       "% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, Mutilate, or Ghostly Strike. Lasts 20 sec.",
     ],
-    [["20", "40"]],
+    [[20, 40]],
   ),
   new MultiRankTalent(
     talentNames.rogue.malice,
@@ -26,7 +26,7 @@ const tier1: TalentTier = [
       "Increases your critical strike chance with all attacks and Poisons by ",
       "%.",
     ],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   null,
 ];
@@ -40,20 +40,20 @@ const tier2: TalentTier = [
       "Gives your finishing moves a ",
       "% chance to add a Combo Point to your target.",
     ],
-    [["20", "40", "60"]],
+    [[20, 40, 60]],
   ),
   new MultiRankTalent(
     talentNames.rogue.murder,
     "spell_shadow_deathscream",
     ["Increases all damage dealt by ", "% against Humanoid and Giant targets."],
-    [["2", "4"]],
+    [[2, 4]],
   ),
   null,
   new MultiRankTalent(
     talentNames.rogue.improvedSliceAndDice,
     "ability_rogue_slicedice",
     ["Increases the duration of your Slice and Dice ability by ", "%."],
-    [["15", "30", "45"]],
+    [[15, 30, 45]],
   ),
 ];
 
@@ -84,7 +84,7 @@ const tier3: TalentTier = [
       "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by ",
       "%.",
     ],
-    [["4", "8", "12", "16", "20"]],
+    [[4, 8, 12, 16, 20]],
     talentNames.rogue.malice,
   ),
   null,
@@ -101,8 +101,8 @@ const tier4: TalentTier = [
       "% chance to resist dispel effects.",
     ],
     [
-      ["4", "8", "12", "16", "20"],
-      ["8", "16", "24", "32", "40"],
+      [4, 8, 12, 16, 20],
+      [8, 16, 24, 32, 40],
     ],
   ),
   new SingleRankTalent(
@@ -119,8 +119,8 @@ const tier4: TalentTier = [
       "% chance to not consume a charge.",
     ],
     [
-      ["2", "4", "6", "8", "10"],
-      ["10", "20", "30", "40", "50"],
+      [2, 4, 6, 8, 10],
+      [10, 20, 30, 40, 50],
     ],
   ),
   null,
@@ -132,7 +132,7 @@ const tier5: TalentTier = [
     talentNames.rogue.vigor,
     "spell_nature_earthbindtotem",
     ["Increases your maximum Energy by ", "."],
-    [["5", "10"]],
+    [[5, 10]],
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
@@ -147,7 +147,7 @@ const tier5: TalentTier = [
       "Enemies Stunned by your Kidney Shot ability take ",
       "% increased damage from your poisons and attacks.",
     ],
-    [["5", "10"]],
+    [[5, 10]],
   ),
   null,
 ];
@@ -163,7 +163,7 @@ const tier6: TalentTier = [
       "Your critical strikes from abilities that add Combo Points have a ",
       "% chance to add an additional Combo Point.",
     ],
-    [["20", "40", "60", "80", "100"]],
+    [[20, 40, 60, 80, 100]],
   ),
   null,
 ];

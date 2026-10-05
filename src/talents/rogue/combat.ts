@@ -8,19 +8,19 @@ const tier1: TalentTier = [
     talentNames.rogue.improvedEviscerate,
     "ability_rogue_eviscerate",
     ["Increases the damage done by your Eviscerate ability by ", "%."],
-    [["7", "13", "20"]],
+    [[7, 13, 20]],
   ),
   new MultiRankTalent(
     talentNames.rogue.improvedSinisterStrike,
     "spell_shadow_ritualofsacrifice",
     ["Reduces the Energy cost of your Sinister Strike ability by ", "."],
-    [["3", "5"]],
+    [[3, 5]],
   ),
   new MultiRankTalent(
     talentNames.rogue.lightningReflexes,
     "spell_nature_invisibilty",
     ["Increases your Dodge chance by ", "%."],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   null,
 ];
@@ -37,22 +37,22 @@ const tier2: TalentTier = [
       "% chance to add an additional Combo Point.",
     ],
     [
-      ["10", "20", "30"],
-      ["5", "10", "15"],
-      ["15", "30", "45"],
+      [10, 20, 30],
+      [5, 10, 15],
+      [15, 30, 45],
     ],
   ),
   new MultiRankTalent(
     talentNames.rogue.deflection,
     "ability_parry",
     ["Increases your Parry chance by ", "%."],
-    [["2", "4", "6"]],
+    [[2, 4, 6]],
   ),
   new MultiRankTalent(
     talentNames.rogue.precision,
     "ability_marksmanship",
     ["Improves your chance to hit by ", "%."],
-    [["1", "2", "3"]],
+    [[1, 2, 3]],
   ),
   null,
 ];
@@ -63,7 +63,7 @@ const tier3: TalentTier = [
     talentNames.rogue.endurance,
     "spell_shadow_shadowward",
     ["Reduces the cooldown of your Sprint and Evasion abilities by ", "%."],
-    [["30", "60"]],
+    [[30, 60]],
   ),
   new SingleRankTalent(
     talentNames.rogue.riposte,
@@ -79,7 +79,7 @@ const tier3: TalentTier = [
       "Gives a ",
       "% chance to remove all movement impairing effects when you activate your Sprint ability.",
     ],
-    [["50", "100"]],
+    [[50, 100]],
   ),
 ];
 
@@ -89,7 +89,7 @@ const tier4: TalentTier = [
     talentNames.rogue.improvedKick,
     "ability_kick",
     ["Gives your Kick ability a ", "% chance to Silence the target for 2 sec."],
-    [["50", "100"]],
+    [[50, 100]],
   ),
   new SingleRankTalent(
     talentNames.rogue.flawlessExecution,
@@ -100,7 +100,7 @@ const tier4: TalentTier = [
     talentNames.rogue.dualWieldSpecialization,
     "ability_dualwield",
     ["Increases the damage done by your off-hand weapon by ", "%."],
-    [["5", "10", "15", "20", "25"]],
+    [[5, 10, 15, 20, 25]],
     talentNames.rogue.precision,
   ),
   null,
@@ -125,9 +125,9 @@ const tier5: TalentTier = [
       "% of<br />    your target's armor.",
     ],
     [
-      ["1", "2", "3", "4", "5"],
-      ["1", "2", "3", "4", "5"],
-      ["3", "6", "9", "12", "15"],
+      [1, 2, 3, 4, 5],
+      [1, 2, 3, 4, 5],
+      [3, 6, 9, 12, 15],
     ],
   ),
   null,
@@ -140,7 +140,7 @@ const tier6: TalentTier = [
     talentNames.rogue.weaponExpertise,
     "spell_holy_blessingofstrength",
     ["Reduces the chance for your attacks to be Dodged or Parried by ", "%."],
-    [["1", "2"]],
+    [[1, 2]],
     talentNames.rogue.bladeFlurry,
   ),
   new MultiRankTalent(
@@ -150,7 +150,7 @@ const tier6: TalentTier = [
       "Increases the damage of your Sinister Strike, Backstab, and Eviscerate abilities by ",
       "%.",
     ],
-    [["2", "4", "6"]],
+    [[2, 4, 6]],
   ),
   null,
 ];

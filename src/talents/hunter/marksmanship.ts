@@ -8,19 +8,19 @@ const tier1: TalentTier = [
     talentNames.hunter.hawkEye,
     "ability_townwatch",
     ["Increases the range of your ranged weapons by ", " yards."],
-    [["2", "4", "6"]],
+    [[2, 4, 6]],
   ),
   new MultiRankTalent(
     talentNames.hunter.improvedConcussiveShot,
     "spell_frost_stun",
     ["Gives your Concussive Shot a ", "% chance to stun the target for 3 sec."],
-    [["4", "8", "12", "16", "20"]],
+    [[4, 8, 12, 16, 20]],
   ),
   new MultiRankTalent(
     talentNames.hunter.lethalAttacks,
     "ability_searingarrow",
     ["Increases your critical strike chance with all attacks by ", "%."],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   null,
 ];
@@ -37,9 +37,9 @@ const tier2: TalentTier = [
       " sec.",
     ],
     [
-      ["6", "13", "20"],
-      ["2", "4", "6"],
-      ["15", "30", "45"],
+      [6, 13, 20],
+      [2, 4, 6],
+      [15, 30, 45],
     ],
   ),
   new MultiRankTalent(
@@ -49,13 +49,13 @@ const tier2: TalentTier = [
       "Reduces the Mana cost of your Shots, Stings, and melee abilities by ",
       "%.",
     ],
-    [["3", "6", "9", "12", "15"]],
+    [[3, 6, 9, 12, 15]],
   ),
   new MultiRankTalent(
     talentNames.hunter.carefulAim,
     "ability_hunter_zenarchery",
     ["Increases your Attack Power by ", "% of your Intellect."],
-    [["20", "40", "60", "80", "100"]],
+    [[20, 40, 60, 80, 100]],
   ),
   null,
 ];
@@ -71,8 +71,8 @@ const tier3: TalentTier = [
       "%.",
     ],
     [
-      ["1", "2"],
-      ["10", "20"],
+      [1, 2],
+      [10, 20],
     ],
   ),
   new MultiRankTalent(
@@ -82,7 +82,7 @@ const tier3: TalentTier = [
       "Reduces the cooldown of your Arcane Shot by ",
       " sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.",
     ],
-    [["0.3", "0.6", "0.9", "1.2", "1.5"]],
+    [[0.3, 0.6, 0.9, 1.2, 1.5]],
   ),
   null,
   new SingleRankTalent(
@@ -107,7 +107,7 @@ const tier4: TalentTier = [
       "Increases the critical strike damage bonus on all ranged abilities by ",
       "%.",
     ],
-    [["6", "12", "18", "24", "30"]],
+    [[6, 12, 18, 24, 30]],
     talentNames.hunter.carefulAim,
   ),
   null,
@@ -124,8 +124,8 @@ const tier5: TalentTier = [
       "% of your Mana regeneration while casting for the next 15 sec.",
     ],
     [
-      ["25", "50"],
-      ["50", "100"],
+      [25, 50],
+      [50, 100],
     ],
     talentNames.hunter.rapidKilling,
   ),
@@ -137,7 +137,7 @@ const tier5: TalentTier = [
       "Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by ",
       "%.",
     ],
-    [["3", "7", "10"]],
+    [[3, 7, 10]],
   ),
   new SingleRankTalent(
     talentNames.hunter.scatterShot,
@@ -154,7 +154,7 @@ const tier6: TalentTier = [
     talentNames.hunter.rangedWeaponSpecialization,
     "inv_weapon_rifle_06",
     ["Increases the damage you deal with ranged weapons by ", "%."],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   null,
 ];

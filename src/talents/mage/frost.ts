@@ -13,21 +13,21 @@ const tier1: TalentTier = [
       "% chance to reflect Frost spells and effects while active.",
     ],
     [
-      ["15", "30"],
-      ["10", "20"],
+      [15, 30],
+      [10, 20],
     ],
   ),
   new MultiRankTalent(
     talentNames.mage.improvedFrostbolt,
     "spell_frost_frostbolt02",
     ["Reduces the casting time of your Frostbolt spell by ", " sec."],
-    [["0.1", "0.2", "0.3", "0.4", "0.5"]],
+    [[0.1, 0.2, 0.3, 0.4, 0.5]],
   ),
   new MultiRankTalent(
     talentNames.mage.elementalPrecision,
     "spell_ice_magicdamage",
     ["Improves your chance to hit with Frost and Fire spells by ", "%."],
-    [["1", "2", "3", "4", "5"]],
+    [[1, 2, 3, 4, 5]],
   ),
   null,
 ];
@@ -41,7 +41,7 @@ const tier2: TalentTier = [
       "Increases the critical strike damage bonus of your Frost spells by ",
       "%.",
     ],
-    [["20", "40", "60", "80", "100"]],
+    [[20, 40, 60, 80, 100]],
   ),
   new MultiRankTalent(
     talentNames.mage.permafrost,
@@ -52,21 +52,21 @@ const tier2: TalentTier = [
       "%.",
     ],
     [
-      ["11", "22", "33"],
-      ["3", "7", "10"],
+      [11, 22, 33],
+      [3, 7, 10],
     ],
   ),
   new MultiRankTalent(
     talentNames.mage.improvedFrostNova,
     "spell_frost_freezingbreath",
     ["Reduces the cooldown of your Frost Nova spell by ", " sec."],
-    [["2", "4"]],
+    [[2, 4]],
   ),
   new MultiRankTalent(
     talentNames.mage.frostbite,
     "spell_frost_frostarmor",
     ["Gives your Chill effects a ", "% chance to Freeze the target for 5 sec."],
-    [["5", "10", "15"]],
+    [[5, 10, 15]],
   ),
 ];
 
@@ -76,7 +76,7 @@ const tier3: TalentTier = [
     talentNames.mage.piercingIce,
     "spell_frost_frostbolt",
     ["Increases the damage done by your Frost spells by ", "%."],
-    [["2", "4", "6"]],
+    [[2, 4, 6]],
   ),
   new MultiRankTalent(
     talentNames.mage.frostChanneling,
@@ -87,8 +87,8 @@ const tier3: TalentTier = [
       "%.",
     ],
     [
-      ["5", "10", "15"],
-      ["10", "20", "30"],
+      [5, 10, 15],
+      [10, 20, 30],
     ],
   ),
   // TODO: check manually: description contains markup
@@ -104,7 +104,7 @@ const tier3: TalentTier = [
       "Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by ",
       "% for 1.5 sec.",
     ],
-    [["15", "25", "40"]],
+    [[15, 25, 40]],
   ),
 ];
 
@@ -117,7 +117,7 @@ const tier4: TalentTier = [
       "Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by ",
       "%.",
     ],
-    [["10", "20"]],
+    [[10, 20]],
   ),
   new SingleRankTalent(
     talentNames.mage.iceBlock,
@@ -132,7 +132,7 @@ const tier4: TalentTier = [
       "Increases the critical strike chance of all your spells against Frozen targets by ",
       "%.",
     ],
-    [["17", "33", "50"]],
+    [[17, 33, 50]],
   ),
 ];
 
@@ -142,7 +142,7 @@ const tier5: TalentTier = [
     talentNames.mage.improvedConeOfCold,
     "spell_frost_glacier",
     ["Increases the damage dealt by your Cone of Cold spell by ", "%."],
-    [["12", "23", "35"]],
+    [[12, 23, 35]],
   ),
   new SingleRankTalent(
     talentNames.mage.coldSnap,
@@ -179,8 +179,8 @@ const tier6: TalentTier = [
       " times.",
     ],
     [
-      ["20", "40", "60", "80", "100"],
-      ["1", "2", "3", "4", "5"],
+      [20, 40, 60, 80, 100],
+      [1, 2, 3, 4, 5],
     ],
   ),
   null,
