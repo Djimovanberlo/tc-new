@@ -5,7 +5,7 @@ import { TalentTier } from "../../types";
 const tier1: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.wakeOfFire,
+    talentNames.mage.wakeOfFire,
     "spell_fire_lavaspawn",
     [
       "Reduces the cooldown of your Fire Blast spell by ",
@@ -18,7 +18,7 @@ const tier1: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.incineration,
+    talentNames.mage.incineration,
     "spell_fire_flameshock",
     [
       "Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by ",
@@ -27,7 +27,7 @@ const tier1: TalentTier = [
     [["2", "4", "6"]],
   ),
   new MultiRankTalent(
-    talentNames.improvedFireball,
+    talentNames.mage.improvedFireball,
     "spell_fire_flamebolt",
     [
       "Reduces the casting time of your Fireball and Frostfire Bolt spells by ",
@@ -41,7 +41,7 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.ignite,
+    talentNames.mage.ignite,
     "spell_fire_incinerate",
     [
       "Your critical strikes from Fire damage spells cause the target to burn for an additional ",
@@ -50,13 +50,13 @@ const tier2: TalentTier = [
     [["8", "16", "24", "32", "40"]],
   ),
   new MultiRankTalent(
-    talentNames.flameThrowing,
+    talentNames.mage.flameThrowing,
     "spell_fire_flare",
     ["Increases the range of your Fire spells by ", " yards."],
     [["3", "6"]],
   ),
   new MultiRankTalent(
-    talentNames.impact,
+    talentNames.mage.impact,
     "spell_fire_meteorstorm",
     ["Gives your Fire spells a ", "% chance to stun the target for 2 sec."],
     [["3", "7", "10"]],
@@ -67,7 +67,7 @@ const tier2: TalentTier = [
 const tier3: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.burningSoul,
+    talentNames.mage.burningSoul,
     "spell_fire_fire",
     [
       "Gives your Fire spells a ",
@@ -80,7 +80,7 @@ const tier3: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.improvedFlamestrike,
+    talentNames.mage.improvedFlamestrike,
     "spell_fire_selfdestruct",
     [
       "Increases the critical strike chance of your Flamestrike spell by ",
@@ -90,7 +90,7 @@ const tier3: TalentTier = [
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.pyroblast,
+    talentNames.mage.pyroblast,
     "spell_fire_fireball02",
     "Hurls an immense fiery boulder that causes <!--ppl20:24:110:150-->101 to 131 Fire damage and an additional 44 Fire damage over 12 sec.",
   ),
@@ -100,7 +100,7 @@ const tier3: TalentTier = [
 const tier4: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.improvedScorch,
+    talentNames.mage.improvedScorch,
     "spell_fire_windsofwoe",
     [
       "Your Scorch spell has a ",
@@ -109,7 +109,7 @@ const tier4: TalentTier = [
     [["33", "67", "100"]],
   ),
   new MultiRankTalent(
-    talentNames.improvedFireWard,
+    talentNames.mage.improvedFireWard,
     "spell_fire_firearmor",
     [
       "Causes your Fire Ward to have a ",
@@ -118,13 +118,13 @@ const tier4: TalentTier = [
     [["10", "20"]],
   ),
   new SingleRankTalent(
-    talentNames.heatingUp,
+    talentNames.mage.heatingUp,
     "spell_fire_firebolt",
     "Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times.",
-    talentNames.pyroblast,
+    talentNames.mage.pyroblast,
   ),
   new MultiRankTalent(
-    talentNames.masterOfElements,
+    talentNames.mage.masterOfElements,
     "spell_fire_masterofelements",
     [
       "Your Fire and Frost critical strikes will refund ",
@@ -138,14 +138,14 @@ const tier5: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.criticalMass,
+    talentNames.mage.criticalMass,
     "spell_nature_wispheal",
     ["Increases the critical strike chance of your Fire spells by ", "%."],
     [["2", "4", "6"]],
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.blastWave,
+    talentNames.mage.blastWave,
     "spell_holy_excorcism_02",
     "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for <!--ppl30:36:163:100-->154 to 184 Fire damage, and Dazing them for 50% reduced movement speed for 6 sec.",
   ),
@@ -157,7 +157,7 @@ const tier6: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.firePower,
+    talentNames.mage.firePower,
     "spell_fire_immolation",
     ["Increases the damage done by your Fire spells by ", "%."],
     [["2", "4", "6", "8", "10"]],
@@ -169,10 +169,10 @@ const tier7: TalentTier = [
   null,
   null,
   new SingleRankTalent(
-    talentNames.combustion,
+    talentNames.mage.combustion,
     "spell_fire_sealoffire",
     "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%.  This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells.",
-    talentNames.criticalMass,
+    talentNames.mage.criticalMass,
   ),
   null,
   null,

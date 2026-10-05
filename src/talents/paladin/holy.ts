@@ -6,13 +6,13 @@ const tier1: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.divineStrength,
+    talentNames.paladin.divineStrength,
     "ability_golemthunderclap",
     ["Increases your Strength by ", "%."],
     [["2", "4", "6", "8", "10"]],
   ),
   new MultiRankTalent(
-    talentNames.divineIntellect,
+    talentNames.paladin.divineIntellect,
     "spell_nature_sleep",
     ["Increases your total Intellect by ", "%."],
     [["2", "4", "6", "8", "10"]],
@@ -23,7 +23,7 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.healingLight,
+    talentNames.paladin.healingLight,
     "spell_holy_holybolt",
     [
       "Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by ",
@@ -32,7 +32,7 @@ const tier2: TalentTier = [
     [["4", "8", "12"]],
   ),
   new MultiRankTalent(
-    talentNames.spiritualFocus,
+    talentNames.paladin.spiritualFocus,
     "spell_arcane_blink",
     [
       "Gives your Flash of Light, Holy Light, and Light's Vigil spells a ",
@@ -41,13 +41,13 @@ const tier2: TalentTier = [
     [["35", "70"]],
   ),
   new MultiRankTalent(
-    talentNames.improvedSeals,
+    talentNames.paladin.improvedSeals,
     "ability_thunderbolt",
     ["Increases the damage done by your Seals and Judgements by ", "%."],
     [["5", "10", "15"]],
   ),
   new MultiRankTalent(
-    talentNames.unyieldingFaith,
+    talentNames.paladin.unyieldingFaith,
     "spell_holy_unyieldingfaith",
     ["Reduces the duration of Fear and Disorient effects on you by ", "%."],
     [["15", "30"]],
@@ -57,18 +57,18 @@ const tier2: TalentTier = [
 const tier3: TalentTier = [
   null,
   new SingleRankTalent(
-    talentNames.voiceOfTruth,
+    talentNames.paladin.voiceOfTruth,
     "inv_misc_horn_03",
     "Grants you immunity to Silence and Interrupt effects for 6 sec.",
   ),
   new MultiRankTalent(
-    talentNames.reverence,
+    talentNames.paladin.reverence,
     "spell_holy_divineillumination",
     ["Allows ", "% of your Mana regeneration to continue while casting."],
     [["10", "20", "30"]],
   ),
   new MultiRankTalent(
-    talentNames.purifyingPower,
+    talentNames.paladin.purifyingPower,
     "spell_holy_purifyingpower",
     [
       "Reduces the mana cost of your Cleanse and Purify spells by ",
@@ -86,7 +86,7 @@ const tier3: TalentTier = [
 const tier4: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.infusionOfLight,
+    talentNames.paladin.infusionOfLight,
     "ability_paladin_infusionoflight",
     [
       "Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by ",
@@ -95,17 +95,17 @@ const tier4: TalentTier = [
     [["0.5", "1.0"]],
   ),
   new MultiRankTalent(
-    talentNames.illumination,
+    talentNames.paladin.illumination,
     "spell_holy_greaterheal",
     [
       "After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a ",
       "% chance to gain Mana equal to 50% of the base cost of the spell.",
     ],
     [["20", "40", "60", "80", "100"]],
-    talentNames.reverence,
+    talentNames.paladin.reverence,
   ),
   new SingleRankTalent(
-    talentNames.divineFavor,
+    talentNames.paladin.divineFavor,
     "spell_holy_heal",
     "When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance.",
   ),
@@ -115,19 +115,19 @@ const tier4: TalentTier = [
 const tier5: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.divinePrecision,
+    talentNames.paladin.divinePrecision,
     "spell_holy_healingfocus",
     ["Improves your chance to hit with Holy spells by ", "%."],
     [["6", "12", "18"]],
-    talentNames.holyShock,
+    talentNames.paladin.holyShock,
   ),
   new SingleRankTalent(
-    talentNames.holyShock,
+    talentNames.paladin.holyShock,
     "spell_holy_searinglight",
     "Blasts the target with Holy energy, causing 129 to 139 Holy damage to an enemy, or 110 to 118 healing to an ally.",
   ),
   new MultiRankTalent(
-    talentNames.consecratedGround,
+    talentNames.paladin.consecratedGround,
     "spell_holy_innerfire",
     [
       "Gives your Holy spells ",
@@ -143,7 +143,7 @@ const tier6: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.holyPower,
+    talentNames.paladin.holyPower,
     "spell_holy_power",
     [
       "Increases the critical strike chance of your Holy Shock and Holy Strike spells by ",
@@ -163,10 +163,10 @@ const tier7: TalentTier = [
   null,
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.lightsVigil,
+    talentNames.paladin.lightsVigil,
     "ability_paladin_judgementofthepure",
     "Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for <!--ppl40:49:324:120-->326 to 344. You may only have one Light's Vigil active per party.",
-    talentNames.holyShock,
+    talentNames.paladin.holyShock,
   ),
   null,
   null,

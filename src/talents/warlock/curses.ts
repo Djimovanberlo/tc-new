@@ -5,13 +5,13 @@ import { TalentTier } from "../../types";
 const tier1: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.improvedLifeTap,
+    talentNames.warlock.improvedLifeTap,
     "spell_shadow_burningspirit",
     ["Increases the amount of Mana awarded by your Life Tap spell by ", "%."],
     [["10", "20"]],
   ),
   new MultiRankTalent(
-    talentNames.suppression,
+    talentNames.warlock.suppression,
     "spell_shadow_unsummonbuilding",
     [
       "Improves your chance to hit by ",
@@ -24,7 +24,7 @@ const tier1: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.improvedCorruption,
+    talentNames.warlock.improvedCorruption,
     "spell_shadow_abominationexplosion",
     [
       "Reduces the casting time of your Corruption spell by ",
@@ -42,13 +42,13 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.malediction,
+    talentNames.warlock.malediction,
     "spell_shadow_curseofachimonde",
     ["Increases all periodic damage done by your Warlock spells by ", "%."],
     [["1", "2", "3", "4", "5"]],
   ),
   new MultiRankTalent(
-    talentNames.soulHarvest,
+    talentNames.warlock.soulHarvest,
     "inv_elemental_primal_shadow",
     [
       "Killing a non-trivial target afflicted by your Drain Soul increases your Mana regeneration by ",
@@ -61,7 +61,7 @@ const tier2: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.improvedDrains,
+    talentNames.warlock.improvedDrains,
     "spell_shadow_haunting",
     [
       "Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by ",
@@ -75,13 +75,13 @@ const tier2: TalentTier = [
 const tier3: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.improvedBaneOfAgony,
+    talentNames.warlock.improvedBaneOfAgony,
     "spell_shadow_curseofsargeras",
     ["Increases the damage done by your Bane of Agony by ", "%."],
     [["5", "10"]],
   ),
   new MultiRankTalent(
-    talentNames.felConcentration,
+    talentNames.warlock.felConcentration,
     "spell_shadow_fingerofdeath",
     [
       "Gives you a ",
@@ -90,12 +90,12 @@ const tier3: TalentTier = [
     [["23", "47", "70"]],
   ),
   new SingleRankTalent(
-    talentNames.amplifyCurse,
+    talentNames.warlock.amplifyCurse,
     "spell_shadow_contagion",
     "Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%.  Lasts 30 sec.",
   ),
   new MultiRankTalent(
-    talentNames.pandemic,
+    talentNames.warlock.pandemic,
     "spell_shadow_unstableaffliction_2",
     [
       "Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by ",
@@ -108,13 +108,13 @@ const tier3: TalentTier = [
 const tier4: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.malevolence,
+    talentNames.warlock.malevolence,
     "spell_shadow_focusedpower",
     ["Increases the critical effect chance of your Shadow spells by ", "%."],
     [["1", "2", "3", "4", "5"]],
   ),
   new MultiRankTalent(
-    talentNames.nightfall,
+    talentNames.warlock.nightfall,
     "spell_shadow_twilight",
     [
       "Gives your Corruption, Drain Soul, Drain Life, and Wrack spells a ",
@@ -124,10 +124,10 @@ const tier4: TalentTier = [
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.curseOfExhaustion,
+    talentNames.warlock.curseOfExhaustion,
     "spell_shadow_grimward",
     "Reduces the target's movement speed by <!--sp18288:0-->30<!--sp18288-->% for 12 sec.  Only one Curse per Warlock can be active on any one target.",
-    talentNames.amplifyCurse,
+    talentNames.warlock.amplifyCurse,
   ),
   null,
 ];
@@ -136,12 +136,12 @@ const tier5: TalentTier = [
   null,
   null,
   new SingleRankTalent(
-    talentNames.siphonLife,
+    talentNames.warlock.siphonLife,
     "spell_shadow_requiem",
     "Transfers 11 health from the target to the caster every 3 sec.  Lasts 30 sec.",
   ),
   new MultiRankTalent(
-    talentNames.soulSiphon,
+    talentNames.warlock.soulSiphon,
     "spell_shadow_lifedrain02",
     [
       "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by ",
@@ -161,7 +161,7 @@ const tier6: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.shadowMastery,
+    talentNames.warlock.shadowMastery,
     "spell_shadow_shadetruesight",
     [
       "Increases the damage dealt or life drained by your Shadow spells by ",
@@ -176,10 +176,10 @@ const tier7: TalentTier = [
   null,
   null,
   new SingleRankTalent(
-    talentNames.wrack,
+    talentNames.warlock.wrack,
     "ability_deathknight_hemorrhagicfever",
     "Tears the target apart from within, inflicting 36 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec.",
-    talentNames.siphonLife,
+    talentNames.warlock.siphonLife,
   ),
   null,
   null,

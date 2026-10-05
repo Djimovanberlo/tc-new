@@ -5,13 +5,13 @@ import { TalentTier } from "../../types";
 const tier1: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.improvedGouge,
+    talentNames.rogue.improvedGouge,
     "ability_gouge",
     ["Increases the duration of your Gouge ability by ", " sec."],
     [["0.5", "1", "1.5"]],
   ),
   new MultiRankTalent(
-    talentNames.remorselessAttacks,
+    talentNames.rogue.remorselessAttacks,
     "ability_fiegndead",
     [
       "After killing a non-trivial enemy, gives you a ",
@@ -20,7 +20,7 @@ const tier1: TalentTier = [
     [["20", "40"]],
   ),
   new MultiRankTalent(
-    talentNames.malice,
+    talentNames.rogue.malice,
     "ability_racial_bloodrage",
     [
       "Increases your critical strike chance with all attacks and Poisons by ",
@@ -34,7 +34,7 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.ruthlessness,
+    talentNames.rogue.ruthlessness,
     "ability_druid_disembowel",
     [
       "Gives your finishing moves a ",
@@ -43,14 +43,14 @@ const tier2: TalentTier = [
     [["20", "40", "60"]],
   ),
   new MultiRankTalent(
-    talentNames.murder,
+    talentNames.rogue.murder,
     "spell_shadow_deathscream",
     ["Increases all damage dealt by ", "% against Humanoid and Giant targets."],
     [["2", "4"]],
   ),
   null,
   new MultiRankTalent(
-    talentNames.improvedSliceAndDice,
+    talentNames.rogue.improvedSliceAndDice,
     "ability_rogue_slicedice",
     ["Increases the duration of your Slice and Dice ability by ", "%."],
     [["15", "30", "45"]],
@@ -60,14 +60,14 @@ const tier2: TalentTier = [
 const tier3: TalentTier = [
   null,
   new SingleRankTalent(
-    talentNames.relentlessStrikes,
+    talentNames.rogue.relentlessStrikes,
     "ability_warrior_decisivestrike",
     "Your finishing moves have a 20% chance per Combo Point to restore 25 Energy.",
   ),
   // TODO: check manually: description contains markup
   // TODO: check manually: could not split rank descriptions into template + values automatically; per-rank texts below, check manually
   new MultiRankTalent(
-    talentNames.improvedExposeArmor,
+    talentNames.rogue.improvedExposeArmor,
     "ability_warrior_riposte",
     ["", ""],
     [
@@ -78,14 +78,14 @@ const tier3: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.lethality,
+    talentNames.rogue.lethality,
     "ability_criticalstrike",
     [
       "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by ",
       "%.",
     ],
     [["4", "8", "12", "16", "20"]],
-    talentNames.malice,
+    talentNames.rogue.malice,
   ),
   null,
 ];
@@ -93,7 +93,7 @@ const tier3: TalentTier = [
 const tier4: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.vilePoisons,
+    talentNames.rogue.vilePoisons,
     "ability_rogue_feigndeath",
     [
       "Increases the damage dealt by your poisons by ",
@@ -106,12 +106,12 @@ const tier4: TalentTier = [
     ],
   ),
   new SingleRankTalent(
-    talentNames.coldBlood,
+    talentNames.rogue.coldBlood,
     "spell_ice_lament",
     "When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%.",
   ),
   new MultiRankTalent(
-    talentNames.improvedPoisons,
+    talentNames.rogue.improvedPoisons,
     "ability_poisons",
     [
       "Increases the chance to apply Poisons to your target by ",
@@ -129,19 +129,19 @@ const tier4: TalentTier = [
 const tier5: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.vigor,
+    talentNames.rogue.vigor,
     "spell_nature_earthbindtotem",
     ["Increases your maximum Energy by ", "."],
     [["5", "10"]],
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.mutilate,
+    talentNames.rogue.mutilate,
     "ability_rogue_deadlybrew",
     "Instantly attacks with both weapons for 75% weapon damage plus an additional 17 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo <!--singular:Point:Points-->Points<!--singular-->.",
   ),
   new MultiRankTalent(
-    talentNames.improvedKidneyShot,
+    talentNames.rogue.improvedKidneyShot,
     "ability_rogue_kidneyshot",
     [
       "Enemies Stunned by your Kidney Shot ability take ",
@@ -157,7 +157,7 @@ const tier6: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.sealFate,
+    talentNames.rogue.sealFate,
     "spell_shadow_chilltouch",
     [
       "Your critical strikes from abilities that add Combo Points have a ",
@@ -173,10 +173,10 @@ const tier7: TalentTier = [
   null,
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.venom,
+    talentNames.rogue.venom,
     "inv_sword_31",
     "Finishing move that increases the damage of your Poisons by 30% and your chance to apply Poisons by 10%. Lasts longer per combo point:<br />   1 point  : 9 sec<br />   2 points: 12 sec<br />   3 points: 15 sec<br />   4 points: 18 sec<br />   5 points: 21 sec",
-    talentNames.mutilate,
+    talentNames.rogue.mutilate,
   ),
   null,
   null,

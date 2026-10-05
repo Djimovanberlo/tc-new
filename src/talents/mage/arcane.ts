@@ -5,19 +5,19 @@ import { TalentTier } from "../../types";
 const tier1: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.wandSpecialization,
+    talentNames.mage.wandSpecialization,
     "inv_wand_01",
     ["Increases your damage with Wands by ", "%."],
     [["13", "25"]],
   ),
   new MultiRankTalent(
-    talentNames.arcaneFocus,
+    talentNames.mage.arcaneFocus,
     "spell_holy_devotion",
     ["Improves your chance to hit with Arcane spells by ", "%."],
     [["1", "2", "3", "4", "5"]],
   ),
   new MultiRankTalent(
-    talentNames.improvedChanneling,
+    talentNames.mage.improvedChanneling,
     "spell_nature_starfall",
     [
       "Gives you a ",
@@ -35,7 +35,7 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.arcaneSubtlety,
+    talentNames.mage.arcaneSubtlety,
     "spell_holy_dispelmagic",
     [
       "Reduces your target's resistance to all your spells by ",
@@ -48,7 +48,7 @@ const tier2: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.magicAbsorption,
+    talentNames.mage.magicAbsorption,
     "spell_nature_astralrecalgroup",
     [
       "Increases all your resistances by ",
@@ -61,7 +61,7 @@ const tier2: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.arcaneConcentration,
+    talentNames.mage.arcaneConcentration,
     "spell_shadow_manaburn",
     [
       "Gives you a ",
@@ -70,7 +70,7 @@ const tier2: TalentTier = [
     [["2", "4", "6", "8", "10"]],
   ),
   new MultiRankTalent(
-    talentNames.arcaneResilience,
+    talentNames.mage.arcaneResilience,
     "spell_arcane_arcaneresilience",
     ["Increases your Armor by an amount equal to ", "% of your Intellect."],
     [["25", "50"]],
@@ -80,13 +80,13 @@ const tier2: TalentTier = [
 const tier3: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.arcaneGeometry,
+    talentNames.mage.arcaneGeometry,
     "inv_ability_mage_radiantspark",
     ["Increases the range of your Arcane spells by ", " yards."],
     [["3", "6"]],
   ),
   new MultiRankTalent(
-    talentNames.arcaneImpact,
+    talentNames.mage.arcaneImpact,
     "spell_nature_wispsplode",
     ["Increases the critical strike chance of your Arcane spells by ", "%."],
     [["2", "4", "6"]],
@@ -94,7 +94,7 @@ const tier3: TalentTier = [
   null,
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.arcaneBlast,
+    talentNames.mage.arcaneBlast,
     "spell_arcane_blast",
     "Blasts the target with energy, dealing <!--ppl20:28:54:90-->57 to 65 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast.",
   ),
@@ -103,7 +103,7 @@ const tier3: TalentTier = [
 const tier4: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.arcaneShielding,
+    talentNames.mage.arcaneShielding,
     "spell_shadow_detectlesserinvisibility",
     [
       "Decreases the Mana lost per point of damage taken when your Mana Shield spell is active by ",
@@ -116,20 +116,20 @@ const tier4: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.improvedCounterspell,
+    talentNames.mage.improvedCounterspell,
     "spell_frost_iceshock",
     ["Your Counterspell also Silences the target for ", " sec."],
     [["2", "4"]],
   ),
   new MultiRankTalent(
-    talentNames.arcaneMeditation,
+    talentNames.mage.arcaneMeditation,
     "spell_shadow_siphonmana",
     ["Allows ", "% of your Mana regeneration to continue while casting."],
     [["17", "33", "50"]],
-    talentNames.arcaneConcentration,
+    talentNames.mage.arcaneConcentration,
   ),
   new SingleRankTalent(
-    talentNames.missileBarrage,
+    talentNames.mage.missileBarrage,
     "ability_mage_missilebarrage",
     "Gives your Arcane Blast spell a 40% chance, and your Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec.",
   ),
@@ -139,12 +139,12 @@ const tier5: TalentTier = [
   null,
   null,
   new SingleRankTalent(
-    talentNames.presenceOfMind,
+    talentNames.mage.presenceOfMind,
     "spell_nature_enchantarmor",
     "When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell.",
   ),
   new MultiRankTalent(
-    talentNames.arcaneMind,
+    talentNames.mage.arcaneMind,
     "spell_shadow_charm",
     [
       "Increases your Intellect by ",
@@ -164,7 +164,7 @@ const tier6: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.arcaneInstability,
+    talentNames.mage.arcaneInstability,
     "spell_shadow_teleport",
     [
       "Increases the damage done by your spells by ",
@@ -183,10 +183,10 @@ const tier7: TalentTier = [
   null,
   null,
   new SingleRankTalent(
-    talentNames.arcanePower,
+    talentNames.mage.arcanePower,
     "spell_nature_lightning",
     "For the next 15 sec, your spells deal 30% more damage while costing 30% more mana to cast.",
-    talentNames.presenceOfMind,
+    talentNames.mage.presenceOfMind,
   ),
   null,
   null,

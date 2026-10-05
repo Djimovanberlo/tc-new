@@ -6,7 +6,7 @@ const tier1: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.ferocity,
+    talentNames.druid.ferocity,
     "ability_hunter_pet_hyena",
     [
       "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by ",
@@ -15,7 +15,7 @@ const tier1: TalentTier = [
     [["1", "2", "3", "4", "5"]],
   ),
   new MultiRankTalent(
-    talentNames.heartOfTheWild,
+    talentNames.druid.heartOfTheWild,
     "spell_holy_blessingofagility",
     [
       "Increases your Intellect by ",
@@ -35,7 +35,7 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.feralSwiftness,
+    talentNames.druid.feralSwiftness,
     "spell_nature_spiritwolf",
     [
       "Increases your movement speed while in Cat Form by ",
@@ -49,7 +49,7 @@ const tier2: TalentTier = [
   ),
   // TODO: check manually: description contains markup
   new MultiRankTalent(
-    talentNames.feralInstinct,
+    talentNames.druid.feralInstinct,
     "ability_ambush",
     [
       "Increases damage done by your Swipe ability by ",
@@ -62,7 +62,7 @@ const tier2: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.brutalImpact,
+    talentNames.druid.brutalImpact,
     "ability_druid_bash",
     [
       "Increases the stun duration of your Bash and Pounce abilities by ",
@@ -75,7 +75,7 @@ const tier2: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.thickHide,
+    talentNames.druid.thickHide,
     "inv_misc_pelt_bear_03",
     [
       "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain ",
@@ -92,7 +92,7 @@ const tier2: TalentTier = [
 const tier3: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.shreddingAttacks,
+    talentNames.druid.shreddingAttacks,
     "spell_shadow_vampiricaura",
     [
       "Reduces the Energy cost of your Shred ability by ",
@@ -105,7 +105,7 @@ const tier3: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.savageFury,
+    talentNames.druid.savageFury,
     "ability_druid_ravage",
     [
       "Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by ",
@@ -115,12 +115,12 @@ const tier3: TalentTier = [
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.feralCharge,
+    talentNames.druid.feralCharge,
     "ability_hunter_pet_bear",
     '<!--sp9634:0--><!--sp9634--><!--sp5487:0--><span style="color: #FF2020">Requires Bear Form, Dire Bear Form</span><!--sp5487--><br />Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.<br /><br /><br /><table><tr><td><b>Feral Charge (Cat)</b><br />8 - 25 yd range<table width="100%"><tr><td>Instant</td><th>30 sec cooldown</th></tr></table>Requires Druid<br />Requires level 1</td></tr></table><table><tr><td>Requires Cat Form<br /><span class="q">Leap behind an enemy.</span></td></tr></table>',
   ),
   new MultiRankTalent(
-    talentNames.sharpenedClaws,
+    talentNames.druid.sharpenedClaws,
     "inv_misc_monsterclaw_04",
     [
       "Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by ",
@@ -133,20 +133,20 @@ const tier3: TalentTier = [
 const tier4: TalentTier = [
   null,
   new SingleRankTalent(
-    talentNames.shiftingPower,
+    talentNames.druid.shiftingPower,
     "spell_druid_displacement",
     "Instantly convert 0 Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting.",
-    talentNames.shreddingAttacks,
+    talentNames.druid.shreddingAttacks,
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.primalBite,
+    talentNames.druid.primalBite,
     "ability_racial_cannibalize",
     "Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat.<!--cooldown:417141:until canceled-->",
-    talentNames.savageFury,
+    talentNames.druid.savageFury,
   ),
   new MultiRankTalent(
-    talentNames.predatoryStrikes,
+    talentNames.druid.predatoryStrikes,
     "ability_hunter_pet_cat",
     [
       "Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by ",
@@ -155,7 +155,7 @@ const tier4: TalentTier = [
     [["50", "100", "150"]],
   ),
   new MultiRankTalent(
-    talentNames.bloodFrenzy,
+    talentNames.druid.bloodFrenzy,
     "ability_ghoulfrenzy",
     [
       "Gives you a ",
@@ -166,27 +166,27 @@ const tier4: TalentTier = [
       ["50", "100"],
       ["50", "100"],
     ],
-    talentNames.sharpenedClaws,
+    talentNames.druid.sharpenedClaws,
   ),
 ];
 
 const tier5: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.improvedShiftingPower,
+    talentNames.druid.improvedShiftingPower,
     "ability_hunter_aspectmastery",
     ["Reduces the cooldown of your Shifting Power spell by ", " sec."],
     [["4", "8"]],
-    talentNames.shiftingPower,
+    talentNames.druid.shiftingPower,
   ),
   new SingleRankTalent(
-    talentNames.leaderOfThePack,
+    talentNames.druid.leaderOfThePack,
     "spell_nature_unyeildingstamina",
     "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura.",
   ),
   null,
   new MultiRankTalent(
-    talentNames.predatoryInstincts,
+    talentNames.druid.predatoryInstincts,
     "ability_druid_predatoryinstincts",
     [
       "Increases the critical strike damage bonus of your melee abilities by ",
@@ -199,7 +199,7 @@ const tier5: TalentTier = [
 const tier6: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.naturalReaction,
+    talentNames.druid.naturalReaction,
     "ability_bullrush",
     [
       "Increases your dodge chance by ",
@@ -213,14 +213,14 @@ const tier6: TalentTier = [
   ),
   null,
   new MultiRankTalent(
-    talentNames.rendAndTear,
+    talentNames.druid.rendAndTear,
     "ability_druid_primalagression",
     [
       "Increases damage done by your melee abilities on Bleeding targets by ",
       "%.",
     ],
     [["2", "4", "6", "8", "10"]],
-    talentNames.predatoryStrikes,
+    talentNames.druid.predatoryStrikes,
   ),
   null,
 ];
@@ -230,10 +230,10 @@ const tier7: TalentTier = [
   null,
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.berserk,
+    talentNames.druid.berserk,
     "ability_druid_berserk",
     '<!--sp9634:0--><!--sp9634--><!--sp3025:0--><!--sp3025--><!--sp5487:0--><span style="color: #FF2020">Requires Cat Form, Bear Form, Dire Bear Form</span><!--sp5487--><br />Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec.',
-    talentNames.leaderOfThePack,
+    talentNames.druid.leaderOfThePack,
   ),
   null,
   null,

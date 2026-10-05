@@ -5,13 +5,13 @@ import { TalentTier } from "../../types";
 const tier1: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.destructiveReach,
+    talentNames.warlock.destructiveReach,
     "spell_shadow_corpseexplode",
     ["Increases the range of your damaging spells by ", "%."],
     [["10", "20"]],
   ),
   new MultiRankTalent(
-    talentNames.improvedShadowBolt,
+    talentNames.warlock.improvedShadowBolt,
     "spell_shadow_shadowbolt",
     [
       "Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by ",
@@ -20,7 +20,7 @@ const tier1: TalentTier = [
     [["4", "8", "12", "16", "20"]],
   ),
   new MultiRankTalent(
-    talentNames.bane,
+    talentNames.warlock.bane,
     "spell_shadow_deathpact",
     [
       "Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by ",
@@ -38,19 +38,19 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.moltenSkin,
+    talentNames.warlock.moltenSkin,
     "ability_mage_moltenarmor",
     ["Reduces all damage taken by ", "%."],
     [["2", "4", "6", "8", "10"]],
   ),
   new MultiRankTalent(
-    talentNames.cataclysm,
+    talentNames.warlock.cataclysm,
     "spell_fire_windsofwoe",
     ["Reduces the Mana cost of your Destruction spells by ", "%."],
     [["3", "6", "10"]],
   ),
   new MultiRankTalent(
-    talentNames.aftermath,
+    talentNames.warlock.aftermath,
     "spell_fire_fire",
     [
       "Increases the initial damage of your Immolate spell by ",
@@ -69,7 +69,7 @@ const tier3: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.ruin,
+    talentNames.warlock.ruin,
     "spell_shadow_shadowwordpain",
     [
       "Increases the critical strike damage bonus of your Destruction spells by ",
@@ -79,7 +79,7 @@ const tier3: TalentTier = [
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.shadowburn,
+    talentNames.warlock.shadowburn,
     "spell_shadow_scourgebuild",
     "Instantly blasts the target for <!--ppl20:24:66:90-->65 to 74 Shadow damage.  If a non-trivial target dies within 8 sec of being hit with Shadowburn, the caster gains a Soul Shard.",
   ),
@@ -89,7 +89,7 @@ const tier3: TalentTier = [
 const tier4: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.intensity,
+    talentNames.warlock.intensity,
     "spell_fire_lavaspawn",
     [
       "Gives you a ",
@@ -98,7 +98,7 @@ const tier4: TalentTier = [
     [["23", "47", "70"]],
   ),
   new MultiRankTalent(
-    talentNames.agonizingFlames,
+    talentNames.warlock.agonizingFlames,
     "spell_fire_soulburn",
     [
       "Increases the critical strike chance of your Searing Pain spell by ",
@@ -112,7 +112,7 @@ const tier4: TalentTier = [
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.conflagrate,
+    talentNames.warlock.conflagrate,
     "spell_fire_fireball",
     "Ignites a target that is already afflicted by your Immolate spell, dealing <!--ppl25:30:95:90-->88 to 111 Fire damage and consuming your Immolate effect.",
   ),
@@ -122,7 +122,7 @@ const tier4: TalentTier = [
 const tier5: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.pyroclasm,
+    talentNames.warlock.pyroclasm,
     "spell_fire_volcano",
     [
       "Gives your Soul Fire spell a ",
@@ -133,22 +133,22 @@ const tier5: TalentTier = [
       ["13", "26"],
       ["13", "26"],
     ],
-    talentNames.intensity,
+    talentNames.warlock.intensity,
   ),
   new SingleRankTalent(
-    talentNames.baneOfHavoc,
+    talentNames.warlock.baneOfHavoc,
     "ability_warlock_baneofhavoc",
     "Afflicts the target for 5 min, causing 15% of all damage done by the Warlock to other targets to also be dealt to the cursed target. Bane of Havoc is limited to 1 target, and only one Bane per Warlock can be active on any one target.",
   ),
   new MultiRankTalent(
-    talentNames.fireAndBrimstone,
+    talentNames.warlock.fireAndBrimstone,
     "spell_fire_meteorstorm",
     [
       "Increases the critical strike chance of your Conflagrate spell by ",
       "%.",
     ],
     [["8", "17", "25"]],
-    talentNames.conflagrate,
+    talentNames.warlock.conflagrate,
   ),
   null,
 ];
@@ -158,7 +158,7 @@ const tier6: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.shadowAndFlame,
+    talentNames.warlock.shadowAndFlame,
     "spell_fire_playingwithfire",
     [
       "Hitting an enemy with Conflagrate increases all Shadow damage you deal by ",
@@ -182,10 +182,10 @@ const tier7: TalentTier = [
   null,
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.incinerate,
+    talentNames.warlock.incinerate,
     "spell_fire_burnout",
     "Deals <!--ppl40:49:97:110-->100 to 114 Fire damage to your target and an additional 25% damage if the target is afflicted by Immolate.",
-    talentNames.baneOfHavoc,
+    talentNames.warlock.baneOfHavoc,
   ),
   null,
   null,

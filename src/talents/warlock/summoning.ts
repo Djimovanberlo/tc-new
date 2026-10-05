@@ -5,7 +5,7 @@ import { TalentTier } from "../../types";
 const tier1: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.improvedHealthFunnel,
+    talentNames.warlock.improvedHealthFunnel,
     "spell_shadow_lifedrain",
     [
       "Increases the amount of health transferred by your Health Funnel spell by ",
@@ -20,7 +20,7 @@ const tier1: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.improvedImp,
+    talentNames.warlock.improvedImp,
     "spell_shadow_summonimp",
     [
       "Increases the damage of your Imp's Firebolt spell by ",
@@ -33,13 +33,13 @@ const tier1: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.demonicEmbrace,
+    talentNames.warlock.demonicEmbrace,
     "spell_shadow_metamorphosis",
     ["Increases your total Stamina by ", "%."],
     [["3", "6", "9", "12", "15"]],
   ),
   new MultiRankTalent(
-    talentNames.unholyPower,
+    talentNames.warlock.unholyPower,
     "spell_shadow_shadowworddominate",
     [
       "Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by ",
@@ -52,7 +52,7 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.demonicAegis,
+    talentNames.warlock.demonicAegis,
     "spell_shadow_ragingscream",
     [
       "Increases the effectiveness of your Demon Skin and Demon Armor spells by ",
@@ -61,7 +61,7 @@ const tier2: TalentTier = [
     [["15", "30"]],
   ),
   new MultiRankTalent(
-    talentNames.improvedVoidwalker,
+    talentNames.warlock.improvedVoidwalker,
     "spell_shadow_summonvoidwalker",
     [
       "Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice, and Suffering spells by ",
@@ -70,7 +70,7 @@ const tier2: TalentTier = [
     [["10", "20", "30"]],
   ),
   new MultiRankTalent(
-    talentNames.felVitality,
+    talentNames.warlock.felVitality,
     "spell_shadow_demonictactics",
     [
       "Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by ",
@@ -83,7 +83,7 @@ const tier2: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.demonicEnergies,
+    talentNames.warlock.demonicEnergies,
     "spell_shadow_felmending",
     [
       "You heal your pet for ",
@@ -100,7 +100,7 @@ const tier2: TalentTier = [
 const tier3: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.improvedSayaad,
+    talentNames.warlock.improvedSayaad,
     "ability_warlock_randomizesuccubusincubus",
     [
       "Increases the effect of your Succubus' and Incubus' Lash of Pain and Soothing Kiss spells by ",
@@ -114,12 +114,12 @@ const tier3: TalentTier = [
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.demonicSacrifice,
+    talentNames.warlock.demonicSacrifice,
     "spell_shadow_psychicscream",
     "When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.<br /><br />Imp: Increases your Shadow damage by 15%.<br /><br />Voidwalker: Restores 2% of your total Mana every 4 sec.<br /><br />Succubus/Incubus: Increases your Fire damage by 15%.<br /><br />Felhunter: Restores 3% of your total Health every 4 sec.",
   ),
   new MultiRankTalent(
-    talentNames.masterSummoner,
+    talentNames.warlock.masterSummoner,
     "spell_shadow_impphaseshift",
     [
       "Reduces the casting time of your Imp, Voidwalker, Succubus, Incubus, and Felhunter Summoning spells by ",
@@ -137,7 +137,7 @@ const tier3: TalentTier = [
 const tier4: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.decimation,
+    talentNames.warlock.decimation,
     "spell_fire_fireball02",
     [
       "Reduces the cooldown of your Soul Fire spell by ",
@@ -153,14 +153,14 @@ const tier4: TalentTier = [
   ),
   null,
   new SingleRankTalent(
-    talentNames.felDomination,
+    talentNames.warlock.felDomination,
     "spell_nature_removecurse",
     "Your next Imp, Voidwalker, Succubus, Incubus, or Felhunter Summon spell has its casting time reduced by 6 sec and its Mana cost reduced by 50%.",
-    talentNames.masterSummoner,
+    talentNames.warlock.masterSummoner,
   ),
   // TODO: check manually: description contains markup
   new MultiRankTalent(
-    talentNames.demonicBrand,
+    talentNames.warlock.demonicBrand,
     "ability_demonhunter_chaoticimprint_fire",
     [
       "Your Searing Pain generates ",
@@ -177,7 +177,7 @@ const tier4: TalentTier = [
 const tier5: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.improvedFelhunter,
+    talentNames.warlock.improvedFelhunter,
     "spell_shadow_summonfelhunter",
     [
       "Increases the Attack Power reduction of your Felhunter's Tainted Blood, the healing of its Devour Magic, and the detection level of its Paranoia by ",
@@ -190,13 +190,13 @@ const tier5: TalentTier = [
     ],
   ),
   new SingleRankTalent(
-    talentNames.soulLink,
+    talentNames.warlock.soulLink,
     "spell_shadow_gathershadows",
     "When active, 30% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, Incubus, or Felhunter Demon instead. In addition, both the Demon and the master will inflict 3% more damage. Lasts as long as the Demon is active.",
-    talentNames.demonicSacrifice,
+    talentNames.warlock.demonicSacrifice,
   ),
   new MultiRankTalent(
-    talentNames.demonicKnowledge,
+    talentNames.warlock.demonicKnowledge,
     "spell_shadow_improvedvampiricembrace",
     [
       "Increases your spell damage and your Demon pet's spell damage by up to ",
@@ -213,7 +213,7 @@ const tier6: TalentTier = [
   null,
   // TODO: check manually: description contains markup
   new MultiRankTalent(
-    talentNames.masterDemonologist,
+    talentNames.warlock.masterDemonologist,
     "spell_shadow_shadowpact",
     [
       "Grants both the Warlock and the summoned demon an effect as long as that demon is active.<br /><br />Imp - Increases Fire damage done by ",
@@ -236,10 +236,10 @@ const tier7: TalentTier = [
   null,
   null,
   new SingleRankTalent(
-    talentNames.demonicPact,
+    talentNames.warlock.demonicPact,
     "inv_ability_soulharvesterwarlock_demonicsoul",
     "Your Demonic Sacrifice effect is no longer cancelled by summoning a different Demon pet. Resummoning the sacrificed pet will still cancel the effect.",
-    talentNames.soulLink,
+    talentNames.warlock.soulLink,
   ),
   null,
   null,

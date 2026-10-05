@@ -6,7 +6,7 @@ const tier1: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.improvedTracking,
+    talentNames.hunter.improvedTracking,
     "inv_misc_head_dragon_black",
     [
       "While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by ",
@@ -15,7 +15,7 @@ const tier1: TalentTier = [
     [["1", "2", "3", "4", "5"]],
   ),
   new MultiRankTalent(
-    talentNames.deflection,
+    talentNames.hunter.deflection,
     "ability_parry",
     ["Increases your Parry chance by ", "%."],
     [["1", "2", "3", "4", "5"]],
@@ -26,7 +26,7 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.entrapment,
+    talentNames.hunter.entrapment,
     "spell_nature_stranglevines",
     [
       "When your traps are triggered, all affected targets are Entrapped, preventing them from moving for ",
@@ -35,7 +35,7 @@ const tier2: TalentTier = [
     [["1", "2", "3", "4", "5"]],
   ),
   new MultiRankTalent(
-    talentNames.savageStrikes,
+    talentNames.hunter.savageStrikes,
     "ability_racial_bloodrage",
     [
       "Increases the critical strike chance of all your melee abilities by ",
@@ -44,13 +44,13 @@ const tier2: TalentTier = [
     [["2", "4"]],
   ),
   new MultiRankTalent(
-    talentNames.survivalist,
+    talentNames.hunter.survivalist,
     "spell_shadow_twilight",
     ["Increases your total Health by ", "%."],
     [["2", "4", "6", "8", "10"]],
   ),
   new MultiRankTalent(
-    talentNames.improvedWingClip,
+    talentNames.hunter.improvedWingClip,
     "ability_rogue_trip",
     [
       "Gives your Wing Clip ability a ",
@@ -63,7 +63,7 @@ const tier2: TalentTier = [
 const tier3: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.cleverTraps,
+    talentNames.hunter.cleverTraps,
     "spell_nature_timestop",
     [
       "Increases the duration of Freezing and Frost trap effects by ",
@@ -76,7 +76,7 @@ const tier3: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.surefooted,
+    talentNames.hunter.surefooted,
     "ability_kick",
     [
       "Increases your hit chance by ",
@@ -90,7 +90,7 @@ const tier3: TalentTier = [
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.deterrence,
+    talentNames.hunter.deterrence,
     "ability_whirlwind",
     "When activated, increases your Dodge and Parry chance by 25% for 10 sec.<!--cooldown:1310496:3 min cooldown-->",
   ),
@@ -100,7 +100,7 @@ const tier3: TalentTier = [
 const tier4: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.survivalTactics,
+    talentNames.hunter.survivalTactics,
     "ability_ensnare",
     [
       "Increases your chance to hit with your Trap and Feign Death abilities by ",
@@ -109,7 +109,7 @@ const tier4: TalentTier = [
     [["5", "10"]],
   ),
   new MultiRankTalent(
-    talentNames.predatorsEdge,
+    talentNames.hunter.predatorsEdge,
     "ability_dualwield",
     [
       "Increases your melee critical strike damage by ",
@@ -122,10 +122,10 @@ const tier4: TalentTier = [
     ],
   ),
   new SingleRankTalent(
-    talentNames.counterattack,
+    talentNames.hunter.counterattack,
     "ability_warrior_challange",
     "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 26 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
-    talentNames.deterrence,
+    talentNames.hunter.deterrence,
   ),
   null,
 ];
@@ -133,7 +133,7 @@ const tier4: TalentTier = [
 const tier5: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.resourcefulness,
+    talentNames.hunter.resourcefulness,
     "ability_hunter_resourcefulness",
     [
       "Reduces the mana cost of your Trap abilities and melee abilities by ",
@@ -146,7 +146,7 @@ const tier5: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.exposePrey,
+    talentNames.hunter.exposePrey,
     "ability_hunter_swiftstrike",
     [
       "Your attacks against targets with Hunter's Mark have a ",
@@ -155,13 +155,13 @@ const tier5: TalentTier = [
     [["5", "10"]],
   ),
   new MultiRankTalent(
-    talentNames.survivalistsDiscipline,
+    talentNames.hunter.survivalistsDiscipline,
     "ability_hunter_mastertactitian",
     ["Reduces the cooldown of your Trap and Deterrence abilities by ", "%."],
     [["20", "40"]],
   ),
   new SingleRankTalent(
-    talentNames.striderKick,
+    talentNames.hunter.striderKick,
     "ability_hunter_pet_tallstrider",
     "A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec.",
   ),
@@ -172,7 +172,7 @@ const tier6: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.lightningReflexes,
+    talentNames.hunter.lightningReflexes,
     "spell_nature_invisibilty",
     ["Increases your Agility by ", "%."],
     [["2", "4", "6", "8", "10"]],
@@ -184,10 +184,10 @@ const tier7: TalentTier = [
   null,
   null,
   new SingleRankTalent(
-    talentNames.laceratingStrikes,
+    talentNames.hunter.laceratingStrikes,
     "ability_gouge",
     "Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec",
-    talentNames.exposePrey,
+    talentNames.hunter.exposePrey,
   ),
   null,
   null,

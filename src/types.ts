@@ -1,7 +1,11 @@
 import { Talent } from "./classes";
 import { talentNames } from "./constants";
 
-export type TalentName = (typeof talentNames)[keyof typeof talentNames];
+export type TalentName = {
+  [
+    C in keyof typeof talentNames
+  ]: (typeof talentNames)[C][keyof (typeof talentNames)[C]];
+}[keyof typeof talentNames];
 
 export type TalentTree = {
   tier1: TalentTier;

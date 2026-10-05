@@ -6,7 +6,7 @@ const tier1: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.improvedWrath,
+    talentNames.druid.improvedWrath,
     "spell_nature_abolishmagic",
     [
       "Reduces the cast time of your Wrath spell by ",
@@ -19,7 +19,7 @@ const tier1: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.genesis,
+    talentNames.druid.genesis,
     "spell_arcane_arcane03",
     [
       "Increases the periodic damage and healing done by your spells and abilities by ",
@@ -33,13 +33,13 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.moonglow,
+    talentNames.druid.moonglow,
     "spell_nature_sentinal",
     ["Reduces the Mana cost of your damaging spells by ", "%."],
     [["8", "17", "25"]],
   ),
   new MultiRankTalent(
-    talentNames.improvedMoonfire,
+    talentNames.druid.improvedMoonfire,
     "spell_nature_starfall",
     [
       "Increases the damage and critical strike chance of your Moonfire spell by ",
@@ -48,7 +48,7 @@ const tier2: TalentTier = [
     [["5", "10"]],
   ),
   new MultiRankTalent(
-    talentNames.naturesMajesty,
+    talentNames.druid.naturesMajesty,
     "inv_staff_01",
     [
       "Increases your critical strike chance with spells and melee attacks by ",
@@ -57,7 +57,7 @@ const tier2: TalentTier = [
     [["2", "4"]],
   ),
   new MultiRankTalent(
-    talentNames.naturesReach,
+    talentNames.druid.naturesReach,
     "spell_nature_naturetouchgrow",
     [
       "Increases the range of your offensive Balance spells by ",
@@ -74,7 +74,7 @@ const tier2: TalentTier = [
 const tier3: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.improvedEntanglingRoots,
+    talentNames.druid.improvedEntanglingRoots,
     "spell_nature_stranglevines",
     [
       "Increases the damage done by your Entangling Roots spell by ",
@@ -88,10 +88,10 @@ const tier3: TalentTier = [
   ),
   null,
   new SingleRankTalent(
-    talentNames.naturesSplendor,
+    talentNames.druid.naturesSplendor,
     "spell_nature_natureresistancetotem",
     "Increases the duration of your Moonfire and Rejuvenation spells by 3 sec, your Regrowth spell by 6 sec, and your Insect Swarm spell by 2 sec.",
-    talentNames.naturesMajesty,
+    talentNames.druid.naturesMajesty,
   ),
   null,
 ];
@@ -100,22 +100,22 @@ const tier4: TalentTier = [
   null,
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.insectSwarm,
+    talentNames.druid.insectSwarm,
     "spell_nature_insectswarm",
     "The enemy target is swarmed by insects, decreasing their chance to hit with attacks by 2% and causing 48 Nature damage over <!--sp1223083:0-->12 sec<!--sp1223083-->.",
   ),
   new MultiRankTalent(
-    talentNames.vengeance,
+    talentNames.druid.vengeance,
     "spell_nature_purge",
     [
       "Increases the critical strike damage bonus of your Arcane and Nature spells by ",
       "%.",
     ],
     [["20", "40", "60", "80", "100"]],
-    talentNames.improvedMoonfire,
+    talentNames.druid.improvedMoonfire,
   ),
   new MultiRankTalent(
-    talentNames.improvedStarfire,
+    talentNames.druid.improvedStarfire,
     "spell_arcane_starfire",
     [
       "Reduces the cast time of Starfire by ",
@@ -133,7 +133,7 @@ const tier4: TalentTier = [
 const tier5: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.overgrowth,
+    talentNames.druid.overgrowth,
     "inv_misc_herb_15",
     [
       "Increases the maximum number of targets you may have affected by Entangling Roots by ",
@@ -142,12 +142,12 @@ const tier5: TalentTier = [
     [["1", "2"]],
   ),
   new SingleRankTalent(
-    talentNames.naturesGrace,
+    talentNames.druid.naturesGrace,
     "spell_nature_naturesblessing",
     "All non-periodic spell criticals grace you with a blessing of nature, increasing your spellcasting speed and reducing your global cooldown by 10% for 3 sec.",
   ),
   new MultiRankTalent(
-    talentNames.eclipse,
+    talentNames.druid.eclipse,
     "ability_druid_eclipse",
     [
       "Your Wrath spell reduces the cast time of your next 2 Starfire spells by ",
@@ -162,7 +162,7 @@ const tier6: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.moonfury,
+    talentNames.druid.moonfury,
     "spell_nature_moonglow",
     ["Increases the damage done by your Arcane and Nature spells by ", "%."],
     [["2", "4", "6", "8", "10"]],
@@ -176,7 +176,7 @@ const tier7: TalentTier = [
   null,
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.moonkinForm,
+    talentNames.druid.moonkinForm,
     "spell_nature_forceofnature",
     "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party members within 45 yards have their Critical Strike chance increased by 3%, exclusive with Leader of the Pack.  Also protects the caster from Polymorph effects and prevents the use of healing spells.<br /><br />The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
   ),

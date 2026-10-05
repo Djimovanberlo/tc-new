@@ -6,7 +6,7 @@ const tier1: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.deadlyAspects,
+    talentNames.hunter.deadlyAspects,
     "spell_nature_ravenform",
     [
       "While Aspect of the Hawk is active, Auto Shot has a ",
@@ -19,7 +19,7 @@ const tier1: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.enduranceTraining,
+    talentNames.hunter.enduranceTraining,
     "spell_nature_reincarnation",
     ["Increases the Health and Armor of your pets by ", "%."],
     [["3", "6", "9", "12", "15"]],
@@ -30,7 +30,7 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.focusedFire,
+    talentNames.hunter.focusedFire,
     "inv_weapon_crossbow_10",
     [
       "Increases all damage you and your pet deal by ",
@@ -39,7 +39,7 @@ const tier2: TalentTier = [
     [["1", "2"]],
   ),
   new MultiRankTalent(
-    talentNames.improvedAspectOfTheMonkey,
+    talentNames.hunter.improvedAspectOfTheMonkey,
     "ability_hunter_aspectofthemonkey",
     [
       "Increases the Dodge bonus of your Aspect of the Monkey by ",
@@ -48,7 +48,7 @@ const tier2: TalentTier = [
     [["2", "4", "6"]],
   ),
   new MultiRankTalent(
-    talentNames.pathfinding,
+    talentNames.hunter.pathfinding,
     "ability_mount_jungletiger",
     [
       "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by ",
@@ -57,7 +57,7 @@ const tier2: TalentTier = [
     [["3", "6"]],
   ),
   new MultiRankTalent(
-    talentNames.improvedRevivePet,
+    talentNames.hunter.improvedRevivePet,
     "ability_hunter_beastsoothe",
     [
       "Revive Pet's casting time is reduced by ",
@@ -77,12 +77,12 @@ const tier3: TalentTier = [
   null,
   null,
   new SingleRankTalent(
-    talentNames.bestialSwiftness,
+    talentNames.hunter.bestialSwiftness,
     "ability_druid_dash",
     "Increases the movement speed of your pets by 30%.",
   ),
   new MultiRankTalent(
-    talentNames.unleashedFury,
+    talentNames.hunter.unleashedFury,
     "ability_bullrush",
     ["Increases the damage done by your pets and hawks by ", "%."],
     [["3", "6", "9", "12", "15"]],
@@ -93,7 +93,7 @@ const tier3: TalentTier = [
 const tier4: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.improvedMendPet,
+    talentNames.hunter.improvedMendPet,
     "ability_hunter_mendpet",
     [
       "Gives your Mend Pet spell a ",
@@ -107,14 +107,14 @@ const tier4: TalentTier = [
   ),
   null,
   new MultiRankTalent(
-    talentNames.ferocity,
+    talentNames.hunter.ferocity,
     "inv_misc_monsterclaw_04",
     ["Increases the critical strike chance of your pets and hawks by ", "%."],
     [["2", "4", "6", "8", "10"]],
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.summonHawk,
+    talentNames.hunter.summonHawk,
     "ability_hunter_animalhandler",
     'Command a hawk to dive-bomb your targeted enemy, dealing [32 / <span class="q2">Ferocity</span>: <span class="q9">48</span> / <span class="q2">Unleashed Fury</span>: <span class="q9">38</span> + (Ranged Attack Power * (0.05))] Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.',
   ),
@@ -123,7 +123,7 @@ const tier4: TalentTier = [
 const tier5: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.spiritBond,
+    talentNames.hunter.spiritBond,
     "ability_druid_demoralizingroar",
     [
       "While your pet is active, you and your pet will regenerate 1% of total health every ",
@@ -132,14 +132,14 @@ const tier5: TalentTier = [
     [["10", "5"]],
   ),
   new SingleRankTalent(
-    talentNames.intimidation,
+    talentNames.hunter.intimidation,
     "ability_devour",
     "Command your pet to Stun the target for 3 sec on its next successful attack, which also gains 100% increased critical strike chance. Generates high threat.",
-    talentNames.bestialSwiftness,
+    talentNames.hunter.bestialSwiftness,
   ),
   null,
   new MultiRankTalent(
-    talentNames.bestialDiscipline,
+    talentNames.hunter.bestialDiscipline,
     "spell_nature_abolishmagic",
     [
       "Increases the Focus regeneration of your pets by ",
@@ -158,14 +158,14 @@ const tier6: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.frenzy,
+    talentNames.hunter.frenzy,
     "inv_misc_monsterclaw_03",
     [
       "Gives your pet a ",
       "% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike.",
     ],
     [["20", "40", "60", "80", "100"]],
-    talentNames.ferocity,
+    talentNames.hunter.ferocity,
   ),
   null,
 ];
@@ -174,10 +174,10 @@ const tier7: TalentTier = [
   null,
   null,
   new SingleRankTalent(
-    talentNames.bestialWrath,
+    talentNames.hunter.bestialWrath,
     "ability_druid_ferociousbite",
     "Send your pet into a rage causing 50% additional damage for 18 sec.  While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed.",
-    talentNames.intimidation,
+    talentNames.hunter.intimidation,
   ),
   null,
   null,

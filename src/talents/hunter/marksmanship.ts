@@ -5,19 +5,19 @@ import { TalentTier } from "../../types";
 const tier1: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.hawkEye,
+    talentNames.hunter.hawkEye,
     "ability_townwatch",
     ["Increases the range of your ranged weapons by ", " yards."],
     [["2", "4", "6"]],
   ),
   new MultiRankTalent(
-    talentNames.improvedConcussiveShot,
+    talentNames.hunter.improvedConcussiveShot,
     "spell_frost_stun",
     ["Gives your Concussive Shot a ", "% chance to stun the target for 3 sec."],
     [["4", "8", "12", "16", "20"]],
   ),
   new MultiRankTalent(
-    talentNames.lethalAttacks,
+    talentNames.hunter.lethalAttacks,
     "ability_searingarrow",
     ["Increases your critical strike chance with all attacks by ", "%."],
     [["1", "2", "3", "4", "5"]],
@@ -28,7 +28,7 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.improvedStings,
+    talentNames.hunter.improvedStings,
     "ability_hunter_quickshot",
     [
       "Increases the damage of your Serpent Sting ability by ",
@@ -43,7 +43,7 @@ const tier2: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.efficiency,
+    talentNames.hunter.efficiency,
     "spell_frost_wizardmark",
     [
       "Reduces the Mana cost of your Shots, Stings, and melee abilities by ",
@@ -52,7 +52,7 @@ const tier2: TalentTier = [
     [["3", "6", "9", "12", "15"]],
   ),
   new MultiRankTalent(
-    talentNames.carefulAim,
+    talentNames.hunter.carefulAim,
     "ability_hunter_zenarchery",
     ["Increases your Attack Power by ", "% of your Intellect."],
     [["20", "40", "60", "80", "100"]],
@@ -63,7 +63,7 @@ const tier2: TalentTier = [
 const tier3: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.rapidKilling,
+    talentNames.hunter.rapidKilling,
     "ability_hunter_rapidkilling",
     [
       "Reduces the cooldown on your Rapid Fire ability by ",
@@ -76,7 +76,7 @@ const tier3: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.improvedArcaneShot,
+    talentNames.hunter.improvedArcaneShot,
     "ability_impalingbolt",
     [
       "Reduces the cooldown of your Arcane Shot by ",
@@ -86,7 +86,7 @@ const tier3: TalentTier = [
   ),
   null,
   new SingleRankTalent(
-    talentNames.loneWolf,
+    talentNames.hunter.loneWolf,
     "ability_mount_whitedirewolf",
     "You deal 20% increased damage with all attacks while you do not have an active pet.",
   ),
@@ -96,19 +96,19 @@ const tier4: TalentTier = [
   null,
   null,
   new SingleRankTalent(
-    talentNames.trueshotAura,
+    talentNames.hunter.trueshotAura,
     "ability_trueshot",
     "Increases the Ranged Attack Power of party members within 45 yds by 30.",
   ),
   new MultiRankTalent(
-    talentNames.mortalShots,
+    talentNames.hunter.mortalShots,
     "ability_piercedamage",
     [
       "Increases the critical strike damage bonus on all ranged abilities by ",
       "%.",
     ],
     [["6", "12", "18", "24", "30"]],
-    talentNames.carefulAim,
+    talentNames.hunter.carefulAim,
   ),
   null,
 ];
@@ -116,7 +116,7 @@ const tier4: TalentTier = [
 const tier5: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.rapidRecuperation,
+    talentNames.hunter.rapidRecuperation,
     "ability_hunter_rapidregeneration",
     [
       "Hitting a target with your Serpent Sting ability grants you ",
@@ -127,11 +127,11 @@ const tier5: TalentTier = [
       ["25", "50"],
       ["50", "100"],
     ],
-    talentNames.rapidKilling,
+    talentNames.hunter.rapidKilling,
   ),
   null,
   new MultiRankTalent(
-    talentNames.barrage,
+    talentNames.hunter.barrage,
     "ability_upgrademoonglaive",
     [
       "Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by ",
@@ -140,7 +140,7 @@ const tier5: TalentTier = [
     [["3", "7", "10"]],
   ),
   new SingleRankTalent(
-    talentNames.scatterShot,
+    talentNames.hunter.scatterShot,
     "ability_golemstormbolt",
     "A short-range shot that deals 50% weapon damage and disorients the target for 4 sec.  Any damage caused will remove the effect.  Turns off your attack when used.",
   ),
@@ -151,7 +151,7 @@ const tier6: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.rangedWeaponSpecialization,
+    talentNames.hunter.rangedWeaponSpecialization,
     "inv_weapon_rifle_06",
     ["Increases the damage you deal with ranged weapons by ", "%."],
     [["1", "2", "3", "4", "5"]],
@@ -163,10 +163,10 @@ const tier7: TalentTier = [
   null,
   null,
   new SingleRankTalent(
-    talentNames.sniperShot,
+    talentNames.hunter.sniperShot,
     "hunter_pvp_snipershot",
     "A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec.",
-    talentNames.trueshotAura,
+    talentNames.hunter.trueshotAura,
   ),
   null,
   null,

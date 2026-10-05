@@ -6,7 +6,7 @@ const tier1: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.boomingVoice,
+    talentNames.warrior.boomingVoice,
     "spell_nature_purge",
     [
       "Increases the area of effect of your Shouts by ",
@@ -19,7 +19,7 @@ const tier1: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.cruelty,
+    talentNames.warrior.cruelty,
     "ability_rogue_eviscerate",
     [
       "Improves your chance to get a critical strike with melee attacks by ",
@@ -34,7 +34,7 @@ const tier2: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.lingeringRage,
+    talentNames.warrior.lingeringRage,
     "ability_warrior_secondwind",
     [
       "Increases the time before your Rage begins to decay after leaving combat by ",
@@ -43,7 +43,7 @@ const tier2: TalentTier = [
     [["2", "4", "6", "8", "10"]],
   ),
   new MultiRankTalent(
-    talentNames.unbridledWrath,
+    talentNames.warrior.unbridledWrath,
     "spell_nature_stoneclawtotem",
     [
       "Gives you a ",
@@ -57,18 +57,18 @@ const tier2: TalentTier = [
 const tier3: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.furiousPrecision,
+    talentNames.warrior.furiousPrecision,
     "ability_warrior_incite",
     ["Increases your chance to hit with off-hand attacks by ", "%."],
     [["4", "7", "10"]],
   ),
   new SingleRankTalent(
-    talentNames.piercingHowl,
+    talentNames.warrior.piercingHowl,
     "spell_shadow_deathscream",
     "Causes all nearby enemies to be Dazed, reducing movement speed by 50% for 6 sec.",
   ),
   new MultiRankTalent(
-    talentNames.bloodCraze,
+    talentNames.warrior.bloodCraze,
     "spell_shadow_summonimp",
     [
       "Regenerates ",
@@ -82,7 +82,7 @@ const tier3: TalentTier = [
 const tier4: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.dualWieldSpecialization,
+    talentNames.warrior.dualWieldSpecialization,
     "ability_dualwield",
     [
       "Increases the damage done by your off-hand weapon by ",
@@ -95,12 +95,12 @@ const tier4: TalentTier = [
     ],
   ),
   new SingleRankTalent(
-    talentNames.ragingBlows,
+    talentNames.warrior.ragingBlows,
     "ability_whirlwind",
     "Causes your Whirlwind to also strike with your Off Hand weapon, and reduces the Rage cost of your Cleave ability by 2.",
   ),
   new MultiRankTalent(
-    talentNames.enrage,
+    talentNames.warrior.enrage,
     "spell_shadow_unholyfrenzy",
     [
       "Gives you a 30% chance to deal ",
@@ -109,7 +109,7 @@ const tier4: TalentTier = [
     [["2", "4", "6", "8", "10"]],
   ),
   new MultiRankTalent(
-    talentNames.improvedExecute,
+    talentNames.warrior.improvedExecute,
     "inv_sword_48",
     ["Reduces the Rage cost of your Execute ability by ", "."],
     [["3", "5"]],
@@ -119,7 +119,7 @@ const tier4: TalentTier = [
 const tier5: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.improvedBerserkerRage,
+    talentNames.warrior.improvedBerserkerRage,
     "spell_nature_ancestralguardian",
     [
       "Your Berserker Rage ability will instantly generate ",
@@ -132,13 +132,13 @@ const tier5: TalentTier = [
     ],
   ),
   new SingleRankTalent(
-    talentNames.deathWish,
+    talentNames.warrior.deathWish,
     "spell_shadow_deathpact",
     "When activated, increases your Physical damage done by 20% and makes you immune to Fear effects, but increases all damage you take by 5%. Lasts 30 sec.",
   ),
   null,
   new MultiRankTalent(
-    talentNames.improvedIntercept,
+    talentNames.warrior.improvedIntercept,
     "ability_rogue_sprint",
     ["Reduces the cooldown of your Intercept ability by ", " sec."],
     [["5", "10"]],
@@ -149,24 +149,24 @@ const tier6: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.flurry,
+    talentNames.warrior.flurry,
     "ability_ghoulfrenzy",
     [
       "Increases your melee attack speed by ",
       "% for your next 3 swings after dealing a melee critical strike.",
     ],
     [["5", "10", "15", "20", "25"]],
-    talentNames.deathWish,
+    talentNames.warrior.deathWish,
   ),
   new MultiRankTalent(
-    talentNames.goreDrinker,
+    talentNames.warrior.goreDrinker,
     "racial_troll_berserk",
     [
       "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore ",
       "% of your maximum Health.",
     ],
     [["0.5", "1.0"]],
-    talentNames.enrage,
+    talentNames.warrior.enrage,
   ),
   null,
 ];
@@ -175,7 +175,7 @@ const tier7: TalentTier = [
   null,
   null,
   new SingleRankTalent(
-    talentNames.bloodthirst,
+    talentNames.warrior.bloodthirst,
     "spell_nature_bloodlust",
     "Instantly attack the target causing damage equal to 35% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec.",
   ),

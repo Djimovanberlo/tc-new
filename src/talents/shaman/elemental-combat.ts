@@ -6,7 +6,7 @@ const tier1: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.convection,
+    talentNames.shaman.convection,
     "spell_nature_wispsplode",
     [
       "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by ",
@@ -15,7 +15,7 @@ const tier1: TalentTier = [
     [["2", "4", "6", "8", "10"]],
   ),
   new MultiRankTalent(
-    talentNames.concussion,
+    talentNames.shaman.concussion,
     "spell_nature_earthshock",
     [
       "Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by ",
@@ -29,19 +29,19 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.elementalWarding,
+    talentNames.shaman.elementalWarding,
     "spell_nature_spiritarmor",
     ["Reduces damage taken from Fire, Frost, and Nature effects by ", "%."],
     [["3", "7", "10"]],
   ),
   new MultiRankTalent(
-    talentNames.reverberation,
+    talentNames.shaman.reverberation,
     "spell_frost_frostward",
     ["Reduces the cooldown of your Shock spells by ", " sec."],
     [["0.2", "0.4", "0.6", "0.8", "1.0"]],
   ),
   new MultiRankTalent(
-    talentNames.callOfFlame,
+    talentNames.shaman.callOfFlame,
     "spell_fire_immolation",
     [
       "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by ",
@@ -50,7 +50,7 @@ const tier2: TalentTier = [
     [["5", "10", "15"]],
   ),
   new MultiRankTalent(
-    talentNames.elementalDevastation,
+    talentNames.shaman.elementalDevastation,
     "spell_fire_elementaldevastation",
     [
       "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by ",
@@ -64,12 +64,12 @@ const tier3: TalentTier = [
   null,
   null,
   new SingleRankTalent(
-    talentNames.elementalFocus,
+    talentNames.shaman.elementalFocus,
     "spell_shadow_manaburn",
     "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell.  The Clearcasting state reduces the mana cost of your next damage spell by 100%.",
   ),
   new MultiRankTalent(
-    talentNames.elementalAlacrity,
+    talentNames.shaman.elementalAlacrity,
     "spell_lightning_lightningbolt01",
     [
       "Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by ",
@@ -83,7 +83,7 @@ const tier3: TalentTier = [
 const tier4: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.improvedFireNova,
+    talentNames.shaman.improvedFireNova,
     "spell_fire_sealoffire",
     [
       "Increases the damage done by your Fire Nova spell by ",
@@ -96,7 +96,7 @@ const tier4: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.eyeOfTheStorm,
+    talentNames.shaman.eyeOfTheStorm,
     "spell_nature_eyeofthestorm",
     [
       "Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by ",
@@ -105,10 +105,10 @@ const tier4: TalentTier = [
     [["23", "47", "70"]],
   ),
   new SingleRankTalent(
-    talentNames.callOfThunder,
+    talentNames.shaman.callOfThunder,
     "spell_nature_callstorm",
     "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%.",
-    talentNames.elementalAlacrity,
+    talentNames.shaman.elementalAlacrity,
   ),
   null,
 ];
@@ -116,7 +116,7 @@ const tier4: TalentTier = [
 const tier5: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.elementalReach,
+    talentNames.shaman.elementalReach,
     "spell_nature_stormreach",
     [
       "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by ",
@@ -129,7 +129,7 @@ const tier5: TalentTier = [
     ],
   ),
   new MultiRankTalent(
-    talentNames.lightningOverload,
+    talentNames.shaman.lightningOverload,
     "spell_nature_lightningoverload",
     [
       "Gives your Lightning Bolt and Chain Lightning spells a ",
@@ -139,7 +139,7 @@ const tier5: TalentTier = [
   ),
   null,
   new SingleRankTalent(
-    talentNames.earthbound,
+    talentNames.shaman.earthbound,
     "spell_nature_stranglevines",
     "Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast.",
   ),
@@ -150,14 +150,14 @@ const tier6: TalentTier = [
   null,
   null,
   new MultiRankTalent(
-    talentNames.elementalFury,
+    talentNames.shaman.elementalFury,
     "spell_fire_volcano",
     [
       "Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by ",
       "%.",
     ],
     [["20", "40", "60", "80", "100"]],
-    talentNames.callOfThunder,
+    talentNames.shaman.callOfThunder,
   ),
   null,
 ];
@@ -167,10 +167,10 @@ const tier7: TalentTier = [
   null,
   // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.lavaBurst,
+    talentNames.shaman.lavaBurst,
     "spell_shaman_lavaburst",
     "You hurl molten lava at the target, dealing <!--ppl40:48:164:90-->150 to 192 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage.",
-    talentNames.lightningOverload,
+    talentNames.shaman.lightningOverload,
   ),
   null,
   null,

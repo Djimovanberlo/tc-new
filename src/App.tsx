@@ -1,9 +1,8 @@
 import { balance } from "./talents/druid/balance";
 
-// NOTE: the generated talent trees contain 536 talents but only 450 unique names, because some
-// names repeat across trees (e.g. Deflection). Duplicate names share a single talentNames key.
-// `requires` is only resolved within one tree, so that is safe, but the TODO in errors.ts
-// (throw on duplicate talent names) would fire on this data and needs to be reconsidered.
+// NOTE: some talent names repeat across classes (e.g. Deflection), so talentNames is nested per
+// class (talentNames.druid.improvedWrath) to keep every key unique. Names are unique within a
+// class, so `requires` and the duplicate-name TODO in errors.ts only need to check within one class.
 function App() {
   console.log("CURRENT: ", balance.tier1[0]?.getCurrentDescription());
   console.log("NEXT: ", balance.tier1[0]?.getNextDescription());
