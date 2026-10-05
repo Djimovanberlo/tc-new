@@ -1,53 +1,49 @@
-import {
-  descriptionLengthError,
-  valueExceededError,
-  valuesLengthError,
-} from "./errors";
+import { descriptionLengthError, valuesLengthError } from "./errors";
 import { TalentName } from "./types";
 
-abstract class Talent {
-  currentValue: number = 0;
+export abstract class Talent {
+  public currentRank = 0;
 
   constructor(
-    public name: TalentName,
-    public icon: string,
-    public readonly maxValue: number,
-    public requires: TalentName | undefined = undefined,
+    public readonly name: TalentName,
+    public readonly icon: string,
+    public readonly maxRank: number,
+    public readonly requires?: TalentName,
   ) {}
 
-  increment(requiredTalent?: Talent) {
-    if (
-      requiredTalent &&
-      requiredTalent.currentValue < requiredTalent.maxValue
-    ) {
+  increment(requiredTalent?: Talent): void {
+    if (requiredTalent && requiredTalent.currentRank < requiredTalent.maxRank) {
       return;
     }
 
-    if (this.currentValue < this.maxValue) {
-      this.currentValue++;
+    if (this.currentRank < this.maxRank) {
+      this.currentRank++;
     }
   }
 
-  decrement(requiredByTalents?: Talent[]) {
-    if (requiredByTalents?.some((talent) => talent.currentValue > 0)) {
+  decrement(requiredByTalents?: Talent[]): void {
+    if (requiredByTalents?.some((talent) => talent.currentRank > 0)) {
       return;
     }
 
-    if (this.currentValue > 0) {
-      this.currentValue--;
+    if (this.currentRank > 0) {
+      this.currentRank--;
     }
   }
+
+  abstract getCurrentDescription(): string;
+  abstract getNextDescription(): string;
 }
 
-class PassiveTalent extends Talent {
+export class MultiRankTalent extends Talent {
   constructor(
     name: TalentName,
     icon: string,
-    requires: TalentName | undefined = undefined,
-    public description: string[],
-    public descriptionValues: (string | number)[][],
+    public readonly description: string[],
+    public readonly descriptionValues: (string | number)[][],
+    requires?: TalentName,
   ) {
-    if (descriptionValues.length !== description.length) {
+    if (descriptionValues.length + 1 !== description.length) {
       throw new Error(descriptionLengthError(name));
     }
 
@@ -59,30 +55,55 @@ class PassiveTalent extends Talent {
       throw new Error(valuesLengthError(name));
     }
 
-    const maxValue = descriptionValues.length;
-    super(name, icon, maxValue, requires);
+    const maxRank = descriptionValues[0].length;
+    super(name, icon, maxRank, requires);
   }
 
-  getDescription(): string {
-    if (
-      this.descriptionValues.some((values) => values.length < this.currentValue)
-    ) {
-      throw new Error(valueExceededError(this.name));
+  getCurrentDescription(): string {
+    return this.getDescription(this.currentRank);
+  }
+
+  getNextDescription(): string {
+    return this.getDescription(this.currentRank + 1);
+  }
+
+  private getDescription(rank: number): string {
+    if (rank === 0 || rank > this.maxRank) {
+      return "";
     }
 
-    return "";
+    return this.description.reduce((result, text, i) => {
+      const value = this.descriptionValues[i]?.[rank - 1] ?? "";
+      return result + text + value;
+    }, "");
   }
 }
 
-class ActiveTalent extends Talent {
+export class SingleRankTalent extends Talent {
   constructor(
     name: TalentName,
     icon: string,
-    requires: TalentName | undefined = undefined,
-    public attributes: (string | null)[],
-    public description: string,
+    public readonly description: string,
+    requires?: TalentName,
+    public readonly attributes?: (string | null)[],
   ) {
-    const maxValue = 1;
-    super(name, icon, maxValue, requires);
+    const maxRank = 1;
+    super(name, icon, maxRank, requires);
+  }
+
+  getCurrentDescription(): string {
+    if (this.currentRank === 0) {
+      return "";
+    }
+
+    return this.description;
+  }
+
+  getNextDescription(): string {
+    if (this.currentRank >= this.maxRank) {
+      return "";
+    }
+
+    return this.description;
   }
 }

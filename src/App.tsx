@@ -1,4 +1,8 @@
+import { balance } from "./talents/druid/balance";
+
 function App() {
+  console.log("CURRENT: ", balance.tier1[0]?.getCurrentDescription());
+  console.log("NEXT: ", balance.tier1[0]?.getNextDescription());
   return <div className="App">App!</div>;
 }
 
