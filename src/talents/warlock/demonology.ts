@@ -245,7 +245,7 @@ const tier7: TalentTier = [
   null,
 ];
 
-export const summoning = {
+export const demonology = {
   tier1,
   tier2,
   tier3,

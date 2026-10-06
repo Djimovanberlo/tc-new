@@ -1,11 +1,12 @@
 import { Talent } from "./classes";
-import { talentNames } from "./constants";
+import { playerClassNames, talentNames } from "./constants";
 
 export type TalentName = {
-  [
-    C in keyof typeof talentNames
-  ]: (typeof talentNames)[C][keyof (typeof talentNames)[C]];
+  [C in keyof typeof talentNames]: (typeof talentNames)[C][keyof (typeof talentNames)[C]];
 }[keyof typeof talentNames];
+
+export type PlayerClassName =
+  (typeof playerClassNames)[keyof typeof playerClassNames];
 
 export type TalentTree = {
   tier1: TalentTier;
@@ -29,4 +30,10 @@ export type TalentTier = readonly [
 
 export type TalentTrees = {
   [key: string]: TalentTree;
+};
+
+export type PlayerClass = {
+  name: PlayerClassName;
+  icon: string;
+  talentTrees: TalentTrees;
 };

@@ -185,7 +185,7 @@ const tier7: TalentTier = [
   null,
 ];
 
-export const curses = {
+export const affliction = {
   tier1,
   tier2,
   tier3,

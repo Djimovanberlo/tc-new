@@ -484,3 +484,15 @@ export const talentNames = {
     voiceOfTruth: "Voice of Truth",
   },
 } as const;
+
+export const playerClassNames = {
+  druid: "Druid",
+  hunter: "Hunter",
+  mage: "Mage",
+  paladin: "Paladin",
+  priest: "Priest",
+  rogue: "Rogue",
+  shaman: "Shaman",
+  warlock: "Warlock",
+  warrior: "Warrior",
+} as const;

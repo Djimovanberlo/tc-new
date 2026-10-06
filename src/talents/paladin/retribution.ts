@@ -181,7 +181,7 @@ const tier7: TalentTier = [
   null,
 ];
 
-export const combat = {
+export const retribution = {
   tier1,
   tier2,
   tier3,
