@@ -1,5 +1,5 @@
-import { playerClassNames } from "../constants";
-import { PlayerClass } from "../types";
+import { playerClassNames } from "@/lib/constants";
+import { PlayerClass } from "@/lib/types";
 import { balance } from "./druid/balance";
 import { feralCombat } from "./druid/feral-combat";
 import { restoration as druidRestoration } from "./druid/restoration";
@@ -30,7 +30,7 @@ import { protection as warriorProtection } from "./warrior/protection";
 
 const druid: PlayerClass = {
   name: playerClassNames.druid,
-  icon: "",
+  icon: "class_druid",
   talentTrees: {
     balance,
     feralCombat,
@@ -40,7 +40,7 @@ const druid: PlayerClass = {
 
 const hunter: PlayerClass = {
   name: playerClassNames.hunter,
-  icon: "",
+  icon: "class_hunter",
   talentTrees: {
     beastMastery,
     marksmanship,
@@ -50,7 +50,7 @@ const hunter: PlayerClass = {
 
 const mage: PlayerClass = {
   name: playerClassNames.mage,
-  icon: "",
+  icon: "class_mage",
   talentTrees: {
     arcane,
     fire,
@@ -60,7 +60,7 @@ const mage: PlayerClass = {
 
 const paladin: PlayerClass = {
   name: playerClassNames.paladin,
-  icon: "",
+  icon: "class_paladin",
   talentTrees: {
     holy: paladinHoly,
     protection: paladinProtection,
@@ -70,31 +70,31 @@ const paladin: PlayerClass = {
 
 const priest: PlayerClass = {
   name: playerClassNames.priest,
-  icon: "",
+  icon: "class_priest",
   talentTrees: { discipline, holy: priestHoly, shadow },
 };
 
 const rogue: PlayerClass = {
   name: playerClassNames.rogue,
-  icon: "",
+  icon: "class_rogue",
   talentTrees: { assassination, combat, subtlety },
 };
 
 const shaman: PlayerClass = {
   name: playerClassNames.shaman,
-  icon: "",
+  icon: "class_shaman",
   talentTrees: { elementalCombat, enhancement, restoration: shamanRestoration },
 };
 
 const warlock: PlayerClass = {
   name: playerClassNames.warlock,
-  icon: "",
+  icon: "class_warlock",
   talentTrees: { affliction, demonology, destruction },
 };
 
 const warrior: PlayerClass = {
   name: playerClassNames.warrior,
-  icon: "",
+  icon: "class_warrior",
   talentTrees: { arms, fury, warriorProtection },
 };
 

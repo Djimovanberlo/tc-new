@@ -1,4 +1,4 @@
-import { descriptionLengthError, valuesLengthError } from "./errors";
+import { descriptionLengthError, valuesLengthError } from "@/errors";
 import { TalentName } from "./types";
 
 export abstract class Talent {

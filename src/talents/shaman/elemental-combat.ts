@@ -1,6 +1,6 @@
-import { MultiRankTalent, SingleRankTalent } from "../../classes";
-import { talentNames } from "../../constants";
-import { TalentTier } from "../../types";
+import { MultiRankTalent, SingleRankTalent } from "@/lib/classes";
+import { talentNames } from "@/lib/constants";
+import { TalentTier } from "@/lib/types";
 
 const tier1: TalentTier = [
   null,
