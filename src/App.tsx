@@ -25,6 +25,15 @@ function App() {
         src={getIconUrl(selectedPlayerClass.icon)}
         alt={selectedPlayerClass.name}
       />
+      <div style={{ display: "flex" }}>
+        {selectedPlayerClass.talentTrees &&
+          Object.values(selectedPlayerClass.talentTrees).map((tree) => (
+            <div key={tree.name}>
+              <p>{tree.name}</p>
+              <img src={getIconUrl(tree.icon)} alt={tree.name} />
+            </div>
+          ))}
+      </div>
 
       <div>
         {playerClasses.map((pc) => (

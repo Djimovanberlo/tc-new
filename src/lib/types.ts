@@ -9,13 +9,17 @@ export type PlayerClassName =
   (typeof playerClassNames)[keyof typeof playerClassNames];
 
 export type TalentTree = {
-  tier1: TalentTier;
-  tier2: TalentTier;
-  tier3: TalentTier;
-  tier4: TalentTier;
-  tier5: TalentTier;
-  tier6: TalentTier;
-  tier7: TalentTier;
+  name: string;
+  icon: string;
+  tiers: {
+    tier1: TalentTier;
+    tier2: TalentTier;
+    tier3: TalentTier;
+    tier4: TalentTier;
+    tier5: TalentTier;
+    tier6: TalentTier;
+    tier7: TalentTier;
+  };
 };
 
 type TalentSlot = Talent | null;

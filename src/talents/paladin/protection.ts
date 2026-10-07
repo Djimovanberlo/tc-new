@@ -1,6 +1,6 @@
 import { MultiRankTalent, SingleRankTalent } from "@/lib/classes";
 import { talentNames } from "@/lib/constants";
-import { TalentTier } from "@/lib/types";
+import { TalentTier, TalentTree } from "@/lib/types";
 
 const tier1: TalentTier = [
   null,
@@ -176,12 +176,16 @@ const tier7: TalentTier = [
   null,
 ];
 
-export const protection = {
-  tier1,
-  tier2,
-  tier3,
-  tier4,
-  tier5,
-  tier6,
-  tier7,
+export const protection: TalentTree = {
+  name: "Protection",
+  icon: "spell_holy_devotionaura",
+  tiers: {
+    tier1,
+    tier2,
+    tier3,
+    tier4,
+    tier5,
+    tier6,
+    tier7,
+  },
 };
