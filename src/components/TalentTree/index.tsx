@@ -2,10 +2,11 @@ import { useId } from "react";
 
 import { getBackgroundImgUrl, getIconUrl } from "@/lib/img";
 import { TalentTree as TalentTreeType } from "@/lib/types";
+import { Talent } from "@/lib/classes";
+import { canDecrementTalent, canIncrementTalent } from "@/lib/talents";
+import IconButton from "@/components/IconButton";
 
 import "./style.scss";
-import IconButton from "../IconButton";
-import { Talent } from "@/lib/classes";
 
 interface TalentTreeProps {
   talentTree: TalentTreeType;
@@ -50,10 +51,25 @@ const TalentTree = ({
           backgroundSize: "100% 100%",
         }}
       >
-        {talents.map((t, i) =>
-          t ? (
+        {talents.map((t, i) => {
+          if (!t) {
+            return <span key={id + i} />;
+          }
+
+          const canIncrement = canIncrementTalent(talentTree, t);
+          const canDecrement = canDecrementTalent(talentTree, t);
+          const outlineColor =
+            t.currentRank === t.maxRank
+              ? "yellow"
+              : canIncrement
+                ? "green"
+                : undefined;
+
+          return (
             <div key={id + t.name} className="talent-tree-item">
               <IconButton
+                data-filter-grey={!canIncrement}
+                data-outline-color={outlineColor}
                 icon={t.icon}
                 ariaLabel={talentTree.name}
                 imgAlt={talentTree.name}
@@ -67,10 +83,8 @@ const TalentTree = ({
                 {t.currentRank}/{t.maxRank}
               </span>
             </div>
-          ) : (
-            <span key={id + i} />
-          ),
-        )}
+          );
+        })}
       </div>
     </div>
   );

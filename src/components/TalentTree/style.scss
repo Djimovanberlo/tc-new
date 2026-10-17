@@ -36,6 +36,20 @@
 .talent-tree-item {
   position: relative;
 
+  .icon-button {
+    &[data-filter-grey="true"] {
+      filter: grayscale(100%);
+    }
+
+    &[data-outline-color="green"] {
+      @include outline($green);
+    }
+
+    &[data-outline-color="yellow"] {
+      @include outline($yellow);
+    }
+  }
+
   span {
     position: absolute;
     right: -5px;

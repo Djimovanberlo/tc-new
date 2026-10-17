@@ -2,6 +2,7 @@ import { useEffect, useId, useState } from "react";
 
 import { playerClasses } from "@/talents";
 import { Talent } from "@/lib/classes";
+import { canDecrementTalent, canIncrementTalent } from "@/lib/talents";
 import {
   PlayerClass,
   PlayerClassName,
@@ -37,27 +38,7 @@ function App() {
   };
 
   const incrementTalent = (talentTree: TalentTreeType, talent: Talent) => {
-    const tieredTalents = Object.values(talentTree.tiers);
-    const talents = tieredTalents.flat();
-
-    const requiredTalent = talent.requires
-      ? talents.find((t) => t?.name === talent.requires)
-      : undefined;
-
-    if (requiredTalent && requiredTalent.currentRank < requiredTalent.maxRank) {
-      return;
-    }
-
-    const talentTier = tieredTalents.findIndex((tier) =>
-      tier.some((tieredTalent) => tieredTalent?.name === talent.name),
-    );
-
-    const currentRankSum = talents.reduce(
-      (sum, t) => sum + (t?.currentRank ?? 0),
-      0,
-    );
-
-    if (currentRankSum < talentTier * 5) {
+    if (!canIncrementTalent(talentTree, talent)) {
       return;
     }
 
@@ -66,31 +47,7 @@ function App() {
   };
 
   const decrementTalent = (talentTree: TalentTreeType, talent: Talent) => {
-    const tieredTalents = Object.values(talentTree.tiers);
-
-    const requiredByTalents = tieredTalents
-      .flat()
-      .filter((t) => t?.requires === talent.name);
-
-    if (requiredByTalents.some((t) => t && t.currentRank > 0)) {
-      return;
-    }
-
-    const talentTier = tieredTalents.findIndex((tier) =>
-      tier.some((tieredTalent) => tieredTalent?.name === talent.name),
-    );
-
-    const pointsPerTier = tieredTalents.map((tier) =>
-      tier.reduce((sum, t) => sum + (t?.currentRank ?? 0), 0),
-    );
-    const highestTier = pointsPerTier
-      .map((points) => points > 0)
-      .lastIndexOf(true);
-    const pointsBelowHighestTier = pointsPerTier
-      .slice(0, highestTier)
-      .reduce((sum, points) => sum + points, 0);
-
-    if (talentTier < highestTier && pointsBelowHighestTier <= highestTier * 5) {
+    if (!canDecrementTalent(talentTree, talent)) {
       return;
     }
 

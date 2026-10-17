@@ -2,7 +2,9 @@ import { Talent } from "./classes";
 import { playerClassNames, talentNames } from "./constants";
 
 export type TalentName = {
-  [C in keyof typeof talentNames]: (typeof talentNames)[C][keyof (typeof talentNames)[C]];
+  [
+    C in keyof typeof talentNames
+  ]: (typeof talentNames)[C][keyof (typeof talentNames)[C]];
 }[keyof typeof talentNames];
 
 export type PlayerClassName =
@@ -23,7 +25,7 @@ export type TalentTree = {
   };
 };
 
-type TalentSlot = Talent | null;
+export type TalentSlot = Talent | null;
 
 export type TalentTier = readonly [
   TalentSlot,
