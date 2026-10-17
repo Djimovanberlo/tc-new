@@ -11,21 +11,13 @@ export abstract class Talent {
     public readonly requires?: TalentName,
   ) {}
 
-  increment(requiredTalent?: Talent): void {
-    if (requiredTalent && requiredTalent.currentRank < requiredTalent.maxRank) {
-      return;
-    }
-
+  increment(): void {
     if (this.currentRank < this.maxRank) {
       this.currentRank++;
     }
   }
 
-  decrement(requiredByTalents?: Talent[]): void {
-    if (requiredByTalents?.some((talent) => talent.currentRank > 0)) {
-      return;
-    }
-
+  decrement(): void {
     if (this.currentRank > 0) {
       this.currentRank--;
     }

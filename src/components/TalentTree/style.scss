@@ -1,10 +1,13 @@
 .talent-tree {
   background-color: $grey;
+  border-radius: 3px;
 
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0.25rem;
+    padding-right: 0.5rem;
 
     span {
       display: flex;
@@ -26,5 +29,20 @@
 .talent-tree-grid {
   display: grid;
   gap: 1rem; // TODO value
+  padding: 1rem; // TODO value
   grid-template-columns: repeat(5, 1fr);
+}
+
+.talent-tree-item {
+  position: relative;
+
+  span {
+    position: absolute;
+    right: -5px;
+    bottom: -3px;
+    background-color: $black;
+    border-radius: 3px;
+    padding-inline: 0.125rem;
+    font-size: 11px;
+  }
 }

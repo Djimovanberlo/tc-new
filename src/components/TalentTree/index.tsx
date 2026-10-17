@@ -5,12 +5,19 @@ import { TalentTree as TalentTreeType } from "@/lib/types";
 
 import "./style.scss";
 import IconButton from "../IconButton";
+import { Talent } from "@/lib/classes";
 
 interface TalentTreeProps {
   talentTree: TalentTreeType;
+  onIncrement: (talent: Talent) => void;
+  onDecrement: (talent: Talent) => void;
 }
 
-const TalentTree = ({ talentTree }: TalentTreeProps) => {
+const TalentTree = ({
+  talentTree,
+  onIncrement,
+  onDecrement,
+}: TalentTreeProps) => {
   const id = useId();
   const backgroundImgUrl = getBackgroundImgUrl(talentTree.backgroundImage);
   const talents = Object.values(talentTree.tiers).flat();
@@ -40,18 +47,28 @@ const TalentTree = ({ talentTree }: TalentTreeProps) => {
         className="talent-tree-grid"
         style={{
           backgroundImage: `url(${backgroundImgUrl})`,
+          backgroundSize: "100% 100%",
         }}
       >
-        {talents.map((t) =>
+        {talents.map((t, i) =>
           t ? (
-            <IconButton
-              icon={t.icon}
-              ariaLabel={talentTree.name}
-              imgAlt={talentTree.name}
-              onClick={() => t.increment()}
-            />
+            <div key={id + t.name} className="talent-tree-item">
+              <IconButton
+                icon={t.icon}
+                ariaLabel={talentTree.name}
+                imgAlt={talentTree.name}
+                onClick={() => onIncrement(t)}
+                onContextMenu={(e) => {
+                  e.preventDefault();
+                  onDecrement(t);
+                }}
+              />
+              <span>
+                {t.currentRank}/{t.maxRank}
+              </span>
+            </div>
           ) : (
-            <span />
+            <span key={id + i} />
           ),
         )}
       </div>

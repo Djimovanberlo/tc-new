@@ -7,6 +7,7 @@ interface IconButtonProps {
   ariaLabel: string;
   imgAlt: string;
   onClick: () => void;
+  onContextMenu?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 const IconButton = ({
@@ -14,11 +15,16 @@ const IconButton = ({
   ariaLabel,
   imgAlt,
   onClick,
+  onContextMenu,
   ...rest
 }: IconButtonProps) => {
   return (
     <div className="icon-button" {...rest}>
-      <button aria-label={ariaLabel} onClick={onClick}>
+      <button
+        aria-label={ariaLabel}
+        onClick={onClick}
+        onContextMenu={onContextMenu}
+      >
         <img src={getIconUrl(icon)} alt={imgAlt} />
       </button>
     </div>
