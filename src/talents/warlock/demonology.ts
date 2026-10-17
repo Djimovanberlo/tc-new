@@ -248,6 +248,7 @@ const tier7: TalentTier = [
 export const demonology: TalentTree = {
   name: "Demonology",
   icon: "spell_shadow_metamorphosis",
+  backgroundImage: "303",
   tiers: {
     tier1,
     tier2,

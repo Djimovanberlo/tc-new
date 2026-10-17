@@ -1,0 +1,30 @@
+.talent-tree {
+  background-color: $grey;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: $space-xs;
+
+      img {
+        @include icon-with-border;
+      }
+    }
+
+    & * {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+}
+
+.talent-tree-grid {
+  display: grid;
+  gap: 1rem; // TODO value
+  grid-template-columns: repeat(5, 1fr);
+}

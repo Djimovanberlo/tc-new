@@ -175,6 +175,7 @@ const tier7: TalentTier = [
 export const holy: TalentTree = {
   name: "Holy",
   icon: "spell_holy_holybolt",
+  backgroundImage: "382",
   tiers: {
     tier1,
     tier2,

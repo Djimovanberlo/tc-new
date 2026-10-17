@@ -202,6 +202,7 @@ const tier7: TalentTier = [
 export const frost: TalentTree = {
   name: "Frost",
   icon: "spell_frost_frostbolt02",
+  backgroundImage: "61",
   tiers: {
     tier1,
     tier2,

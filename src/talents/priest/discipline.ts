@@ -188,6 +188,7 @@ const tier7: TalentTier = [
 export const discipline: TalentTree = {
   name: "Discipline",
   icon: "spell_holy_wordfortitude",
+  backgroundImage: "201",
   tiers: {
     tier1,
     tier2,

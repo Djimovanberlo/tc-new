@@ -186,6 +186,7 @@ const tier7: TalentTier = [
 export const beastMastery: TalentTree = {
   name: "Beast Mastery",
   icon: "ability_hunter_beasttaming",
+  backgroundImage: "361",
   tiers: {
     tier1,
     tier2,

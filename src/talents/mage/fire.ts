@@ -188,6 +188,7 @@ const tier7: TalentTier = [
 export const fire: TalentTree = {
   name: "Fire",
   icon: "spell_fire_firebolt02",
+  backgroundImage: "41",
   tiers: {
     tier1,
     tier2,

@@ -1,3 +1,17 @@
 @mixin outline($color) {
   outline: 2px solid $color;
 }
+
+@mixin icon-with-border() {
+  background-image: url("/border.png");
+  background-position: center;
+  border-radius: 2px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    display: block;
+    transform: scale(0.9);
+  }
+}

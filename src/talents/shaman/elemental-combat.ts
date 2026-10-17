@@ -196,6 +196,7 @@ const tier7: TalentTier = [
 export const elementalCombat: TalentTree = {
   name: "Elemental Combat",
   icon: "spell_nature_lightning",
+  backgroundImage: "261",
   tiers: {
     tier1,
     tier2,

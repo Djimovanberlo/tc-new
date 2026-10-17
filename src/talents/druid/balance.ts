@@ -187,6 +187,7 @@ const tier7: TalentTier = [
 export const balance: TalentTree = {
   name: "Balance",
   icon: "spell_nature_starfall",
+  backgroundImage: "283",
   tiers: {
     tier1,
     tier2,

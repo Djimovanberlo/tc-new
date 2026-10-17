@@ -198,6 +198,7 @@ const tier7: TalentTier = [
 export const enhancement: TalentTree = {
   name: "Enhancement",
   icon: "spell_nature_lightningshield",
+  backgroundImage: "263",
   tiers: {
     tier1,
     tier2,

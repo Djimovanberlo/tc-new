@@ -171,6 +171,7 @@ const tier7: TalentTier = [
 export const restoration: TalentTree = {
   name: "Restoration",
   icon: "spell_nature_healingtouch",
+  backgroundImage: "282",
   tiers: {
     tier1,
     tier2,

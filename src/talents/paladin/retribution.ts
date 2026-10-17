@@ -184,6 +184,7 @@ const tier7: TalentTier = [
 export const retribution: TalentTree = {
   name: "Retribution",
   icon: "spell_holy_auraoflight",
+  backgroundImage: "381",
   tiers: {
     tier1,
     tier2,

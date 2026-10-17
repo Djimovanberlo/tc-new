@@ -186,6 +186,7 @@ const tier7: TalentTier = [
 export const fury: TalentTree = {
   name: "Fury",
   icon: "ability_warrior_innerrage",
+  backgroundImage: "164",
   tiers: {
     tier1,
     tier2,

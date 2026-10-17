@@ -172,6 +172,7 @@ const tier7: TalentTier = [
 export const shadow: TalentTree = {
   name: "Shadow",
   icon: "spell_shadow_shadowwordpain",
+  backgroundImage: "203",
   tiers: {
     tier1,
     tier2,

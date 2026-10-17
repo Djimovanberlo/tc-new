@@ -187,6 +187,7 @@ const tier7: TalentTier = [
 export const affliction: TalentTree = {
   name: "Affliction",
   icon: "spell_shadow_deathcoil",
+  backgroundImage: "302",
   tiers: {
     tier1,
     tier2,

@@ -170,6 +170,7 @@ const tier7: TalentTier = [
 export const combat: TalentTree = {
   name: "Combat",
   icon: "ability_backstab",
+  backgroundImage: "181",
   tiers: {
     tier1,
     tier2,

@@ -179,6 +179,7 @@ const tier7: TalentTier = [
 export const protection: TalentTree = {
   name: "Protection",
   icon: "spell_holy_devotionaura",
+  backgroundImage: "383",
   tiers: {
     tier1,
     tier2,

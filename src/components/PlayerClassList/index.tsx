@@ -1,9 +1,8 @@
-import { getIconUrl } from "@/lib/img";
-import { PlayerClass, PlayerClassName } from "@/lib/types";
-
-import "./style.scss";
 import { useId } from "react";
-import IconButton from "../IconButton";
+
+import { PlayerClass, PlayerClassName } from "@/lib/types";
+import IconButton from "@/components/IconButton";
+import "./style.scss";
 
 interface PlayerClassListProps {
   playerClasses: PlayerClass[];

@@ -185,6 +185,7 @@ const tier7: TalentTier = [
 export const assassination: TalentTree = {
   name: "Assassination",
   icon: "ability_rogue_eviscerate",
+  backgroundImage: "182",
   tiers: {
     tier1,
     tier2,

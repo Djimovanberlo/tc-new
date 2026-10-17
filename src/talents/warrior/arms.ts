@@ -175,6 +175,7 @@ const tier7: TalentTier = [
 export const arms: TalentTree = {
   name: "Arms",
   icon: "ability_warrior_savageblow",
+  backgroundImage: "161",
   tiers: {
     tier1,
     tier2,

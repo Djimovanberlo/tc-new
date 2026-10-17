@@ -243,6 +243,7 @@ const tier7: TalentTier = [
 export const feralCombat: TalentTree = {
   name: "Feral Combat",
   icon: "ability_racial_bearform",
+  backgroundImage: "281",
   tiers: {
     tier1,
     tier2,

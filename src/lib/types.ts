@@ -11,6 +11,7 @@ export type PlayerClassName =
 export type TalentTree = {
   name: string;
   icon: string;
+  backgroundImage: string;
   tiers: {
     tier1: TalentTier;
     tier2: TalentTier;

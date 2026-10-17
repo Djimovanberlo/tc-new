@@ -212,6 +212,7 @@ const tier7: TalentTier = [
 export const arcane: TalentTree = {
   name: "Arcane",
   icon: "spell_holy_magicalsentry",
+  backgroundImage: "81",
   tiers: {
     tier1,
     tier2,

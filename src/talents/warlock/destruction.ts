@@ -194,6 +194,7 @@ const tier7: TalentTier = [
 export const destruction: TalentTree = {
   name: "Destruction",
   icon: "spell_shadow_rainoffire",
+  backgroundImage: "301",
   tiers: {
     tier1,
     tier2,

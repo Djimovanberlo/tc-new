@@ -196,6 +196,7 @@ const tier7: TalentTier = [
 export const survival: TalentTree = {
   name: "Survival",
   icon: "ability_hunter_swiftstrike",
+  backgroundImage: "362",
   tiers: {
     tier1,
     tier2,

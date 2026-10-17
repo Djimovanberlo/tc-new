@@ -208,6 +208,7 @@ const tier7: TalentTier = [
 export const subtlety: TalentTree = {
   name: "Subtlety",
   icon: "ability_stealth",
+  backgroundImage: "183",
   tiers: {
     tier1,
     tier2,
