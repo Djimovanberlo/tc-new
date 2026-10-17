@@ -1,0 +1,15 @@
+.icon-button {
+  height: 36px;
+  width: 36px;
+  background-image: url("/public/border.png");
+  background-position: center;
+  border-radius: 2px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    display: block;
+    transform: scale(0.9);
+  }
+}

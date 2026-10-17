@@ -1,3 +1,8 @@
+html {
+  height: 100dvh;
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family:
@@ -5,4 +10,28 @@ body {
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  all: unset;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  height: 100%;
+  display: grid;
+  place-items: center;
 }

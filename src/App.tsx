@@ -4,7 +4,8 @@ import { playerClasses } from "@/talents";
 import { PlayerClass, PlayerClassName } from "@/lib/types";
 import { getIconUrl } from "@/lib/img";
 
-import "./app.css";
+import "./app.scss";
+import PlayerClassList from "./components/PlayerClassList";
 
 // NOTE: some talent names repeat across classes (e.g. Deflection), so talentNames is nested per
 // class (talentNames.druid.improvedWrath) to keep every key unique. Names are unique within a
@@ -21,7 +22,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="app">
       <p>{selectedPlayerClass.name}</p>
       <img
         src={getIconUrl(selectedPlayerClass.icon)}
@@ -37,14 +38,11 @@ function App() {
           ))}
       </div>
 
-      <div>
-        {playerClasses.map((pc) => (
-          <button key={pc.name} onClick={() => selectPlayerClass(pc.name)}>
-            <img src={getIconUrl(pc.icon)} alt={pc.name} />
-            <p>{pc.name}</p>
-          </button>
-        ))}
-      </div>
+      <PlayerClassList
+        playerClasses={playerClasses}
+        selectedPlayerClass={selectedPlayerClass}
+        selectPlayerClass={selectPlayerClass}
+      />
     </div>
   );
 }

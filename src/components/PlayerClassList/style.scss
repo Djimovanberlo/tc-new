@@ -1,0 +1,8 @@
+.player-class-list {
+  display: flex;
+  gap: $space-xs;
+
+  .icon-button[data-selected="true"] {
+    @include outline($yellow);
+  }
+}
