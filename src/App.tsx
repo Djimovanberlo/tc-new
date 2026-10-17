@@ -4,6 +4,8 @@ import { playerClasses } from "@/talents";
 import { PlayerClass, PlayerClassName } from "@/lib/types";
 import { getIconUrl } from "@/lib/img";
 
+import "./app.css";
+
 // NOTE: some talent names repeat across classes (e.g. Deflection), so talentNames is nested per
 // class (talentNames.druid.improvedWrath) to keep every key unique. Names are unique within a
 // class, so `requires` and the duplicate-name TODO in errors.ts only need to check within one class.
