@@ -72,7 +72,7 @@ const tier3: TalentTier = [
     [
       "Increases the amount of damage absorbed by your shield by ",
       "%, and gives your blocks a ",
-      "% chance to restore 6% of your maximum Mana.  May only occur once every 3 sec.",
+      "% chance to restore 4% of your maximum Mana.  May only occur once every 3 sec.",
     ],
     [
       [10, 20, 30],
@@ -132,8 +132,8 @@ const tier5: TalentTier = [
     "spell_holy_blessingofstrength",
     [
       "Gives you a ",
-      "% chance to gain an extra attack after Blocking a melee attack and a ",
-      "% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
+      "% chance after Blocking and a ",
+      "% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.",
     ],
     [
       [8, 16, 24, 32, 40],

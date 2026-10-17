@@ -112,7 +112,7 @@ const tier4: TalentTier = [
     talentNames.hunter.predatorsEdge,
     "ability_dualwield",
     [
-      "Increases your melee critical strike damage by ",
+      "Increases your melee ability critical strike damage by ",
       "% and your Off Hand weapon damage by ",
       "%.",
     ],
@@ -136,21 +136,21 @@ const tier5: TalentTier = [
     talentNames.hunter.resourcefulness,
     "ability_hunter_resourcefulness",
     [
-      "Reduces the mana cost of your Trap abilities and melee abilities by ",
-      "%. In addition, your critical strikes have a ",
-      "% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec.",
+      "Reduces the Mana cost of your Trap and melee abilities by ",
+      "%, and grants your melee and ranged ability Critical Strikes a ",
+      "% chance to allow 50% of your Mana Regeneration to continue while casting for 30 sec.",
     ],
     [
       [30, 60],
-      [30, 60],
+      [50, 100],
     ],
   ),
   new MultiRankTalent(
     talentNames.hunter.exposePrey,
     "ability_hunter_swiftstrike",
     [
-      "Your attacks against targets with Hunter's Mark have a ",
-      "% chance to activate your Mongoose Bite for 5 sec.",
+      "Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a ",
+      "% chance to allow an activation of Mongoose Bite. Lasts 10 sec.",
     ],
     [[5, 10]],
   ),

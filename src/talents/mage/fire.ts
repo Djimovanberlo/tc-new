@@ -5,16 +5,16 @@ import { TalentTier, TalentTree } from "@/lib/types";
 const tier1: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.mage.wakeOfFire,
+    talentNames.mage.improvedFireBlast,
     "spell_fire_lavaspawn",
     [
       "Reduces the cooldown of your Fire Blast spell by ",
-      " sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within 30 sec by ",
-      "%.",
+      " sec and increases its range by ",
+      " yards.",
     ],
     [
       [1, 2],
-      [25, 50],
+      [8, 15],
     ],
   ),
   new MultiRankTalent(
@@ -120,7 +120,7 @@ const tier4: TalentTier = [
   new SingleRankTalent(
     talentNames.mage.heatingUp,
     "spell_fire_firebolt",
-    "Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times.",
+    "Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times. Fire Blast grants an additional stack every time it deals damage.",
     talentNames.mage.pyroblast,
   ),
   new MultiRankTalent(
@@ -141,7 +141,7 @@ const tier5: TalentTier = [
     talentNames.mage.criticalMass,
     "spell_nature_wispheal",
     ["Increases the critical strike chance of your Fire spells by ", "%."],
-    [[2, 4, 6]],
+    [[2, 4, 6, 8, 10]],
   ),
   // TODO: check manually: description contains markup
   new SingleRankTalent(
@@ -159,8 +159,15 @@ const tier6: TalentTier = [
   new MultiRankTalent(
     talentNames.mage.firePower,
     "spell_fire_immolation",
-    ["Increases the damage done by your Fire spells by ", "%."],
-    [[2, 4, 6, 8, 10]],
+    [
+      "Increases the damage done by your Fire spells by ",
+      "% per your Fire effects on the target, up to a maximum increase of ",
+      "%. Effects which mix multiple schools of magic do not qualify.",
+    ],
+    [
+      [1, 2, 3],
+      [4, 8, 12],
+    ],
   ),
   null,
 ];

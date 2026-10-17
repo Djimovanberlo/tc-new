@@ -81,7 +81,7 @@ const tier4: TalentTier = [
   new SingleRankTalent(
     talentNames.warrior.spearingStrike,
     "inv_spear_01",
-    "A brutal attack that deals 40% weapon damage, plus an additional 80% weapon damage against Giants, Dragonkin, and mounted targets.",
+    "A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted.",
   ),
   new MultiRankTalent(
     talentNames.warrior.twoHandedWeaponSpecialization,
@@ -89,11 +89,13 @@ const tier4: TalentTier = [
     ["Increases the damage you deal with two-handed melee weapons by ", "%."],
     [[1, 2, 3]],
   ),
+  // TODO: check manually: prerequisite changed (was none, now deepWounds)
   new MultiRankTalent(
     talentNames.warrior.impale,
     "ability_searingarrow",
     ["Increases the critical strike damage bonus of your abilities by ", "%."],
     [[10, 20]],
+    talentNames.warrior.deepWounds,
   ),
   null,
 ];
@@ -104,8 +106,8 @@ const tier5: TalentTier = [
     talentNames.warrior.bloodthrill,
     "inv_sword_01",
     [
-      "Your Main Hand melee attacks against enemies afflicted by your Rend have a ",
-      "% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
+      "Grants your Main Hand melee attacks against enemies afflicted by your Rend a ",
+      "% chance to allow an activation of Overpower.",
     ],
     [[4, 8, 12, 16, 20]],
   ),

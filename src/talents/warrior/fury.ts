@@ -65,7 +65,7 @@ const tier3: TalentTier = [
   new SingleRankTalent(
     talentNames.warrior.piercingHowl,
     "spell_shadow_deathscream",
-    "Causes all nearby enemies to be Dazed, reducing movement speed by 50% for 6 sec.",
+    "Causes all enemies within 10 yds to be Dazed, reducing movement speed by 50% for 6 sec.",
   ),
   new MultiRankTalent(
     talentNames.warrior.bloodCraze,
@@ -97,7 +97,7 @@ const tier4: TalentTier = [
   new SingleRankTalent(
     talentNames.warrior.ragingBlows,
     "ability_whirlwind",
-    "Causes your Whirlwind to also strike with your Off Hand weapon, and reduces the Rage cost of your Cleave ability by 2.",
+    "Reduces the Rage cost of your Cleave and Whirlwind abilities by 3.",
   ),
   new MultiRankTalent(
     talentNames.warrior.enrage,
@@ -177,7 +177,7 @@ const tier7: TalentTier = [
   new SingleRankTalent(
     talentNames.warrior.bloodthirst,
     "spell_nature_bloodlust",
-    "Instantly attack the target causing damage equal to 35% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec.",
+    "Instantly attack the target causing damage equal to 45% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec.",
   ),
   null,
   null,

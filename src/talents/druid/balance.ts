@@ -178,7 +178,7 @@ const tier7: TalentTier = [
   new SingleRankTalent(
     talentNames.druid.moonkinForm,
     "spell_nature_forceofnature",
-    "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party members within 45 yards have their Critical Strike chance increased by 3%, exclusive with Leader of the Pack.  Also protects the caster from Polymorph effects and prevents the use of healing spells.<br /><br />The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+    "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%.  Also protects the caster from Polymorph effects and prevents the use of healing spells.<br /><br />The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
   ),
   null,
   null,

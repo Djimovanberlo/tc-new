@@ -60,7 +60,7 @@ const tier3: TalentTier = [
     "spell_holy_vindication",
     [
       "Gives your damaging melee attacks a chance to reduce the target's Attack Power by (",
-      " /- 3 * <!--ppl0:60:6:-350--> - 204), and increase your Attack Power by ",
+      " /- 3 * <!--pts1:1:0:440667-->6<!---->), and increase your Attack Power by ",
       "% for 30 sec.",
     ],
     [
@@ -151,7 +151,7 @@ const tier6: TalentTier = [
     talentNames.paladin.championOfTheLight,
     "ability_paladin_enlightenedjudgements",
     ["Increases your spell damage by up to ", "% of your Intellect."],
-    [[20, 40, 60]],
+    [[10, 20, 30]],
   ),
   new MultiRankTalent(
     talentNames.paladin.instrumentOfLaw,

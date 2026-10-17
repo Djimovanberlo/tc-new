@@ -116,7 +116,7 @@ const tier4: TalentTier = [
   new SingleRankTalent(
     talentNames.hunter.summonHawk,
     "ability_hunter_animalhandler",
-    'Command a hawk to dive-bomb your targeted enemy, dealing [32 / <span class="q2">Ferocity</span>: <span class="q9">48</span> / <span class="q2">Unleashed Fury</span>: <span class="q9">38</span> + (Ranged Attack Power * (0.05))] Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.',
+    'Command a hawk to dive-bomb your targeted enemy, dealing [32 / <span class="q2">Ferocity</span>: <span class="q9">48</span> / <span class="q2">Unleashed Fury</span>: <span class="q9">52</span> + (Ranged Attack Power * (0.05))] Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.',
   ),
 ];
 

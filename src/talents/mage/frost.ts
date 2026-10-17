@@ -20,7 +20,10 @@ const tier1: TalentTier = [
   new MultiRankTalent(
     talentNames.mage.improvedFrostbolt,
     "spell_frost_frostbolt02",
-    ["Reduces the casting time of your Frostbolt spell by ", " sec."],
+    [
+      "Reduces the casting time of your Frostbolt and Frost Blast spells by ",
+      " sec.",
+    ],
     [[0.1, 0.2, 0.3, 0.4, 0.5]],
   ),
   new MultiRankTalent(
@@ -95,7 +98,7 @@ const tier3: TalentTier = [
   new SingleRankTalent(
     talentNames.mage.iceLance,
     "spell_frost_frostblast",
-    "Deals <!--ppl20:26:28:35-->28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
+    "Deals <!--ppl20:26:28:35-->28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
   ),
   new MultiRankTalent(
     talentNames.mage.improvedBlizzard,
@@ -114,7 +117,7 @@ const tier4: TalentTier = [
     talentNames.mage.arcticReach,
     "spell_shadow_darkritual",
     [
-      "Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by ",
+      "Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by ",
       "%.",
     ],
     [[10, 20]],
@@ -175,13 +178,9 @@ const tier6: TalentTier = [
     "spell_frost_chillingblast",
     [
       "Gives your Frost damage spells a ",
-      "% chance to apply the Winter's Chill effect, which increases the chance your Ice Lance and Frostbolt spells will critically hit the target by 2% for 15 sec. Stacks up to ",
-      " times.",
+      "% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times.",
     ],
-    [
-      [20, 40, 60, 80, 100],
-      [1, 2, 3, 4, 5],
-    ],
+    [[20, 40, 60, 80, 100]],
   ),
   null,
 ];

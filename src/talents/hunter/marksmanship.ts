@@ -98,7 +98,7 @@ const tier4: TalentTier = [
   new SingleRankTalent(
     talentNames.hunter.trueshotAura,
     "ability_trueshot",
-    "Increases the Ranged Attack Power of party members within 45 yds by 30.",
+    "Increases the Ranged Attack Power of party or raid members within 45 yds by 30.",
   ),
   new MultiRankTalent(
     talentNames.hunter.mortalShots,
@@ -119,9 +119,9 @@ const tier5: TalentTier = [
     talentNames.hunter.rapidRecuperation,
     "ability_hunter_rapidregeneration",
     [
-      "Hitting a target with your Serpent Sting ability grants you ",
-      "% and consuming Rapid Killing grants you ",
-      "% of your Mana regeneration while casting for the next 15 sec.",
+      "Afflicting a target with Serpent Sting allows ",
+      "% of your Mana Regeneration to continue while casting for 15 sec, increased to ",
+      "% when Rapid Killing is consumed.",
     ],
     [
       [25, 50],

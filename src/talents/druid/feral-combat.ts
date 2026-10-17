@@ -74,18 +74,15 @@ const tier2: TalentTier = [
       [15, 30],
     ],
   ),
+  // TODO: check manually: description contains markup
   new MultiRankTalent(
     talentNames.druid.thickHide,
     "inv_misc_pelt_bear_03",
     [
-      "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain ",
-      " additional base Armor per level and another ",
+      "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain <!--ppl1:60:3:300-->180 additional base Armor per level and another ",
       " base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms.",
     ],
-    [
-      [1, 2, 3],
-      [0.67, 1.33, "2.00"],
-    ],
+    [[0.67, 1.33, "2.00"]],
   ),
 ];
 
@@ -182,17 +179,21 @@ const tier5: TalentTier = [
   new SingleRankTalent(
     talentNames.druid.leaderOfThePack,
     "spell_nature_unyeildingstamina",
-    "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura.",
+    "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%.",
   ),
   null,
   new MultiRankTalent(
-    talentNames.druid.predatoryInstincts,
+    talentNames.druid.naturalInstinct,
     "ability_druid_predatoryinstincts",
     [
       "Increases the critical strike damage bonus of your melee abilities by ",
-      "%.",
+      "% and increases your spell healing by ",
+      "% of your Intellect.",
     ],
-    [[10, 20]],
+    [
+      [10, 20],
+      [12, 25],
+    ],
   ),
 ];
 

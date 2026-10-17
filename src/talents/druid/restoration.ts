@@ -19,9 +19,9 @@ const tier1: TalentTier = [
     "spell_holy_blessingofstamina",
     [
       "Gives you a ",
-      "% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain ",
-      "% of the Energy you had when you were last in Cat Form, plus ",
-      " Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of ",
+      "% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores ",
+      "% of the Energy you had when last in Cat Form, plus ",
+      " Energy per second spent outside Bear Form or Dire Bear Form, up to ",
       " Energy.",
     ],
     [

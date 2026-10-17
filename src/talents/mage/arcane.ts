@@ -22,14 +22,29 @@ const tier1: TalentTier = [
     [
       "Gives you a ",
       "% chance to avoid interruption caused by damage while channeling Arcane Missiles and a ",
-      "% chance while casting Arcane Blast.",
+      "% chance while casting Arcane Blast or Arcane Wrath.",
     ],
     [
       [20, 40, 60, 80, 100],
       [14, 28, 42, 56, 70],
     ],
   ),
-  null,
+  // TODO: check manually: position changed (was tier 4 slot 4, now tier 1 slot 4)
+  new MultiRankTalent(
+    talentNames.mage.missileBarrage,
+    "ability_mage_missilebarrage",
+    [
+      "Gives your Arcane Blast spell a ",
+      "% chance, your Arcane Missile hits a ",
+      "% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a ",
+      "% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec.",
+    ],
+    [
+      [20, 40],
+      [5, 10],
+      [10, 20],
+    ],
+  ),
 ];
 
 const tier2: TalentTier = [
@@ -96,7 +111,7 @@ const tier3: TalentTier = [
   new SingleRankTalent(
     talentNames.mage.arcaneBlast,
     "spell_arcane_blast",
-    "Blasts the target with energy, dealing <!--ppl20:28:54:90-->57 to 65 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast.",
+    "Blasts the target with energy, dealing <!--ppl20:28:32:50-->34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application.",
   ),
 ];
 
@@ -128,10 +143,12 @@ const tier4: TalentTier = [
     [[17, 33, 50]],
     talentNames.mage.arcaneConcentration,
   ),
+  // TODO: check manually: description contains markup
   new SingleRankTalent(
-    talentNames.mage.missileBarrage,
-    "ability_mage_missilebarrage",
-    "Gives your Arcane Blast spell a 40% chance, and your Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec.",
+    talentNames.mage.arcaneWrath,
+    "ability_mage_netherwindpresence",
+    "Launches a projectile of pure Arcane energy at the enemy target, causing <!--ppl25:35:120:140-->122 to 146 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana.",
+    talentNames.mage.arcaneBlast,
   ),
 ];
 

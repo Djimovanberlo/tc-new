@@ -165,7 +165,7 @@ const tier4: TalentTier = [
     [
       "Your Searing Pain generates ",
       "% less threat and brands the target for 10 sec. Your pet's next ",
-      " attacks against the target generate high threat and deal ((((<!--pl1293695:1:60-->60 - 26) * 1.5) + 14 + (0.078 * ((Shadow spell power)))) * (<!--sp23759:0-->1<!--sp23759--> * <!--sp18769:0-->1<!--sp18769--> * <!--sp23761:0-->1<!--sp23761-->)) to ((((<!--pl1293695:1:60-->60 - 26) * 1.5) + 17 + (0.078 * ((Shadow spell power)))) * (<!--sp23759:0-->1<!--sp23759--> * <!--sp18769:0-->1<!--sp18769--> * <!--sp23761:0-->1<!--sp23761-->)) Fire or Shadow damage based on the pet.",
+      " attacks against the target deal ((((<!--pl1293695:1:60-->60 - 26) * 1.5) + 14 + (0.078 * ((Shadow spell power)))) * (<!--sp23759:0-->1<!--sp23759--> * <!--sp18769:0-->1<!--sp18769--> * <!--sp23761:0-->1<!--sp23761-->)) to ((((<!--pl1293695:1:60-->60 - 26) * 1.5) + 17 + (0.078 * ((Shadow spell power)))) * (<!--sp23759:0-->1<!--sp23759--> * <!--sp18769:0-->1<!--sp18769--> * <!--sp23761:0-->1<!--sp23761-->)) Fire or Shadow damage based on the pet. If Shadow damage is dealt, it has high threat.",
     ],
     [
       [17, 33, 50],

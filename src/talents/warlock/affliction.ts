@@ -42,10 +42,10 @@ const tier1: TalentTier = [
 const tier2: TalentTier = [
   null,
   new MultiRankTalent(
-    talentNames.warlock.malediction,
-    "spell_shadow_curseofachimonde",
-    ["Increases all periodic damage done by your Warlock spells by ", "%."],
-    [[1, 2, 3, 4, 5]],
+    talentNames.warlock.grimReach,
+    "spell_shadow_callofbone",
+    ["Increases the range of your Affliction spells by ", "%."],
+    [[10, 20]],
   ),
   new MultiRankTalent(
     talentNames.warlock.soulHarvest,
@@ -92,7 +92,7 @@ const tier3: TalentTier = [
   new SingleRankTalent(
     talentNames.warlock.amplifyCurse,
     "spell_shadow_contagion",
-    "Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%.  Lasts 30 sec.",
+    "Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 50%.  Lasts 30 sec.",
   ),
   new MultiRankTalent(
     talentNames.warlock.pandemic,
@@ -122,11 +122,10 @@ const tier4: TalentTier = [
     ],
     [[2, 4]],
   ),
-  // TODO: check manually: description contains markup
   new SingleRankTalent(
     talentNames.warlock.curseOfExhaustion,
     "spell_shadow_grimward",
-    "Reduces the target's movement speed by <!--sp18288:0-->30<!--sp18288-->% for 12 sec.  Only one Curse per Warlock can be active on any one target.",
+    "Reduces the target's movement speed by 30% for 12 sec.  Only one Curse per Warlock can be active on any one target.",
     talentNames.warlock.amplifyCurse,
   ),
   null,
@@ -167,7 +166,7 @@ const tier6: TalentTier = [
       "Increases the damage dealt or life drained by your Shadow spells by ",
       "%.",
     ],
-    [[1, 2, 3, 4, 5]],
+    [[2, 4, 6, 8, 10]],
   ),
   null,
 ];

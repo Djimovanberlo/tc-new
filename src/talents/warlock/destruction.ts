@@ -7,7 +7,7 @@ const tier1: TalentTier = [
   new MultiRankTalent(
     talentNames.warlock.destructiveReach,
     "spell_shadow_corpseexplode",
-    ["Increases the range of your damaging spells by ", "%."],
+    ["Increases the range of your Destruction spells by ", "%."],
     [[10, 20]],
   ),
   new MultiRankTalent(
