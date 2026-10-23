@@ -37,6 +37,8 @@ function App() {
     );
   };
 
+  // TODO Reset tree and full spec functions
+
   const incrementTalent = (talentTree: TalentTreeType, talent: Talent) => {
     if (!canIncrementTalent(talentTree, talent)) {
       return;

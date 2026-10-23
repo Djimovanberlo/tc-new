@@ -3,8 +3,7 @@ import { useId } from "react";
 import { getBackgroundImgUrl, getIconUrl } from "@/lib/img";
 import { TalentTree as TalentTreeType } from "@/lib/types";
 import { Talent } from "@/lib/classes";
-import { canDecrementTalent, canIncrementTalent } from "@/lib/talents";
-import IconButton from "@/components/IconButton";
+import TalentTreeItem from "@/components/TalentTreeItem";
 
 import "./style.scss";
 
@@ -48,43 +47,22 @@ const TalentTree = ({
         className="talent-tree-grid"
         style={{
           backgroundImage: `url(${backgroundImgUrl})`,
-          backgroundSize: "100% 100%",
+          backgroundSize: "cover",
         }}
       >
-        {talents.map((t, i) => {
-          if (!t) {
-            return <span key={id + i} />;
-          }
-
-          const canIncrement = canIncrementTalent(talentTree, t);
-          const canDecrement = canDecrementTalent(talentTree, t);
-          const outlineColor =
-            t.currentRank === t.maxRank
-              ? "yellow"
-              : canIncrement
-                ? "green"
-                : undefined;
-
-          return (
-            <div key={id + t.name} className="talent-tree-item">
-              <IconButton
-                data-filter-grey={!canIncrement}
-                data-outline-color={outlineColor}
-                icon={t.icon}
-                ariaLabel={talentTree.name}
-                imgAlt={talentTree.name}
-                onClick={() => onIncrement(t)}
-                onContextMenu={(e) => {
-                  e.preventDefault();
-                  onDecrement(t);
-                }}
-              />
-              <span>
-                {t.currentRank}/{t.maxRank}
-              </span>
-            </div>
-          );
-        })}
+        {talents.map((t, i) =>
+          t ? (
+            <TalentTreeItem
+              key={id + t.name}
+              talentTree={talentTree}
+              talent={t}
+              onIncrement={onIncrement}
+              onDecrement={onDecrement}
+            />
+          ) : (
+            <span key={id + i} />
+          ),
+        )}
       </div>
     </div>
   );

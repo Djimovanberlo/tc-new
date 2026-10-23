@@ -1,5 +1,7 @@
 .player-class-list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: $space-xs;
 
   .icon-button[data-selected="true"] {

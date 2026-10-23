@@ -1,4 +1,8 @@
-import { TalentTier, TalentTree as TalentTreeType } from "@/lib/types";
+import {
+  TalentSlot,
+  TalentTier,
+  TalentTree as TalentTreeType,
+} from "@/lib/types";
 import { Talent } from "@/lib/classes";
 
 const POINTS_PER_TIER = 5;
@@ -69,6 +73,15 @@ const keepsHigherTiersUnlocked = (
 
     return pointsBelow - 1 >= tier * POINTS_PER_TIER;
   });
+};
+
+export const getIsRequiredByTalent = (
+  talentTree: TalentTreeType,
+  talent: Talent,
+) => {
+  const { talentList } = getTalentsFromTree(talentTree);
+  const talentRequiredBy = talentList.find((t) => t?.requires === talent.name);
+  return talentRequiredBy;
 };
 
 export const canIncrementTalent = (

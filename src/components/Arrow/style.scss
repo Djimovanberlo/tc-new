@@ -1,0 +1,11 @@
+.arrow {
+  &[data-direction="right"] {
+    border: 2px saddlebrown;
+  }
+  &[data-direction="down"] {
+    border: 2px seagreen;
+  }
+  &[data-direction="left"] {
+    border: 2px seashell;
+  }
+}

@@ -1,0 +1,31 @@
+.talent-tree-item {
+  position: relative;
+
+  .icon-button {
+    &[data-filter-grey="true"] {
+      filter: grayscale(100%);
+    }
+
+    &[data-outline-color="green"] {
+      @include outline($green);
+    }
+
+    &[data-outline-color="yellow"] {
+      @include outline($yellow);
+    }
+  }
+
+  span {
+    position: absolute;
+    right: -5px;
+    bottom: -3px;
+    background-color: $black;
+    border-radius: 3px;
+    padding-inline: 0.125rem;
+    font-size: 11px;
+  }
+
+  .arrow {
+    position: absolute;
+  }
+}
