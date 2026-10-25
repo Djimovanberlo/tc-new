@@ -34,4 +34,21 @@
     right: 0;
     z-index: -1;
   }
+
+  &:hover {
+    z-index: 2;
+
+    .tooltip {
+      display: block;
+    }
+  }
+
+  .tooltip {
+    // TODO position for responsiveness
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: calc(100% + 10px);
+    z-index: 999;
+  }
 }

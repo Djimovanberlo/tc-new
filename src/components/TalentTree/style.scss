@@ -2,7 +2,7 @@
   background-color: $grey;
   border-radius: 3px;
 
-  header {
+  > header {
     height: $iconSize; // match icon + padding, to prevent visual shift when switching between classes
     display: flex;
     align-items: center;

@@ -1,0 +1,15 @@
+.tooltip {
+  background-image: url("/tooltip.png");
+  min-width: 15rem;
+  padding: 0.5rem;
+
+  h3 {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  p {
+    font-weight: normal;
+    color: $yellow;
+  }
+}

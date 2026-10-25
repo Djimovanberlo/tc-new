@@ -6,7 +6,6 @@ import {
   TalentTree as TalentTreeType,
 } from "@/lib/types";
 import { Talent } from "@/lib/classes";
-import TalentTree from "@/components/TalentTree";
 
 const POINTS_PER_TIER = 5;
 

@@ -5,6 +5,7 @@ import IconButton from "@/components/IconButton";
 import Arrow from "@/components/Arrow";
 
 import "./style.scss";
+import Tooltip from "../Tooltip";
 
 interface TalentTreeItemProps {
   talentTree: TalentTree;
@@ -52,6 +53,7 @@ const TalentTreeItem = ({
       {arrows.map(({ key, ...arrow }) => (
         <Arrow key={key} {...arrow} />
       ))}
+      <Tooltip talent={talent} />
     </div>
   );
 };
