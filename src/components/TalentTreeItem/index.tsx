@@ -1,6 +1,6 @@
 import { TalentTree } from "@/lib/types";
 import { Talent } from "@/lib/classes";
-import { canIncrementTalent, getIsRequiredByTalent } from "@/lib/talents";
+import { canIncrementTalent, getArrows } from "@/lib/talents";
 import IconButton from "@/components/IconButton";
 import Arrow from "@/components/Arrow";
 
@@ -20,10 +20,7 @@ const TalentTreeItem = ({
   onDecrement,
 }: TalentTreeItemProps) => {
   const canIncrement = canIncrementTalent(talentTree, talent);
-  const requiredByTalent = getIsRequiredByTalent(talentTree, talent);
-  const canIncrementRequiredByTalent = requiredByTalent
-    ? canIncrementTalent(talentTree, requiredByTalent)
-    : false;
+  const arrows = getArrows(talentTree, talent);
 
   const outlineColor =
     talent.currentRank === talent.maxRank
@@ -40,7 +37,10 @@ const TalentTreeItem = ({
         icon={talent.icon}
         ariaLabel={talent.name}
         imgAlt={talent.name}
-        onClick={() => onIncrement(talent)}
+        onClick={(e) => {
+          e.preventDefault();
+          onIncrement(talent);
+        }}
         onContextMenu={(e) => {
           e.preventDefault();
           onDecrement(talent);
@@ -49,13 +49,9 @@ const TalentTreeItem = ({
       <span>
         {talent.currentRank}/{talent.maxRank}
       </span>
-      {!!requiredByTalent && (
-        <Arrow
-          isActive={canIncrementRequiredByTalent}
-          direction="left"
-          length={1}
-        />
-      )}
+      {arrows.map(({ key, ...arrow }) => (
+        <Arrow key={key} {...arrow} />
+      ))}
     </div>
   );
 };

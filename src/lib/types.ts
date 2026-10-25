@@ -44,3 +44,14 @@ export type PlayerClass = {
   icon: string;
   talentTrees: TalentTrees;
 };
+
+export type ArrowLength = 1 | 2 | 3;
+
+export type ArrowDirection = "right" | "down" | "left";
+
+export type TalentArrow = {
+  key: string;
+  length: ArrowLength;
+  direction: ArrowDirection;
+  isActive: boolean;
+};

@@ -6,7 +6,7 @@ interface IconButtonProps {
   icon: string;
   ariaLabel: string;
   imgAlt: string;
-  onClick: () => void;
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
   onContextMenu?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 

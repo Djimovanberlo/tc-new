@@ -3,7 +3,7 @@
   border-radius: 3px;
 
   header {
-    height: 36px; // match icon + padding, to prevent visual shift when switching between classes
+    height: $iconSize; // match icon + padding, to prevent visual shift when switching between classes
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,7 +29,7 @@
 
 .talent-tree-grid {
   display: grid;
-  gap: 1rem; // TODO value
-  padding: 1rem; // TODO value
+  gap: $talentGap;
+  padding: $talentGap;
   grid-template-columns: repeat(5, 1fr);
 }

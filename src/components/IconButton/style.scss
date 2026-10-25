@@ -1,5 +1,5 @@
 .icon-button {
-  height: 36px;
-  width: 36px;
+  height: $iconSize;
+  width: $iconSize;
   @include icon-with-border;
 }

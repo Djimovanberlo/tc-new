@@ -1,5 +1,6 @@
 .talent-tree-item {
   position: relative;
+  z-index: 1;
 
   .icon-button {
     &[data-filter-grey="true"] {
@@ -23,9 +24,14 @@
     border-radius: 3px;
     padding-inline: 0.125rem;
     font-size: 11px;
+    pointer-events: none;
   }
 
   .arrow {
     position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: -1;
   }
 }

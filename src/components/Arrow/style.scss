@@ -1,11 +1,40 @@
+$arrow-length: 264px;
+$yellow-arrow-length: 257px;
+$first-talent-offset: calc($iconSize / 2) + $talentGap;
+$talent-step: $iconSize + $talentGap;
+
 .arrow {
+  --arrow-length: #{$arrow-length};
+
+  display: flex;
+  justify-content: center;
+  transform: rotate(var(--degrees));
+  transform-origin: top;
+  overflow: hidden;
+
+  &[data-active="true"] {
+    --arrow-length: #{$yellow-arrow-length};
+  }
+
   &[data-direction="right"] {
-    border: 2px saddlebrown;
+    --degrees: -90deg;
   }
   &[data-direction="down"] {
-    border: 2px seagreen;
+    --degrees: 0deg;
   }
   &[data-direction="left"] {
-    border: 2px seashell;
+    --degrees: 90deg;
+  }
+
+  img {
+    @each $length in 1, 2, 3 {
+      &[data-length="#{$length}"] {
+        margin-top: calc(
+          #{$first-talent-offset +
+            $talent-step *
+            ($length - 1)} - var(--arrow-length)
+        );
+      }
+    }
   }
 }

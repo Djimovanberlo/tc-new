@@ -1,4 +1,7 @@
 import {
+  ArrowDirection,
+  ArrowLength,
+  TalentArrow,
   TalentSlot,
   TalentTier,
   TalentTree as TalentTreeType,
@@ -75,13 +78,53 @@ const keepsHigherTiersUnlocked = (
   });
 };
 
-export const getIsRequiredByTalent = (
+const findTalentPosition = (talentTree: TalentTreeType, talent: Talent) => {
+  const tiers = Object.values(talentTree.tiers);
+
+  for (let tier = 0; tier < tiers.length; tier++) {
+    for (let column = 0; column < tiers[tier].length; column++) {
+      if (tiers[tier][column]?.name === talent.name) {
+        return { tier, column };
+      }
+    }
+  }
+};
+
+const isArrowLength = (length: number): length is ArrowLength =>
+  length === 1 || length === 2 || length === 3;
+
+export const getArrowProperties = (
+  sourceTalent: Talent,
+  requiredByTalent: Talent,
   talentTree: TalentTreeType,
-  talent: Talent,
 ) => {
+  let arrowLength: ArrowLength | undefined;
+  let arrowDirection: ArrowDirection | undefined;
+
+  const source = findTalentPosition(talentTree, sourceTalent);
+  const target = findTalentPosition(talentTree, requiredByTalent);
+
+  if (source && target) {
+    const tierDistance = target.tier - source.tier;
+    const columnDistance = target.column - source.column;
+    const columnSpan = Math.abs(columnDistance);
+
+    if (columnDistance === 0 && isArrowLength(tierDistance)) {
+      arrowDirection = "down";
+      arrowLength = tierDistance;
+    } else if (tierDistance === 0 && isArrowLength(columnSpan)) {
+      arrowDirection = columnDistance > 0 ? "right" : "left";
+      arrowLength = columnSpan;
+    }
+  }
+
+  return { arrowLength, arrowDirection };
+};
+
+const getDependentTalents = (talentTree: TalentTreeType, talent: Talent) => {
   const { talentList } = getTalentsFromTree(talentTree);
-  const talentRequiredBy = talentList.find((t) => t?.requires === talent.name);
-  return talentRequiredBy;
+
+  return talentList.filter((t): t is Talent => t?.requires === talent.name);
 };
 
 export const canIncrementTalent = (
@@ -92,6 +135,30 @@ export const canIncrementTalent = (
     isPrerequisiteMaxed(talentTree, talent) &&
     hasEnoughPointsForTier(talentTree, talent)
   );
+};
+
+export const getArrows = (talentTree: TalentTreeType, talent: Talent) => {
+  const dependentTalents = getDependentTalents(talentTree, talent);
+  const arrows: TalentArrow[] = [];
+
+  for (const dependentTalent of dependentTalents) {
+    const { arrowLength, arrowDirection } = getArrowProperties(
+      talent,
+      dependentTalent,
+      talentTree,
+    );
+
+    if (arrowLength && arrowDirection) {
+      arrows.push({
+        key: dependentTalent.name,
+        length: arrowLength,
+        direction: arrowDirection,
+        isActive: canIncrementTalent(talentTree, dependentTalent),
+      });
+    }
+  }
+
+  return arrows;
 };
 
 export const canDecrementTalent = (
