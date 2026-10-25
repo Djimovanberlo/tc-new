@@ -5,7 +5,7 @@ import { Talent } from "@/lib/classes";
 import {
   canDecrementTalent,
   canIncrementTalent,
-  getTalentsFromTree,
+  getCurrentPointsInTree,
 } from "@/lib/talents";
 import {
   PlayerClass,
@@ -32,12 +32,11 @@ function App() {
     selectedPlayerClass.talentTrees,
   );
 
-  const totalSpentPoints = Object.values(talentTrees)
-    .map((tree) => getTalentsFromTree(tree).talentList)
-    .flat()
-    .reduce((sum, talent) => sum + (talent?.currentRank ?? 0), 0);
+  const [first, second, third] = Object.values(talentTrees).map(
+    getCurrentPointsInTree,
+  );
 
-  const pointsLeft = 51 - totalSpentPoints;
+  const pointsLeft = 51 - (first + second + third);
 
   const resetTalentTree = (talentTree: TalentTreeType) => {
     const talents = Object.values(talentTree.tiers).flat();
@@ -92,7 +91,17 @@ function App() {
       />
       <div className="options">
         <p>
-          Points left: <span>{pointsLeft}</span>
+          <span
+            data-player-class={selectedPlayerClass.name.toLocaleLowerCase()}
+          >
+            {selectedPlayerClass.name}
+          </span>
+          <span>
+            {first}/{second}/{third}
+          </span>
+          <span>
+            Points left: <span>{pointsLeft}</span>
+          </span>
         </p>
         <ResetButton onClick={resetAllTalentTrees}>Reset all</ResetButton>
       </div>

@@ -51,10 +51,19 @@ body,
   padding-top: 15%;
 }
 
-.options {
+.options,
+.options p {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.options p span:first-child {
+  @each $name, $color in $class-colors {
+    &[data-player-class="#{$name}"] {
+      color: $color;
+    }
+  }
 }
 
 .talent-trees {

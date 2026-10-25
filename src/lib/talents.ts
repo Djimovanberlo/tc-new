@@ -6,6 +6,7 @@ import {
   TalentTree as TalentTreeType,
 } from "@/lib/types";
 import { Talent } from "@/lib/classes";
+import TalentTree from "@/components/TalentTree";
 
 const POINTS_PER_TIER = 5;
 
@@ -92,11 +93,19 @@ const getDependentTalents = (talentTree: TalentTreeType, talent: Talent) => {
   return talentList.filter((t): t is Talent => t?.requires === talent.name);
 };
 
-export const getTalentsFromTree = (talentTree: TalentTreeType) => {
+const getTalentsFromTree = (talentTree: TalentTreeType) => {
   const talentTiers = Object.values(talentTree.tiers);
   const talentList = talentTiers.flat();
 
   return { talentTiers, talentList };
+};
+
+export const getCurrentPointsInTree = (talentTree: TalentTreeType) => {
+  const { talentList } = getTalentsFromTree(talentTree);
+  return talentList.reduce(
+    (sum, talent) => sum + (talent?.currentRank ?? 0),
+    0,
+  );
 };
 
 export const getArrowProperties = (

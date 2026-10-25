@@ -8,6 +8,29 @@ $yellow: #ffd100cc;
 $green: #40bf40cc;
 $red: #d15d50;
 
+// Class colors
+$druid: #ff7c0a;
+$hunter: #aad372;
+$mage: #68ccef;
+$paladin: #f48cba;
+$priest: #fff;
+$rogue: #fff468;
+$shaman: #2359ff;
+$warlock: #9382c9;
+$warrior: #c69b6d;
+
+$class-colors: (
+  "druid": $druid,
+  "hunter": $hunter,
+  "mage": $mage,
+  "paladin": $paladin,
+  "priest": $priest,
+  "rogue": $rogue,
+  "shaman": $shaman,
+  "warlock": $warlock,
+  "warrior": $warrior,
+);
+
 // Fonts
 $font-main: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
