@@ -37,7 +37,21 @@ function App() {
     );
   };
 
-  // TODO Reset tree and full spec functions
+  const resetTalentTree = (talentTree: TalentTreeType) => {
+    const talents = Object.values(talentTree.tiers).flat();
+
+    for (const talent of talents) {
+      talent?.reset();
+    }
+
+    setTalentTrees({ ...talentTrees });
+  };
+
+  const resetAllTalentTrees = () => {
+    for (const talentTree of Object.values(talentTrees)) {
+      resetTalentTree(talentTree);
+    }
+  };
 
   const incrementTalent = (talentTree: TalentTreeType, talent: Talent) => {
     if (!canIncrementTalent(talentTree, talent)) {

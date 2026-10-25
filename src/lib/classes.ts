@@ -23,6 +23,10 @@ export abstract class Talent {
     }
   }
 
+  reset(): void {
+    this.currentRank = 0;
+  }
+
   abstract getCurrentDescription(): string;
   abstract getNextDescription(): string;
 }
