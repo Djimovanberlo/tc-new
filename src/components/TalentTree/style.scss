@@ -25,6 +25,26 @@
       font-weight: 700;
     }
   }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: $iconSize;
+    padding: 0.5rem;
+
+    button {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.5rem;
+      background-color: $light-grey;
+
+      span {
+        line-height: 1;
+        color: $red;
+      }
+    }
+  }
 }
 
 .talent-tree-grid {

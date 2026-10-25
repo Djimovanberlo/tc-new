@@ -1,0 +1,12 @@
+.reset-button {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: $light-grey;
+
+  span {
+    line-height: 1;
+    color: $red;
+  }
+}

@@ -2,7 +2,11 @@ import { useEffect, useId, useState } from "react";
 
 import { playerClasses } from "@/talents";
 import { Talent } from "@/lib/classes";
-import { canDecrementTalent, canIncrementTalent } from "@/lib/talents";
+import {
+  canDecrementTalent,
+  canIncrementTalent,
+  getTalentsFromTree,
+} from "@/lib/talents";
 import {
   PlayerClass,
   PlayerClassName,
@@ -10,6 +14,7 @@ import {
 } from "@/lib/types";
 import PlayerClassList from "./components/PlayerClassList";
 import TalentTree from "./components/TalentTree";
+import ResetButton from "./components/ResetButton";
 
 import "./app.scss";
 
@@ -27,15 +32,12 @@ function App() {
     selectedPlayerClass.talentTrees,
   );
 
-  useEffect(() => {
-    setTalentTrees(selectedPlayerClass.talentTrees);
-  }, [selectedPlayerClass]);
+  const totalSpentPoints = Object.values(talentTrees)
+    .map((tree) => getTalentsFromTree(tree).talentList)
+    .flat()
+    .reduce((sum, talent) => sum + (talent?.currentRank ?? 0), 0);
 
-  const selectPlayerClass = (playerClassName: PlayerClassName) => {
-    setSelectedPlayerClass(
-      playerClasses.find((c) => c.name === playerClassName)!,
-    );
-  };
+  const pointsLeft = 51 - totalSpentPoints;
 
   const resetTalentTree = (talentTree: TalentTreeType) => {
     const talents = Object.values(talentTree.tiers).flat();
@@ -51,6 +53,12 @@ function App() {
     for (const talentTree of Object.values(talentTrees)) {
       resetTalentTree(talentTree);
     }
+  };
+
+  const selectPlayerClass = (playerClassName: PlayerClassName) => {
+    setSelectedPlayerClass(
+      playerClasses.find((c) => c.name === playerClassName)!,
+    );
   };
 
   const incrementTalent = (talentTree: TalentTreeType, talent: Talent) => {
@@ -71,6 +79,10 @@ function App() {
     setTalentTrees({ ...talentTrees });
   };
 
+  useEffect(() => {
+    setTalentTrees(selectedPlayerClass.talentTrees);
+  }, [selectedPlayerClass]);
+
   return (
     <div className="app">
       <PlayerClassList
@@ -78,6 +90,12 @@ function App() {
         selectedPlayerClass={selectedPlayerClass}
         selectPlayerClass={selectPlayerClass}
       />
+      <div className="options">
+        <p>
+          Points left: <span>{pointsLeft}</span>
+        </p>
+        <ResetButton onClick={resetAllTalentTrees}>Reset all</ResetButton>
+      </div>
       <div className="talent-trees">
         {Object.values(talentTrees).map((t) => (
           <TalentTree
@@ -85,6 +103,7 @@ function App() {
             talentTree={t}
             onIncrement={(talent) => incrementTalent(t, talent)}
             onDecrement={(talent) => decrementTalent(t, talent)}
+            resetTree={resetTalentTree}
           />
         ))}
       </div>

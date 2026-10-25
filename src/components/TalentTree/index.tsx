@@ -4,6 +4,7 @@ import { getBackgroundImgUrl, getIconUrl } from "@/lib/img";
 import { TalentTree as TalentTreeType } from "@/lib/types";
 import { Talent } from "@/lib/classes";
 import TalentTreeItem from "@/components/TalentTreeItem";
+import ResetButton from "@/components//ResetButton";
 
 import "./style.scss";
 
@@ -11,12 +12,14 @@ interface TalentTreeProps {
   talentTree: TalentTreeType;
   onIncrement: (talent: Talent) => void;
   onDecrement: (talent: Talent) => void;
+  resetTree: (talentTree: TalentTreeType) => void;
 }
 
 const TalentTree = ({
   talentTree,
   onIncrement,
   onDecrement,
+  resetTree,
 }: TalentTreeProps) => {
   const id = useId();
   const backgroundImgUrl = getBackgroundImgUrl(talentTree.backgroundImage);
@@ -64,6 +67,9 @@ const TalentTree = ({
           ),
         )}
       </div>
+      <footer>
+        <ResetButton onClick={() => resetTree(talentTree)}>Reset</ResetButton>
+      </footer>
     </div>
   );
 };

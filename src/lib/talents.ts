@@ -2,20 +2,12 @@ import {
   ArrowDirection,
   ArrowLength,
   TalentArrow,
-  TalentSlot,
   TalentTier,
   TalentTree as TalentTreeType,
 } from "@/lib/types";
 import { Talent } from "@/lib/classes";
 
 const POINTS_PER_TIER = 5;
-
-const getTalentsFromTree = (talentTree: TalentTreeType) => {
-  const talentTiers = Object.values(talentTree.tiers);
-  const talentList = talentTiers.flat();
-
-  return { talentTiers, talentList };
-};
 
 const getTierIndex = (talentTiers: readonly TalentTier[], talent: Talent) => {
   return talentTiers.findIndex((tier) =>
@@ -90,8 +82,22 @@ const findTalentPosition = (talentTree: TalentTreeType, talent: Talent) => {
   }
 };
 
-const isArrowLength = (length: number): length is ArrowLength =>
-  length === 1 || length === 2 || length === 3;
+const isArrowLength = (length: number): length is ArrowLength => {
+  return length === 1 || length === 2 || length === 3;
+};
+
+const getDependentTalents = (talentTree: TalentTreeType, talent: Talent) => {
+  const { talentList } = getTalentsFromTree(talentTree);
+
+  return talentList.filter((t): t is Talent => t?.requires === talent.name);
+};
+
+export const getTalentsFromTree = (talentTree: TalentTreeType) => {
+  const talentTiers = Object.values(talentTree.tiers);
+  const talentList = talentTiers.flat();
+
+  return { talentTiers, talentList };
+};
 
 export const getArrowProperties = (
   sourceTalent: Talent,
@@ -119,12 +125,6 @@ export const getArrowProperties = (
   }
 
   return { arrowLength, arrowDirection };
-};
-
-const getDependentTalents = (talentTree: TalentTreeType, talent: Talent) => {
-  const { talentList } = getTalentsFromTree(talentTree);
-
-  return talentList.filter((t): t is Talent => t?.requires === talent.name);
 };
 
 export const canIncrementTalent = (

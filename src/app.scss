@@ -24,6 +24,11 @@ h6 {
   margin: 0;
 }
 
+p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
 button {
   all: unset;
 
@@ -42,8 +47,14 @@ body,
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 3rem;
+  gap: 2rem;
   padding-top: 15%;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .talent-trees {
